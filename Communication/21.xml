@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1542612791000" analysisTimestamp="1542615921006" release="">
+  <Project projectName="">
+    <Jar>/home/mitu/Downloads/finalizeCode-INTERNAL-EVIDENCES/allAlgoIn1platform/bytecodes/21.jar</Jar>
+  </Project>
+  <BugInstance type="DP_DO_INSIDE_DO_PRIVILEGED" priority="3" rank="20" abbrev="DP" category="MALICIOUS_CODE">
+    <Class classname="com.tablet.messenger.ProtectedTabletMessengerApplication">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Class>
+    <Method classname="com.tablet.messenger.ProtectedTabletMessengerApplication" name="onCreate" signature="()V" isStatic="false">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Method>
+    <Method classname="java.lang.reflect.Method" name="setAccessible" signature="(Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.reflect.Method" sourcefile="Method.java" sourcepath="java/lang/reflect/Method.java"/>
+    </Method>
+    <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication" startBytecode="43" endBytecode="43"/>
+  </BugInstance>
+  <BugInstance type="ICAST_BAD_SHIFT_AMOUNT" priority="3" rank="6" abbrev="BSHIFT" category="CORRECTNESS">
+    <Class classname="com.tablet.messenger.ProtectedTabletMessengerApplication">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Class>
+    <Method classname="com.tablet.messenger.ProtectedTabletMessengerApplication" name="fb11593" signature="()V" isStatic="true">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Method>
+    <Int value="-24" role="INT_SHIFT"/>
+    <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication" startBytecode="6403" endBytecode="6403"/>
+  </BugInstance>
+  <BugInstance type="ICAST_BAD_SHIFT_AMOUNT" priority="3" rank="6" abbrev="BSHIFT" category="CORRECTNESS">
+    <Class classname="com.tablet.messenger.ProtectedTabletMessengerApplication">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Class>
+    <Method classname="com.tablet.messenger.ProtectedTabletMessengerApplication" name="fb11593" signature="()V" isStatic="true">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Method>
+    <Int value="-16" role="INT_SHIFT"/>
+    <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication" startBytecode="6394" endBytecode="6394"/>
+  </BugInstance>
+  <BugInstance type="ICAST_BAD_SHIFT_AMOUNT" priority="3" rank="6" abbrev="BSHIFT" category="CORRECTNESS">
+    <Class classname="com.tablet.messenger.ProtectedTabletMessengerApplication">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Class>
+    <Method classname="com.tablet.messenger.ProtectedTabletMessengerApplication" name="fb11593" signature="()V" isStatic="true">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Method>
+    <Int value="-8" role="INT_SHIFT"/>
+    <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication" startBytecode="6381" endBytecode="6381"/>
+  </BugInstance>
+  <BugInstance type="INT_VACUOUS_BIT_OPERATION" priority="2" rank="17" abbrev="INT" category="STYLE">
+    <Class classname="com.tablet.messenger.ProtectedTabletMessengerApplication">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Class>
+    <Method classname="com.tablet.messenger.ProtectedTabletMessengerApplication" name="fb11593" signature="()V" isStatic="true">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Method>
+    <String value="iand"/>
+    <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication" startBytecode="6364" endBytecode="6364"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.tablet.messenger.ProtectedTabletMessengerApplication">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Class>
+    <Field classname="com.tablet.messenger.ProtectedTabletMessengerApplication" name="CfzHg" signature="Z" isStatic="true">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.tablet.messenger.ProtectedTabletMessengerApplication">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Class>
+    <Field classname="com.tablet.messenger.ProtectedTabletMessengerApplication" name="CfzHg" signature="Z" isStatic="true">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.tablet.messenger.ProtectedTabletMessengerApplication">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Class>
+    <Field classname="com.tablet.messenger.ProtectedTabletMessengerApplication" name="Fks" signature="Ljava/lang/Object;" isStatic="true">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.tablet.messenger.ProtectedTabletMessengerApplication">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Class>
+    <Method classname="com.tablet.messenger.ProtectedTabletMessengerApplication" name="ByGmH" signature="(Ljava/lang/Object;IIIIIIII)I" isStatic="true">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.tablet.messenger.ProtectedTabletMessengerApplication">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Class>
+    <Method classname="com.tablet.messenger.ProtectedTabletMessengerApplication" name="Ee" signature="(Ljava/io/File;)V" isStatic="false">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.tablet.messenger.ProtectedTabletMessengerApplication">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Class>
+    <Method classname="com.tablet.messenger.ProtectedTabletMessengerApplication" name="HdwIlHs" signature="(II)I" isStatic="true">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.tablet.messenger.ProtectedTabletMessengerApplication">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Class>
+    <Method classname="com.tablet.messenger.ProtectedTabletMessengerApplication" name="HsvcockAu" signature="([I[I)V" isStatic="true">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE">
+    <Class classname="com.tablet.messenger.ProtectedTabletMessengerApplication">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Class>
+    <Method classname="com.tablet.messenger.ProtectedTabletMessengerApplication" name="yG" signature="()V" isStatic="false">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Method>
+    <Method classname="java.io.File" name="delete" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="1034" end="1041" startBytecode="0" endBytecode="91" sourcefile="File.java" sourcepath="java/io/File.java"/>
+    </Method>
+    <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication" startBytecode="66" endBytecode="66"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE">
+    <Class classname="com.tablet.messenger.ProtectedTabletMessengerApplication">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Class>
+    <Method classname="com.tablet.messenger.ProtectedTabletMessengerApplication" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Method>
+    <Field classname="com.tablet.messenger.ProtectedTabletMessengerApplication" name="Fks" signature="Ljava/lang/Object;" isStatic="true">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Field>
+    <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication" startBytecode="5" endBytecode="5"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_REFERENCE_TO_ARRAY" priority="3" rank="17" abbrev="VO" category="MT_CORRECTNESS">
+    <Class classname="com.tablet.messenger.ProtectedTabletMessengerApplication">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Class>
+    <Field classname="com.tablet.messenger.ProtectedTabletMessengerApplication" name="async" signature="[Ljava/lang/Object;" isStatic="true">
+      <SourceLine classname="com.tablet.messenger.ProtectedTabletMessengerApplication"/>
+    </Field>
+  </BugInstance>
+  <Errors errors="0" missingClasses="7">
+    <MissingClass>android.app.Application</MissingClass>
+    <MissingClass>android.content.res.AssetManager</MissingClass>
+    <MissingClass>android.os.Build</MissingClass>
+    <MissingClass>android.os.Build$VERSION</MissingClass>
+    <MissingClass>android.os.Process</MissingClass>
+    <MissingClass>android.os.SystemProperties</MissingClass>
+    <MissingClass>android.util.Log</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sun, 18 Nov 2018 21:33:11 -1000" total_classes="1" referenced_classes="18" total_bugs="15" total_size="1041" num_packages="1" java_version="1.8.0_131" vm_version="25.131-b11" cpu_seconds="6.95" clock_seconds="1.98" peak_mbytes="141.81" alloc_mbytes="683.00" gc_seconds="0.03" priority_3="9" priority_2="5" priority_1="1">
+    <PackageStats package="com.tablet.messenger" total_bugs="15" total_types="1" total_size="1041" priority_3="9" priority_2="5" priority_1="1">
+      <ClassStats class="com.tablet.messenger.ProtectedTabletMessengerApplication" sourceFile="&lt;Unknown&gt;" interface="false" size="1041" bugs="15" priority_3="9" priority_2="5" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="227" invocations="386" avgMicrosecondsPerInvocation="589" maxMicrosecondsPerInvocation="23304" standardDeviationMircosecondsPerInvocation="1749"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="79" invocations="91" avgMicrosecondsPerInvocation="874" maxMicrosecondsPerInvocation="9195" standardDeviationMircosecondsPerInvocation="1408"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="76" invocations="18" avgMicrosecondsPerInvocation="4262" maxMicrosecondsPerInvocation="16170" standardDeviationMircosecondsPerInvocation="4731"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="73" invocations="14" avgMicrosecondsPerInvocation="5260" maxMicrosecondsPerInvocation="48361" standardDeviationMircosecondsPerInvocation="12024"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="72" invocations="14" avgMicrosecondsPerInvocation="5152" maxMicrosecondsPerInvocation="29429" standardDeviationMircosecondsPerInvocation="7390"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="66" invocations="14" avgMicrosecondsPerInvocation="4766" maxMicrosecondsPerInvocation="44574" standardDeviationMircosecondsPerInvocation="11112"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="59" invocations="14" avgMicrosecondsPerInvocation="4267" maxMicrosecondsPerInvocation="16947" standardDeviationMircosecondsPerInvocation="4524"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="50" invocations="18" avgMicrosecondsPerInvocation="2829" maxMicrosecondsPerInvocation="8866" standardDeviationMircosecondsPerInvocation="2626"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="49" invocations="14" avgMicrosecondsPerInvocation="3559" maxMicrosecondsPerInvocation="22334" standardDeviationMircosecondsPerInvocation="5571"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="46" invocations="16" avgMicrosecondsPerInvocation="2901" maxMicrosecondsPerInvocation="38765" standardDeviationMircosecondsPerInvocation="9276"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="38" invocations="344" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="1579" standardDeviationMircosecondsPerInvocation="214"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="37" invocations="15" avgMicrosecondsPerInvocation="2507" maxMicrosecondsPerInvocation="11360" standardDeviationMircosecondsPerInvocation="2866"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="31" invocations="48" avgMicrosecondsPerInvocation="660" maxMicrosecondsPerInvocation="16694" standardDeviationMircosecondsPerInvocation="2496"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="28" invocations="1" avgMicrosecondsPerInvocation="28734" maxMicrosecondsPerInvocation="28734" standardDeviationMircosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="28" invocations="1" avgMicrosecondsPerInvocation="28399" maxMicrosecondsPerInvocation="28399" standardDeviationMircosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="27" invocations="1" avgMicrosecondsPerInvocation="27864" maxMicrosecondsPerInvocation="27864" standardDeviationMircosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="27" invocations="18" avgMicrosecondsPerInvocation="1527" maxMicrosecondsPerInvocation="8647" standardDeviationMircosecondsPerInvocation="2090"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="24" invocations="14" avgMicrosecondsPerInvocation="1765" maxMicrosecondsPerInvocation="13722" standardDeviationMircosecondsPerInvocation="3368"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="23" invocations="18" avgMicrosecondsPerInvocation="1283" maxMicrosecondsPerInvocation="10725" standardDeviationMircosecondsPerInvocation="2451"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="22" invocations="18" avgMicrosecondsPerInvocation="1255" maxMicrosecondsPerInvocation="7296" standardDeviationMircosecondsPerInvocation="1957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="21" invocations="19" avgMicrosecondsPerInvocation="1136" maxMicrosecondsPerInvocation="21054" standardDeviationMircosecondsPerInvocation="4694"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="21" invocations="10" avgMicrosecondsPerInvocation="2151" maxMicrosecondsPerInvocation="9825" standardDeviationMircosecondsPerInvocation="2685"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="17" invocations="389" avgMicrosecondsPerInvocation="44" maxMicrosecondsPerInvocation="460" standardDeviationMircosecondsPerInvocation="32"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="17" invocations="18" avgMicrosecondsPerInvocation="971" maxMicrosecondsPerInvocation="5467" standardDeviationMircosecondsPerInvocation="1353"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="16" invocations="18" avgMicrosecondsPerInvocation="939" maxMicrosecondsPerInvocation="4981" standardDeviationMircosecondsPerInvocation="1417"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="16" invocations="1" avgMicrosecondsPerInvocation="16519" maxMicrosecondsPerInvocation="16519" standardDeviationMircosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="16" invocations="18" avgMicrosecondsPerInvocation="907" maxMicrosecondsPerInvocation="3745" standardDeviationMircosecondsPerInvocation="982"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
