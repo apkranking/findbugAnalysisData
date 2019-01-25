@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1542600963000" analysisTimestamp="1542602377995" release="">
+  <Project projectName="">
+    <Jar>/home/mitu/Downloads/finalizeCode-INTERNAL-EVIDENCES/allAlgoIn1platform/bytecodes/10.jar</Jar>
+  </Project>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.google.android.gms.internal.zzapt">
+      <SourceLine classname="com.google.android.gms.internal.zzapt"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE">
+    <Class classname="com.google.android.gms.internal.zzapt$zza">
+      <SourceLine classname="com.google.android.gms.internal.zzapt$zza"/>
+    </Class>
+    <Method classname="com.google.android.gms.internal.zzapt$zza" name="onConnected" signature="(Landroid/os/Bundle;)V" isStatic="false">
+      <SourceLine classname="com.google.android.gms.internal.zzapt$zza" startBytecode="0" endBytecode="43"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="56" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.google.android.gms.internal.zzapt$zza" startBytecode="55" endBytecode="55"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.EXCEPTION_HANDLER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IN_JSP_PAGE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.PARAM_DEAD_ON_ENTRY" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE">
+    <Class classname="com.google.android.gms.internal.zzapt$zza">
+      <SourceLine classname="com.google.android.gms.internal.zzapt$zza"/>
+    </Class>
+    <Method classname="com.google.android.gms.internal.zzapt$zza" name="onConnectionFailed" signature="(Lcom/google/android/gms/common/ConnectionResult;)V" isStatic="false">
+      <SourceLine classname="com.google.android.gms.internal.zzapt$zza" startBytecode="0" endBytecode="8"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="16" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.google.android.gms.internal.zzapt$zza" startBytecode="15" endBytecode="15"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.EXCEPTION_HANDLER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IN_JSP_PAGE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.PARAM_DEAD_ON_ENTRY" value="true"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="1" rank="6" abbrev="IP" category="CORRECTNESS">
+    <Class classname="com.google.android.gms.internal.zzapt$zza">
+      <SourceLine classname="com.google.android.gms.internal.zzapt$zza"/>
+    </Class>
+    <Method classname="com.google.android.gms.internal.zzapt$zza" name="onConnectionFailed" signature="(Lcom/google/android/gms/common/ConnectionResult;)V" isStatic="false">
+      <SourceLine classname="com.google.android.gms.internal.zzapt$zza" startBytecode="0" endBytecode="8"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="16" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.google.android.gms.internal.zzapt$zza" startBytecode="15" endBytecode="15"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="com.google.android.gms.internal.zzapt$zza">
+      <SourceLine classname="com.google.android.gms.internal.zzapt$zza"/>
+    </Class>
+    <Method classname="com.google.android.gms.internal.zzapt$zza" name="onConnected" signature="(Landroid/os/Bundle;)V" isStatic="false">
+      <SourceLine classname="com.google.android.gms.internal.zzapt$zza" startBytecode="0" endBytecode="43"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="5" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.google.android.gms.internal.zzapt$zza" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.google.android.gms.internal.zzapt$zza">
+      <SourceLine classname="com.google.android.gms.internal.zzapt$zza"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.google.android.gms.internal.zzapu">
+      <SourceLine classname="com.google.android.gms.internal.zzapu"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.google.android.gms.internal.zzapv">
+      <SourceLine classname="com.google.android.gms.internal.zzapv"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="com.google.android.gms.internal.zzapw">
+      <SourceLine classname="com.google.android.gms.internal.zzapw"/>
+    </Class>
+    <Method classname="com.google.android.gms.internal.zzapw" name="zza" signature="(Lcom/google/android/gms/internal/zzapv;Landroid/os/Parcel;I)V" isStatic="true">
+      <SourceLine classname="com.google.android.gms.internal.zzapw" startBytecode="0" endBytecode="23"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="5" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.google.android.gms.internal.zzapw" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.google.android.gms.internal.zzapw">
+      <SourceLine classname="com.google.android.gms.internal.zzapw"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.google.android.gms.internal.zzapx">
+      <SourceLine classname="com.google.android.gms.internal.zzapx"/>
+    </Class>
+    <Method classname="com.google.android.gms.internal.zzapx" name="zzFY" signature="()[B" isStatic="false">
+      <SourceLine classname="com.google.android.gms.internal.zzapx"/>
+    </Method>
+    <Field classname="com.google.android.gms.internal.zzapx" name="zzbfH" signature="[B" isStatic="false">
+      <SourceLine classname="com.google.android.gms.internal.zzapx"/>
+    </Field>
+    <SourceLine classname="com.google.android.gms.internal.zzapx" startBytecode="11" endBytecode="11"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.google.android.gms.internal.zzapx">
+      <SourceLine classname="com.google.android.gms.internal.zzapx"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="com.google.android.gms.internal.zzapy">
+      <SourceLine classname="com.google.android.gms.internal.zzapy"/>
+    </Class>
+    <Method classname="com.google.android.gms.internal.zzapy" name="zza" signature="(Lcom/google/android/gms/internal/zzapx;Landroid/os/Parcel;I)V" isStatic="true">
+      <SourceLine classname="com.google.android.gms.internal.zzapy" startBytecode="0" endBytecode="17"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="5" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.google.android.gms.internal.zzapy" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.google.android.gms.internal.zzapy">
+      <SourceLine classname="com.google.android.gms.internal.zzapy"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.google.android.gms.internal.zzapz$zza">
+      <SourceLine classname="com.google.android.gms.internal.zzapz$zza"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.google.android.gms.internal.zzapz$zza$zza">
+      <SourceLine classname="com.google.android.gms.internal.zzapz$zza$zza"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="0" missingClasses="16">
+    <MissingClass>android.os.Binder</MissingClass>
+    <MissingClass>android.os.DeadObjectException</MissingClass>
+    <MissingClass>android.os.HandlerThread</MissingClass>
+    <MissingClass>android.os.IBinder</MissingClass>
+    <MissingClass>android.os.IInterface</MissingClass>
+    <MissingClass>android.os.Parcel</MissingClass>
+    <MissingClass>android.os.Parcelable$Creator</MissingClass>
+    <MissingClass>android.os.RemoteException</MissingClass>
+    <MissingClass>com.google.android.gms.common.internal.safeparcel.zza</MissingClass>
+    <MissingClass>com.google.android.gms.common.internal.safeparcel.zzb</MissingClass>
+    <MissingClass>com.google.android.gms.common.internal.safeparcel.zzb$zza</MissingClass>
+    <MissingClass>com.google.android.gms.common.internal.safeparcel.zzc</MissingClass>
+    <MissingClass>com.google.android.gms.common.internal.zzf</MissingClass>
+    <MissingClass>com.google.android.gms.common.internal.zzf$zzb</MissingClass>
+    <MissingClass>com.google.android.gms.internal.zzaf$zza</MissingClass>
+    <MissingClass>com.google.android.gms.internal.zzbut</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sun, 18 Nov 2018 18:16:03 -1000" total_classes="10" referenced_classes="22" total_bugs="16" total_size="192" num_packages="1" java_version="1.8.0_131" vm_version="25.131-b11" cpu_seconds="5.36" clock_seconds="1.53" peak_mbytes="111.82" alloc_mbytes="683.00" gc_seconds="0.03" priority_3="5" priority_2="8" priority_1="3">
+    <PackageStats package="com.google.android.gms.internal" total_bugs="16" total_types="10" total_size="192" priority_3="5" priority_2="8" priority_1="3">
+      <ClassStats class="com.google.android.gms.internal.zzapt" sourceFile="&lt;Unknown&gt;" interface="false" size="3" bugs="1" priority_2="1"/>
+      <ClassStats class="com.google.android.gms.internal.zzapt$zza" sourceFile="&lt;Unknown&gt;" interface="false" size="44" bugs="5" priority_3="2" priority_1="3"/>
+      <ClassStats class="com.google.android.gms.internal.zzapu" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="com.google.android.gms.internal.zzapv" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="com.google.android.gms.internal.zzapw" sourceFile="&lt;Unknown&gt;" interface="false" size="28" bugs="2" priority_3="1" priority_2="1"/>
+      <ClassStats class="com.google.android.gms.internal.zzapx" sourceFile="&lt;Unknown&gt;" interface="false" size="33" bugs="2" priority_2="2"/>
+      <ClassStats class="com.google.android.gms.internal.zzapy" sourceFile="&lt;Unknown&gt;" interface="false" size="25" bugs="2" priority_3="1" priority_2="1"/>
+      <ClassStats class="com.google.android.gms.internal.zzapz" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.google.android.gms.internal.zzapz$zza" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="1" priority_2="1"/>
+      <ClassStats class="com.google.android.gms.internal.zzapz$zza$zza" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="1" priority_3="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="214" invocations="353" avgMicrosecondsPerInvocation="608" maxMicrosecondsPerInvocation="19974" standardDeviationMircosecondsPerInvocation="1736"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="52" invocations="22" avgMicrosecondsPerInvocation="2364" maxMicrosecondsPerInvocation="17070" standardDeviationMircosecondsPerInvocation="4192"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="50" invocations="123" avgMicrosecondsPerInvocation="409" maxMicrosecondsPerInvocation="5087" standardDeviationMircosecondsPerInvocation="617"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="47" invocations="45" avgMicrosecondsPerInvocation="1065" maxMicrosecondsPerInvocation="10192" standardDeviationMircosecondsPerInvocation="1893"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="47" invocations="46" avgMicrosecondsPerInvocation="1034" maxMicrosecondsPerInvocation="39538" standardDeviationMircosecondsPerInvocation="5744"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="41" invocations="46" avgMicrosecondsPerInvocation="913" maxMicrosecondsPerInvocation="12113" standardDeviationMircosecondsPerInvocation="1957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="36" invocations="298" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="1646" standardDeviationMircosecondsPerInvocation="218"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="36" invocations="45" avgMicrosecondsPerInvocation="806" maxMicrosecondsPerInvocation="4217" standardDeviationMircosecondsPerInvocation="954"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="34" invocations="46" avgMicrosecondsPerInvocation="752" maxMicrosecondsPerInvocation="9691" standardDeviationMircosecondsPerInvocation="1590"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="33" invocations="45" avgMicrosecondsPerInvocation="744" maxMicrosecondsPerInvocation="7111" standardDeviationMircosecondsPerInvocation="1285"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="32" invocations="45" avgMicrosecondsPerInvocation="723" maxMicrosecondsPerInvocation="11849" standardDeviationMircosecondsPerInvocation="1735"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="32" invocations="22" avgMicrosecondsPerInvocation="1459" maxMicrosecondsPerInvocation="9102" standardDeviationMircosecondsPerInvocation="2157"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="27" invocations="45" avgMicrosecondsPerInvocation="615" maxMicrosecondsPerInvocation="16025" standardDeviationMircosecondsPerInvocation="2412"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="22" invocations="22" avgMicrosecondsPerInvocation="1031" maxMicrosecondsPerInvocation="10261" standardDeviationMircosecondsPerInvocation="2184"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="20" invocations="22" avgMicrosecondsPerInvocation="932" maxMicrosecondsPerInvocation="11120" standardDeviationMircosecondsPerInvocation="2352"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="19" invocations="39" avgMicrosecondsPerInvocation="494" maxMicrosecondsPerInvocation="4103" standardDeviationMircosecondsPerInvocation="788"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="18" invocations="22" avgMicrosecondsPerInvocation="823" maxMicrosecondsPerInvocation="7312" standardDeviationMircosecondsPerInvocation="1700"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="16" invocations="356" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="437" standardDeviationMircosecondsPerInvocation="29"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="15" invocations="22" avgMicrosecondsPerInvocation="717" maxMicrosecondsPerInvocation="4942" standardDeviationMircosecondsPerInvocation="1204"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="13" invocations="19" avgMicrosecondsPerInvocation="715" maxMicrosecondsPerInvocation="13010" standardDeviationMircosecondsPerInvocation="2897"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="13" invocations="22" avgMicrosecondsPerInvocation="610" maxMicrosecondsPerInvocation="3318" standardDeviationMircosecondsPerInvocation="763"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="11" invocations="22" avgMicrosecondsPerInvocation="543" maxMicrosecondsPerInvocation="5162" standardDeviationMircosecondsPerInvocation="1175"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
