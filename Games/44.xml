@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1542607693000" analysisTimestamp="1542611008290" release="">
+  <Project projectName="">
+    <Jar>/home/mitu/Downloads/finalizeCode-INTERNAL-EVIDENCES/allAlgoIn1platform/bytecodes/44.jar</Jar>
+  </Project>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="android.support.v4.app.BackStackState">
+      <SourceLine classname="android.support.v4.app.BackStackState"/>
+    </Class>
+    <Method classname="android.support.v4.app.BackStackState" name="&lt;init&gt;" signature="(Landroid/support/v4/app/k;Landroid/support/v4/app/b;)V" isStatic="false">
+      <SourceLine classname="android.support.v4.app.BackStackState" startBytecode="0" endBytecode="221"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="9" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="android.support.v4.app.BackStackState" startBytecode="8" endBytecode="8"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="android.support.v4.app.FragmentState">
+      <SourceLine classname="android.support.v4.app.FragmentState"/>
+    </Class>
+    <Method classname="android.support.v4.app.FragmentState" name="writeToParcel" signature="(Landroid/os/Parcel;I)V" isStatic="false">
+      <SourceLine classname="android.support.v4.app.FragmentState" startBytecode="0" endBytecode="63"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="103" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="android.support.v4.app.FragmentState" startBytecode="102" endBytecode="102"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="android.support.v4.app.b">
+      <SourceLine classname="android.support.v4.app.b"/>
+    </Class>
+    <Field classname="android.support.v4.app.b" name="l" signature="Z" isStatic="false">
+      <SourceLine classname="android.support.v4.app.b"/>
+    </Field>
+    <SourceLine classname="android.support.v4.app.b" startBytecode="6" endBytecode="6"/>
+  </BugInstance>
+  <BugInstance type="NP_LOAD_OF_KNOWN_NULL_VALUE" priority="3" rank="19" abbrev="NP" category="STYLE">
+    <Class classname="android.support.v4.app.e">
+      <SourceLine classname="android.support.v4.app.e"/>
+    </Class>
+    <Method classname="android.support.v4.app.e" name="onCreateView" signature="(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;" isStatic="false">
+      <SourceLine classname="android.support.v4.app.e" startBytecode="0" endBytecode="262"/>
+    </Method>
+    <LocalVariable name="?" register="7" pc="163" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="android.support.v4.app.e" startBytecode="189" endBytecode="189"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="android.support.v4.app.e">
+      <SourceLine classname="android.support.v4.app.e"/>
+    </Class>
+    <Method classname="android.support.v4.app.e" name="a" signature="(Ljava/lang/String;Ljava/io/PrintWriter;Landroid/view/View;)V" isStatic="false">
+      <SourceLine classname="android.support.v4.app.e"/>
+    </Method>
+    <SourceLine classname="android.support.v4.app.e" startBytecode="47" endBytecode="47"/>
+  </BugInstance>
+  <BugInstance type="UCF_USELESS_CONTROL_FLOW" priority="3" rank="20" abbrev="UCF" category="STYLE">
+    <Class classname="android.support.v4.app.e">
+      <SourceLine classname="android.support.v4.app.e"/>
+    </Class>
+    <Method classname="android.support.v4.app.e" name="dump" signature="(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="android.support.v4.app.e"/>
+    </Method>
+    <SourceLine classname="android.support.v4.app.e" startBytecode="5" endBytecode="5"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="android.support.v4.app.g">
+      <SourceLine classname="android.support.v4.app.g"/>
+    </Class>
+    <Field classname="android.support.v4.app.g" name="a" signature="Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="android.support.v4.app.g"/>
+    </Field>
+    <SourceLine classname="android.support.v4.app.e" startBytecode="167" endBytecode="167"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="android.support.v4.app.g">
+      <SourceLine classname="android.support.v4.app.g"/>
+    </Class>
+    <Field classname="android.support.v4.app.g" name="b" signature="Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="android.support.v4.app.g"/>
+    </Field>
+    <SourceLine classname="android.support.v4.app.e" startBytecode="174" endBytecode="174"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="android.support.v4.app.g">
+      <SourceLine classname="android.support.v4.app.g"/>
+    </Class>
+    <Field classname="android.support.v4.app.g" name="c" signature="Landroid/support/v4/c/k;" isStatic="false">
+      <SourceLine classname="android.support.v4.app.g"/>
+    </Field>
+    <SourceLine classname="android.support.v4.app.e" startBytecode="180" endBytecode="180"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="android.support.v4.app.k">
+      <SourceLine classname="android.support.v4.app.k"/>
+    </Class>
+    <Method classname="android.support.v4.app.k" name="a" signature="(Landroid/content/Context;FF)Landroid/view/animation/Animation;" isStatic="true">
+      <SourceLine classname="android.support.v4.app.k" startBytecode="0" endBytecode="13"/>
+    </Method>
+    <LocalVariable name="?" register="0" pc="10" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="9" endBytecode="9"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="android.support.v4.app.k">
+      <SourceLine classname="android.support.v4.app.k"/>
+    </Class>
+    <Method classname="android.support.v4.app.k" name="a" signature="(Landroid/content/Context;FFFF)Landroid/view/animation/Animation;" isStatic="true">
+      <SourceLine classname="android.support.v4.app.k" startBytecode="0" endBytecode="42"/>
+    </Method>
+    <LocalVariable name="?" register="0" pc="9" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="8" endBytecode="8"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="android.support.v4.app.k">
+      <SourceLine classname="android.support.v4.app.k"/>
+    </Class>
+    <Method classname="android.support.v4.app.k" name="a" signature="(Landroid/os/Handler;Ljava/lang/String;II)Z" isStatic="false">
+      <SourceLine classname="android.support.v4.app.k" startBytecode="0" endBytecode="194"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="245" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="244" endBytecode="244"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="android.support.v4.app.k">
+      <SourceLine classname="android.support.v4.app.k"/>
+    </Class>
+    <Field classname="android.support.v4.app.k" name="c" signature="Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="android.support.v4.app.k"/>
+    </Field>
+    <Int value="69" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="610" endBytecode="610" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="617" endBytecode="617" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="654" endBytecode="654" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="51" endBytecode="51" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="58" endBytecode="58" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="142" endBytecode="142" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="174" endBytecode="174" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="186" endBytecode="186" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="41" endBytecode="41" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="59" endBytecode="59" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="68" endBytecode="68" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="55" endBytecode="55" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="android.support.v4.app.k">
+      <SourceLine classname="android.support.v4.app.k"/>
+    </Class>
+    <Field classname="android.support.v4.app.k" name="d" signature="[Ljava/lang/Runnable;" isStatic="false">
+      <SourceLine classname="android.support.v4.app.k"/>
+    </Field>
+    <Int value="66" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="221" endBytecode="221" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="232" endBytecode="232" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="150" endBytecode="150" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="157" endBytecode="157" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="170" endBytecode="170" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="178" endBytecode="178" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="NP_LOAD_OF_KNOWN_NULL_VALUE" priority="3" rank="19" abbrev="NP" category="STYLE">
+    <Class classname="android.support.v4.app.k">
+      <SourceLine classname="android.support.v4.app.k"/>
+    </Class>
+    <Method classname="android.support.v4.app.k" name="a" signature="(Landroid/support/v4/app/Fragment;IIIZ)V" isStatic="false">
+      <SourceLine classname="android.support.v4.app.k" startBytecode="0" endBytecode="713"/>
+    </Method>
+    <LocalVariable name="?" register="9" pc="637" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="640" endBytecode="640"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="3" rank="20" abbrev="SF" category="STYLE">
+    <Class classname="android.support.v4.app.k">
+      <SourceLine classname="android.support.v4.app.k"/>
+    </Class>
+    <Method classname="android.support.v4.app.k" name="a" signature="(Landroid/support/v4/app/Fragment;IIIZ)V" isStatic="false">
+      <SourceLine classname="android.support.v4.app.k"/>
+    </Method>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="555" endBytecode="557"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS">
+    <Class classname="android.support.v4.app.k">
+      <SourceLine classname="android.support.v4.app.k"/>
+    </Class>
+    <Field classname="android.support.v4.app.k" name="m" signature="Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="android.support.v4.app.k"/>
+    </Field>
+    <SourceLine classname="android.support.v4.app.k" startBytecode="1" endBytecode="1"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="1" rank="15" abbrev="RV" category="STYLE">
+    <Class classname="android.support.v4.b.a">
+      <SourceLine classname="android.support.v4.b.a"/>
+    </Class>
+    <Method classname="android.support.v4.b.a" name="a" signature="(Landroid/support/v4/b/c;)Landroid/os/Parcelable$Creator;" isStatic="true">
+      <SourceLine classname="android.support.v4.b.a"/>
+    </Method>
+    <Method classname="android.support.v4.b.e" name="a" signature="(Landroid/support/v4/b/c;)Landroid/os/Parcelable$Creator;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="android.support.v4.b.e"/>
+    </Method>
+    <SourceLine classname="android.support.v4.b.a" startBytecode="9" endBytecode="9"/>
+  </BugInstance>
+  <BugInstance type="EQ_DOESNT_OVERRIDE_EQUALS" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="android.support.v4.c.a">
+      <SourceLine classname="android.support.v4.c.a"/>
+    </Class>
+    <SourceLine classname="android.support.v4.c.a" start="1" end="1" startBytecode="0" endBytecode="0"/>
+    <Method classname="android.support.v4.c.k" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_DID_YOU_MEAN_TO_OVERRIDE">
+      <SourceLine classname="android.support.v4.c.k"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="IT_NO_SUCH_ELEMENT" priority="3" rank="19" abbrev="It" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.c.f">
+      <SourceLine classname="android.support.v4.c.f"/>
+    </Class>
+    <Method classname="android.support.v4.c.f" name="next" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="android.support.v4.c.f"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="PZ_DONT_REUSE_ENTRY_OBJECTS_IN_ITERATORS" priority="2" rank="14" abbrev="PZ" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.c.i">
+      <SourceLine classname="android.support.v4.c.i"/>
+    </Class>
+    <String value="shouldn&apos;t reuse Iterator as a Map.Entry"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="android.support.v4.view.ViewPager">
+      <SourceLine classname="android.support.v4.view.ViewPager"/>
+    </Class>
+    <Method classname="android.support.v4.view.ViewPager" name="onMeasure" signature="(II)V" isStatic="false">
+      <SourceLine classname="android.support.v4.view.ViewPager"/>
+    </Method>
+    <LocalVariable name="?" register="14" pc="487" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="android.support.v4.view.ViewPager" startBytecode="489" endBytecode="489" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="android.support.v4.view.ViewPager" startBytecode="471" endBytecode="471" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS">
+    <Class classname="android.support.v4.view.ViewPager">
+      <SourceLine classname="android.support.v4.view.ViewPager"/>
+    </Class>
+    <Method classname="android.support.v4.view.ViewPager" name="setChildrenDrawingOrderEnabledCompat" signature="(Z)V" isStatic="false">
+      <SourceLine classname="android.support.v4.view.ViewPager"/>
+    </Method>
+    <Field classname="android.support.v4.view.ViewPager" name="ac" signature="Ljava/lang/reflect/Method;" isStatic="false" role="FIELD_CONTAINS_VALUE">
+      <SourceLine classname="android.support.v4.view.ViewPager"/>
+    </Field>
+    <SourceLine classname="android.support.v4.view.ViewPager" startBytecode="53" endBytecode="53" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="android.support.v4.view.ViewPager" startBytecode="58" endBytecode="58" role="SOURCE_LINE_KNOWN_NULL"/>
+    <SourceLine classname="android.support.v4.view.ViewPager" startBytecode="66" endBytecode="66" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.DEREFS_IN_CATCH_BLOCKS" value="true"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="2" rank="17" abbrev="SF" category="STYLE">
+    <Class classname="android.support.v4.view.ViewPager">
+      <SourceLine classname="android.support.v4.view.ViewPager"/>
+    </Class>
+    <Method classname="android.support.v4.view.ViewPager" name="onTouchEvent" signature="(Landroid/view/MotionEvent;)Z" isStatic="false">
+      <SourceLine classname="android.support.v4.view.ViewPager"/>
+    </Method>
+    <SourceLine classname="android.support.v4.view.ViewPager" startBytecode="126" endBytecode="128"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="android.support.v4.view.ViewPager">
+      <SourceLine classname="android.support.v4.view.ViewPager"/>
+    </Class>
+    <Field classname="android.support.v4.view.ViewPager" name="T" signature="Z" isStatic="false">
+      <SourceLine classname="android.support.v4.view.ViewPager"/>
+    </Field>
+    <SourceLine classname="android.support.v4.view.ViewPager" startBytecode="743" endBytecode="743"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="android.support.v4.view.ViewPager">
+      <SourceLine classname="android.support.v4.view.ViewPager"/>
+    </Class>
+    <Field classname="android.support.v4.view.ViewPager" name="u" signature="I" isStatic="false">
+      <SourceLine classname="android.support.v4.view.ViewPager"/>
+    </Field>
+    <SourceLine classname="android.support.v4.view.ViewPager" startBytecode="400" endBytecode="400"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.aa">
+      <SourceLine classname="android.support.v4.view.aa"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.ab">
+      <SourceLine classname="android.support.v4.view.ab"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.ac">
+      <SourceLine classname="android.support.v4.view.ac"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.ad">
+      <SourceLine classname="android.support.v4.view.ad"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.ae">
+      <SourceLine classname="android.support.v4.view.ae"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.af">
+      <SourceLine classname="android.support.v4.view.af"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.ah">
+      <SourceLine classname="android.support.v4.view.ah"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.ai">
+      <SourceLine classname="android.support.v4.view.ai"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.aj">
+      <SourceLine classname="android.support.v4.view.aj"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.ak">
+      <SourceLine classname="android.support.v4.view.ak"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.al">
+      <SourceLine classname="android.support.v4.view.al"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.am">
+      <SourceLine classname="android.support.v4.view.am"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.ao">
+      <SourceLine classname="android.support.v4.view.ao"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.ap">
+      <SourceLine classname="android.support.v4.view.ap"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.at">
+      <SourceLine classname="android.support.v4.view.at"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.au">
+      <SourceLine classname="android.support.v4.view.au"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_COMPARATOR_SHOULD_BE_SERIALIZABLE" priority="2" rank="19" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="android.support.v4.view.au">
+      <SourceLine classname="android.support.v4.view.au"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS">
+    <Class classname="android.support.v4.view.r">
+      <SourceLine classname="android.support.v4.view.r"/>
+    </Class>
+    <Field classname="android.support.v4.view.r" name="a" signature="Landroid/database/DataSetObservable;" isStatic="false">
+      <SourceLine classname="android.support.v4.view.r"/>
+    </Field>
+    <SourceLine classname="android.support.v4.view.r" startBytecode="1" endBytecode="1"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE">
+    <Class classname="android.support.v4.widget.DrawerLayout">
+      <SourceLine classname="android.support.v4.widget.DrawerLayout"/>
+    </Class>
+    <Method classname="android.support.v4.widget.DrawerLayout" name="onLayout" signature="(ZIIII)V" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.DrawerLayout"/>
+    </Method>
+    <SourceLine classname="android.support.v4.widget.DrawerLayout" startBytecode="175" endBytecode="175"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="3" rank="20" abbrev="FE" category="STYLE">
+    <Class classname="android.support.v4.widget.DrawerLayout">
+      <SourceLine classname="android.support.v4.widget.DrawerLayout"/>
+    </Class>
+    <Method classname="android.support.v4.widget.DrawerLayout" name="b" signature="(Landroid/view/View;F)V" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.DrawerLayout"/>
+    </Method>
+    <SourceLine classname="android.support.v4.widget.DrawerLayout" startBytecode="14" endBytecode="14"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="android.support.v4.widget.DrawerLayout">
+      <SourceLine classname="android.support.v4.widget.DrawerLayout"/>
+    </Class>
+    <Method classname="android.support.v4.widget.DrawerLayout" name="a" signature="(IILandroid/view/View;)V" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.DrawerLayout" startBytecode="0" endBytecode="71"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="24" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="android.support.v4.widget.DrawerLayout" startBytecode="23" endBytecode="23"/>
+  </BugInstance>
+  <BugInstance type="NS_DANGEROUS_NON_SHORT_CIRCUIT" priority="1" rank="15" abbrev="NS" category="STYLE">
+    <Class classname="android.support.v4.widget.DrawerLayout">
+      <SourceLine classname="android.support.v4.widget.DrawerLayout"/>
+    </Class>
+    <Method classname="android.support.v4.widget.DrawerLayout" name="computeScroll" signature="()V" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.DrawerLayout"/>
+    </Method>
+    <SourceLine classname="android.support.v4.widget.DrawerLayout" startBytecode="62" endBytecode="62"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="android.support.v4.widget.DrawerLayout">
+      <SourceLine classname="android.support.v4.widget.DrawerLayout"/>
+    </Class>
+    <Field classname="android.support.v4.widget.DrawerLayout" name="o" signature="Z" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.DrawerLayout"/>
+    </Field>
+    <SourceLine classname="android.support.v4.widget.DrawerLayout" startBytecode="148" endBytecode="148"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="android.support.v4.widget.SlidingPaneLayout">
+      <SourceLine classname="android.support.v4.widget.SlidingPaneLayout"/>
+    </Class>
+    <Method classname="android.support.v4.widget.SlidingPaneLayout" name="a" signature="(FI)Z" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.SlidingPaneLayout" startBytecode="0" endBytecode="43"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="25" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="android.support.v4.widget.SlidingPaneLayout" startBytecode="24" endBytecode="24"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="android.support.v4.widget.SlidingPaneLayout">
+      <SourceLine classname="android.support.v4.widget.SlidingPaneLayout"/>
+    </Class>
+    <Method classname="android.support.v4.widget.SlidingPaneLayout" name="onLayout" signature="(ZIIII)V" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.SlidingPaneLayout" startBytecode="0" endBytecode="222"/>
+    </Method>
+    <LocalVariable name="?" register="5" pc="62" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="android.support.v4.widget.SlidingPaneLayout" startBytecode="60" endBytecode="60"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="android.support.v4.widget.SlidingPaneLayout">
+      <SourceLine classname="android.support.v4.widget.SlidingPaneLayout"/>
+    </Class>
+    <Method classname="android.support.v4.widget.SlidingPaneLayout" name="onLayout" signature="(ZIIII)V" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.SlidingPaneLayout" startBytecode="0" endBytecode="222"/>
+    </Method>
+    <LocalVariable name="?" register="3" pc="64" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="android.support.v4.widget.SlidingPaneLayout" startBytecode="63" endBytecode="63"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="android.support.v4.widget.SlidingPaneLayout">
+      <SourceLine classname="android.support.v4.widget.SlidingPaneLayout"/>
+    </Class>
+    <Method classname="android.support.v4.widget.SlidingPaneLayout" name="onLayout" signature="(ZIIII)V" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.SlidingPaneLayout" startBytecode="0" endBytecode="222"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="270" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="android.support.v4.widget.SlidingPaneLayout" startBytecode="269" endBytecode="269"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_CONDITION" priority="3" rank="19" abbrev="UC" category="STYLE">
+    <Class classname="android.support.v4.widget.SlidingPaneLayout">
+      <SourceLine classname="android.support.v4.widget.SlidingPaneLayout"/>
+    </Class>
+    <Method classname="android.support.v4.widget.SlidingPaneLayout" name="onMeasure" signature="(II)V" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.SlidingPaneLayout"/>
+    </Method>
+    <String value="local$6 == 0"/>
+    <SourceLine classname="android.support.v4.widget.SlidingPaneLayout" startBytecode="244" endBytecode="244"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="android.support.v4.widget.SlidingPaneLayout">
+      <SourceLine classname="android.support.v4.widget.SlidingPaneLayout"/>
+    </Class>
+    <Field classname="android.support.v4.widget.SlidingPaneLayout" name="o" signature="Landroid/support/v4/widget/q;" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.SlidingPaneLayout"/>
+    </Field>
+    <SourceLine classname="android.support.v4.widget.SlidingPaneLayout" startBytecode="2" endBytecode="2"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="android.support.v4.widget.c">
+      <SourceLine classname="android.support.v4.widget.c"/>
+    </Class>
+    <Method classname="android.support.v4.widget.c" name="a" signature="(Landroid/view/View;FF)V" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.c" startBytecode="0" endBytecode="67"/>
+    </Method>
+    <LocalVariable name="?" register="3" pc="9" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="android.support.v4.widget.c" startBytecode="8" endBytecode="8"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="android.support.v4.widget.c">
+      <SourceLine classname="android.support.v4.widget.c"/>
+    </Class>
+    <Method classname="android.support.v4.widget.c" name="a" signature="(Landroid/view/View;II)I" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.c" startBytecode="0" endBytecode="26"/>
+    </Method>
+    <LocalVariable name="?" register="3" pc="34" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="android.support.v4.widget.c" startBytecode="33" endBytecode="33"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="android.support.v4.widget.c">
+      <SourceLine classname="android.support.v4.widget.c"/>
+    </Class>
+    <Method classname="android.support.v4.widget.c" name="a" signature="(Landroid/view/View;IIII)V" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.c" startBytecode="0" endBytecode="48"/>
+    </Method>
+    <LocalVariable name="?" register="3" pc="5" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="android.support.v4.widget.c" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS">
+    <Class classname="android.support.v4.widget.d">
+      <SourceLine classname="android.support.v4.widget.d"/>
+    </Class>
+    <Field classname="android.support.v4.widget.d" name="a" signature="Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.d"/>
+    </Field>
+    <SourceLine classname="android.support.v4.widget.d" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS">
+    <Class classname="android.support.v4.widget.i">
+      <SourceLine classname="android.support.v4.widget.i"/>
+    </Class>
+    <Field classname="android.support.v4.widget.i" name="a" signature="Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.i"/>
+    </Field>
+    <SourceLine classname="android.support.v4.widget.i" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="DP_DO_INSIDE_DO_PRIVILEGED" priority="3" rank="20" abbrev="DP" category="MALICIOUS_CODE">
+    <Class classname="android.support.v4.widget.t">
+      <SourceLine classname="android.support.v4.widget.t"/>
+    </Class>
+    <Method classname="android.support.v4.widget.t" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.t"/>
+    </Method>
+    <Method classname="java.lang.reflect.Field" name="setAccessible" signature="(Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.reflect.Field" sourcefile="Field.java" sourcepath="java/lang/reflect/Field.java"/>
+    </Method>
+    <SourceLine classname="android.support.v4.widget.t" startBytecode="35" endBytecode="35"/>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" rank="20" abbrev="UwF" category="STYLE">
+    <Class classname="android.support.v4.widget.v">
+      <SourceLine classname="android.support.v4.widget.v"/>
+    </Class>
+    <Field classname="android.support.v4.widget.v" name="l" signature="Landroid/view/VelocityTracker;" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.v"/>
+    </Field>
+    <Method classname="android.support.v4.widget.v" name="h" signature="()V" isStatic="false">
+      <SourceLine classname="android.support.v4.widget.v"/>
+    </Method>
+    <SourceLine classname="android.support.v4.widget.v" startBytecode="11" endBytecode="11"/>
+  </BugInstance>
+  <BugInstance type="DE_MIGHT_IGNORE" priority="3" rank="19" abbrev="DE" category="BAD_PRACTICE">
+    <Class classname="im.delight.android.a.b">
+      <SourceLine classname="im.delight.android.a.b"/>
+    </Class>
+    <Method classname="im.delight.android.a.b" name="a" signature="(Landroid/content/Context;)V" isStatic="true">
+      <SourceLine classname="im.delight.android.a.b"/>
+    </Method>
+    <Class classname="java.lang.Exception" role="CLASS_EXCEPTION">
+      <SourceLine classname="java.lang.Exception" start="54" end="123" sourcefile="Exception.java" sourcepath="java/lang/Exception.java"/>
+    </Class>
+    <SourceLine classname="im.delight.android.a.b" startBytecode="29" endBytecode="29"/>
+    <SourceLine classname="im.delight.android.a.b" startBytecode="29" endBytecode="29"/>
+  </BugInstance>
+  <BugInstance type="DP_DO_INSIDE_DO_PRIVILEGED" priority="3" rank="20" abbrev="DP" category="MALICIOUS_CODE">
+    <Class classname="im.delight.android.a.b">
+      <SourceLine classname="im.delight.android.a.b"/>
+    </Class>
+    <Method classname="im.delight.android.a.b" name="a" signature="(Landroid/content/Context;)V" isStatic="true">
+      <SourceLine classname="im.delight.android.a.b"/>
+    </Method>
+    <Method classname="java.lang.reflect.Field" name="setAccessible" signature="(Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.reflect.Field" sourcefile="Field.java" sourcepath="java/lang/reflect/Field.java"/>
+    </Method>
+    <SourceLine classname="im.delight.android.a.b" startBytecode="19" endBytecode="19"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" rank="20" abbrev="REC" category="STYLE">
+    <Class classname="im.delight.android.a.b">
+      <SourceLine classname="im.delight.android.a.b"/>
+    </Class>
+    <Method classname="im.delight.android.a.b" name="a" signature="(Landroid/content/Context;)V" isStatic="true">
+      <SourceLine classname="im.delight.android.a.b"/>
+    </Method>
+    <SourceLine classname="im.delight.android.a.b" startBytecode="29" endBytecode="29"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="3" rank="19" abbrev="RV" category="BAD_PRACTICE">
+    <Class classname="im.delight.android.a.c">
+      <SourceLine classname="im.delight.android.a.c"/>
+    </Class>
+    <Method classname="im.delight.android.a.c" name="b" signature="(Landroid/content/Context;Ljava/lang/String;Landroid/graphics/Bitmap;I)Ljava/io/File;" isStatic="true">
+      <SourceLine classname="im.delight.android.a.c"/>
+    </Method>
+    <Method classname="java.io.File" name="createNewFile" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="1007" end="1012" startBytecode="0" endBytecode="98" sourcefile="File.java" sourcepath="java/io/File.java"/>
+    </Method>
+    <SourceLine classname="im.delight.android.a.c" startBytecode="17" endBytecode="17"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="im.delight.android.a.c">
+      <SourceLine classname="im.delight.android.a.c"/>
+    </Class>
+    <Method classname="im.delight.android.a.c" name="b" signature="(Landroid/content/Context;Ljava/lang/String;Landroid/graphics/Bitmap;I)Ljava/io/File;" isStatic="true">
+      <SourceLine classname="im.delight.android.a.c"/>
+    </Method>
+    <SourceLine classname="im.delight.android.a.c" startBytecode="35" endBytecode="35"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" rank="20" abbrev="REC" category="STYLE">
+    <Class classname="im.delight.android.a.c$1">
+      <SourceLine classname="im.delight.android.a.c$1"/>
+    </Class>
+    <Method classname="im.delight.android.a.c$1" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="im.delight.android.a.c$1"/>
+    </Method>
+    <SourceLine classname="im.delight.android.a.c$1" startBytecode="89" endBytecode="89"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="3" rank="20" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="im.delight.android.webview.AdvancedWebView">
+      <SourceLine classname="im.delight.android.webview.AdvancedWebView"/>
+    </Class>
+    <Field classname="im.delight.android.webview.AdvancedWebView" name="a" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="im.delight.android.webview.AdvancedWebView"/>
+    </Field>
+    <SourceLine classname="im.delight.android.webview.AdvancedWebView" startBytecode="35" endBytecode="35"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" priority="2" rank="13" abbrev="NP" category="STYLE">
+    <Class classname="im.delight.android.webview.AdvancedWebView">
+      <SourceLine classname="im.delight.android.webview.AdvancedWebView"/>
+    </Class>
+    <Method classname="im.delight.android.webview.AdvancedWebView" name="a" signature="()V" isStatic="false">
+      <SourceLine classname="im.delight.android.webview.AdvancedWebView"/>
+    </Method>
+    <LocalVariable name="?" register="-1" pc="35" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="im.delight.android.webview.AdvancedWebView" startBytecode="35" endBytecode="35" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="im.delight.android.webview.AdvancedWebView" startBytecode="29" endBytecode="29" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" priority="2" rank="13" abbrev="NP" category="STYLE">
+    <Class classname="im.delight.android.webview.AdvancedWebView">
+      <SourceLine classname="im.delight.android.webview.AdvancedWebView"/>
+    </Class>
+    <Method classname="im.delight.android.webview.AdvancedWebView" name="a" signature="()V" isStatic="false">
+      <SourceLine classname="im.delight.android.webview.AdvancedWebView"/>
+    </Method>
+    <LocalVariable name="?" register="-1" pc="51" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="im.delight.android.webview.AdvancedWebView" startBytecode="51" endBytecode="51" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="im.delight.android.webview.AdvancedWebView" startBytecode="45" endBytecode="45" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" priority="2" rank="13" abbrev="NP" category="STYLE">
+    <Class classname="im.delight.android.webview.AdvancedWebView">
+      <SourceLine classname="im.delight.android.webview.AdvancedWebView"/>
+    </Class>
+    <Method classname="im.delight.android.webview.AdvancedWebView" name="a" signature="()V" isStatic="false">
+      <SourceLine classname="im.delight.android.webview.AdvancedWebView"/>
+    </Method>
+    <LocalVariable name="?" register="-1" pc="60" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="im.delight.android.webview.AdvancedWebView" startBytecode="60" endBytecode="60" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="im.delight.android.webview.AdvancedWebView" startBytecode="91" endBytecode="91" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" priority="2" rank="13" abbrev="NP" category="STYLE">
+    <Class classname="im.delight.android.webview.AdvancedWebView">
+      <SourceLine classname="im.delight.android.webview.AdvancedWebView"/>
+    </Class>
+    <Method classname="im.delight.android.webview.AdvancedWebView" name="a" signature="(Landroid/webkit/ValueCallback;Landroid/webkit/ValueCallback;)V" isStatic="false">
+      <SourceLine classname="im.delight.android.webview.AdvancedWebView"/>
+    </Method>
+    <LocalVariable name="?" register="-1" pc="118" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="im.delight.android.webview.AdvancedWebView" startBytecode="118" endBytecode="118" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="im.delight.android.webview.AdvancedWebView" startBytecode="100" endBytecode="100" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" priority="2" rank="13" abbrev="NP" category="STYLE">
+    <Class classname="im.delight.android.webview.AdvancedWebView">
+      <SourceLine classname="im.delight.android.webview.AdvancedWebView"/>
+    </Class>
+    <Method classname="im.delight.android.webview.AdvancedWebView" name="a" signature="(Landroid/webkit/ValueCallback;Landroid/webkit/ValueCallback;)V" isStatic="false">
+      <SourceLine classname="im.delight.android.webview.AdvancedWebView"/>
+    </Method>
+    <LocalVariable name="?" register="-1" pc="161" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="im.delight.android.webview.AdvancedWebView" startBytecode="161" endBytecode="161" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="im.delight.android.webview.AdvancedWebView" startBytecode="143" endBytecode="143" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UwF" category="STYLE">
+    <Class classname="im.delight.android.webview.AdvancedWebView">
+      <SourceLine classname="im.delight.android.webview.AdvancedWebView"/>
+    </Class>
+    <Field classname="im.delight.android.webview.AdvancedWebView" name="c" signature="Ljava/lang/ref/WeakReference;" isStatic="false">
+      <SourceLine classname="im.delight.android.webview.AdvancedWebView"/>
+    </Field>
+    <SourceLine classname="im.delight.android.webview.AdvancedWebView" startBytecode="1" endBytecode="1"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="96">
+    <MissingClass>android.animation.ValueAnimator</MissingClass>
+    <MissingClass>android.app.Activity</MissingClass>
+    <MissingClass>android.app.AlertDialog</MissingClass>
+    <MissingClass>android.app.AlertDialog$Builder</MissingClass>
+    <MissingClass>android.app.Dialog</MissingClass>
+    <MissingClass>android.app.Fragment</MissingClass>
+    <MissingClass>android.content.ComponentCallbacks</MissingClass>
+    <MissingClass>android.content.Context</MissingClass>
+    <MissingClass>android.content.DialogInterface</MissingClass>
+    <MissingClass>android.content.DialogInterface$OnClickListener</MissingClass>
+    <MissingClass>android.content.Intent</MissingClass>
+    <MissingClass>android.content.SharedPreferences</MissingClass>
+    <MissingClass>android.content.SharedPreferences$Editor</MissingClass>
+    <MissingClass>android.content.pm.PackageManager</MissingClass>
+    <MissingClass>android.content.res.Resources</MissingClass>
+    <MissingClass>android.content.res.TypedArray</MissingClass>
+    <MissingClass>android.database.DataSetObservable</MissingClass>
+    <MissingClass>android.database.DataSetObserver</MissingClass>
+    <MissingClass>android.graphics.Bitmap</MissingClass>
+    <MissingClass>android.graphics.Bitmap$CompressFormat</MissingClass>
+    <MissingClass>android.graphics.Canvas</MissingClass>
+    <MissingClass>android.graphics.Paint</MissingClass>
+    <MissingClass>android.graphics.PorterDuff$Mode</MissingClass>
+    <MissingClass>android.graphics.PorterDuffColorFilter</MissingClass>
+    <MissingClass>android.graphics.Rect</MissingClass>
+    <MissingClass>android.graphics.drawable.Drawable</MissingClass>
+    <MissingClass>android.net.Uri</MissingClass>
+    <MissingClass>android.os.Build$VERSION</MissingClass>
+    <MissingClass>android.os.Bundle</MissingClass>
+    <MissingClass>android.os.Handler</MissingClass>
+    <MissingClass>android.os.Looper</MissingClass>
+    <MissingClass>android.os.Parcel</MissingClass>
+    <MissingClass>android.os.Parcelable</MissingClass>
+    <MissingClass>android.os.Parcelable$ClassLoaderCreator</MissingClass>
+    <MissingClass>android.os.Parcelable$Creator</MissingClass>
+    <MissingClass>android.preference.PreferenceManager</MissingClass>
+    <MissingClass>android.text.Editable</MissingClass>
+    <MissingClass>android.text.Html</MissingClass>
+    <MissingClass>android.text.TextUtils</MissingClass>
+    <MissingClass>android.util.AndroidRuntimeException</MissingClass>
+    <MissingClass>android.util.AttributeSet</MissingClass>
+    <MissingClass>android.util.Base64</MissingClass>
+    <MissingClass>android.util.Log</MissingClass>
+    <MissingClass>android.util.SparseArray</MissingClass>
+    <MissingClass>android.view.FocusFinder</MissingClass>
+    <MissingClass>android.view.Gravity</MissingClass>
+    <MissingClass>android.view.KeyEvent</MissingClass>
+    <MissingClass>android.view.LayoutInflater</MissingClass>
+    <MissingClass>android.view.Menu</MissingClass>
+    <MissingClass>android.view.MenuInflater</MissingClass>
+    <MissingClass>android.view.MenuItem</MissingClass>
+    <MissingClass>android.view.MotionEvent</MissingClass>
+    <MissingClass>android.view.SoundEffectConstants</MissingClass>
+    <MissingClass>android.view.VelocityTracker</MissingClass>
+    <MissingClass>android.view.View</MissingClass>
+    <MissingClass>android.view.View$BaseSavedState</MissingClass>
+    <MissingClass>android.view.View$MeasureSpec</MissingClass>
+    <MissingClass>android.view.View$OnCreateContextMenuListener</MissingClass>
+    <MissingClass>android.view.ViewConfiguration</MissingClass>
+    <MissingClass>android.view.ViewGroup</MissingClass>
+    <MissingClass>android.view.ViewGroup$LayoutParams</MissingClass>
+    <MissingClass>android.view.ViewGroup$MarginLayoutParams</MissingClass>
+    <MissingClass>android.view.ViewParent</MissingClass>
+    <MissingClass>android.view.Window</MissingClass>
+    <MissingClass>android.view.WindowManager$LayoutParams</MissingClass>
+    <MissingClass>android.view.accessibility.AccessibilityEvent</MissingClass>
+    <MissingClass>android.view.animation.AccelerateInterpolator</MissingClass>
+    <MissingClass>android.view.animation.AlphaAnimation</MissingClass>
+    <MissingClass>android.view.animation.Animation</MissingClass>
+    <MissingClass>android.view.animation.Animation$AnimationListener</MissingClass>
+    <MissingClass>android.view.animation.AnimationSet</MissingClass>
+    <MissingClass>android.view.animation.AnimationUtils</MissingClass>
+    <MissingClass>android.view.animation.DecelerateInterpolator</MissingClass>
+    <MissingClass>android.view.animation.Interpolator</MissingClass>
+    <MissingClass>android.view.animation.ScaleAnimation</MissingClass>
+    <MissingClass>android.webkit.CookieManager</MissingClass>
+    <MissingClass>android.webkit.DownloadListener</MissingClass>
+    <MissingClass>android.webkit.GeolocationPermissions$Callback</MissingClass>
+    <MissingClass>android.webkit.ValueCallback</MissingClass>
+    <MissingClass>android.webkit.WebChromeClient</MissingClass>
+    <MissingClass>android.webkit.WebSettings</MissingClass>
+    <MissingClass>android.webkit.WebSettings$RenderPriority</MissingClass>
+    <MissingClass>android.webkit.WebView</MissingClass>
+    <MissingClass>android.webkit.WebViewClient</MissingClass>
+    <MissingClass>android.widget.EdgeEffect</MissingClass>
+    <MissingClass>android.widget.EditText</MissingClass>
+    <MissingClass>android.widget.FrameLayout</MissingClass>
+    <MissingClass>android.widget.FrameLayout$LayoutParams</MissingClass>
+    <MissingClass>android.widget.ImageView</MissingClass>
+    <MissingClass>android.widget.OverScroller</MissingClass>
+    <MissingClass>android.widget.ProgressBar</MissingClass>
+    <MissingClass>android.widget.Scroller</MissingClass>
+    <MissingClass>android.widget.TabHost</MissingClass>
+    <MissingClass>android.widget.TabHost$OnTabChangeListener</MissingClass>
+    <MissingClass>android.widget.TextView</MissingClass>
+    <MissingClass>android.widget.Toast</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sun, 18 Nov 2018 20:08:13 -1000" total_classes="160" referenced_classes="280" total_bugs="75" total_size="7648" num_packages="11" java_version="1.8.0_131" vm_version="25.131-b11" cpu_seconds="27.97" clock_seconds="8.08" peak_mbytes="341.12" alloc_mbytes="683.00" gc_seconds="0.49" priority_3="43" priority_2="29" priority_1="3">
+    <PackageStats package="android.support.v4.a" total_bugs="0" total_types="2" total_size="55">
+      <ClassStats class="android.support.v4.a.a" sourceFile="&lt;Unknown&gt;" interface="false" size="54" bugs="0"/>
+      <ClassStats class="android.support.v4.a.b" sourceFile="&lt;Unknown&gt;" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="android.support.v4.app" total_bugs="17" total_types="35" total_size="2796" priority_3="9" priority_2="8">
+      <ClassStats class="android.support.v4.app.BackStackState" sourceFile="&lt;Unknown&gt;" interface="false" size="121" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.app.BackStackState$1" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="android.support.v4.app.Fragment" sourceFile="&lt;Unknown&gt;" interface="false" size="391" bugs="0"/>
+      <ClassStats class="android.support.v4.app.Fragment$1" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="android.support.v4.app.Fragment$SavedState" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="0"/>
+      <ClassStats class="android.support.v4.app.Fragment$SavedState$1" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="android.support.v4.app.FragmentManagerState" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="0"/>
+      <ClassStats class="android.support.v4.app.FragmentManagerState$1" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="android.support.v4.app.FragmentState" sourceFile="&lt;Unknown&gt;" interface="false" size="73" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.app.FragmentState$1" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="android.support.v4.app.FragmentTabHost" sourceFile="&lt;Unknown&gt;" interface="false" size="65" bugs="0"/>
+      <ClassStats class="android.support.v4.app.FragmentTabHost$1" sourceFile="&lt;Unknown&gt;" interface="false" size="1" bugs="0"/>
+      <ClassStats class="android.support.v4.app.FragmentTabHost$SavedState" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="0"/>
+      <ClassStats class="android.support.v4.app.FragmentTabHost$SavedState$1" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="android.support.v4.app.a" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="0"/>
+      <ClassStats class="android.support.v4.app.b" sourceFile="&lt;Unknown&gt;" interface="false" size="316" bugs="1" priority_2="1"/>
+      <ClassStats class="android.support.v4.app.c" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+      <ClassStats class="android.support.v4.app.d" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="0"/>
+      <ClassStats class="android.support.v4.app.e" sourceFile="&lt;Unknown&gt;" interface="false" size="344" bugs="3" priority_3="2" priority_2="1"/>
+      <ClassStats class="android.support.v4.app.f" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="android.support.v4.app.g" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="3" priority_2="3"/>
+      <ClassStats class="android.support.v4.app.h" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="android.support.v4.app.i" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="android.support.v4.app.j" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="android.support.v4.app.k" sourceFile="&lt;Unknown&gt;" interface="false" size="1005" bugs="8" priority_3="5" priority_2="3"/>
+      <ClassStats class="android.support.v4.app.k$1" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="android.support.v4.app.k$2" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="0"/>
+      <ClassStats class="android.support.v4.app.l" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="0"/>
+      <ClassStats class="android.support.v4.app.m" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="android.support.v4.app.n" sourceFile="&lt;Unknown&gt;" interface="false" size="3" bugs="0"/>
+      <ClassStats class="android.support.v4.app.o" sourceFile="&lt;Unknown&gt;" interface="true" size="4" bugs="0"/>
+      <ClassStats class="android.support.v4.app.p" sourceFile="&lt;Unknown&gt;" interface="false" size="132" bugs="0"/>
+      <ClassStats class="android.support.v4.app.q" sourceFile="&lt;Unknown&gt;" interface="false" size="156" bugs="0"/>
+      <ClassStats class="android.support.v4.app.r" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+      <ClassStats class="android.support.v4.app.s" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="android.support.v4.b" total_bugs="1" total_types="5" total_size="27" priority_1="1">
+      <ClassStats class="android.support.v4.b.a" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="android.support.v4.b.b" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="android.support.v4.b.c" sourceFile="&lt;Unknown&gt;" interface="true" size="3" bugs="0"/>
+      <ClassStats class="android.support.v4.b.d" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="android.support.v4.b.e" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="android.support.v4.c" total_bugs="3" total_types="13" total_size="661" priority_3="1" priority_2="2">
+      <ClassStats class="android.support.v4.c.a" sourceFile="&lt;Unknown&gt;" interface="false" size="20" bugs="1" priority_2="1"/>
+      <ClassStats class="android.support.v4.c.a$1" sourceFile="&lt;Unknown&gt;" interface="false" size="23" bugs="0"/>
+      <ClassStats class="android.support.v4.c.b" sourceFile="&lt;Unknown&gt;" interface="false" size="24" bugs="0"/>
+      <ClassStats class="android.support.v4.c.c" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+      <ClassStats class="android.support.v4.c.d" sourceFile="&lt;Unknown&gt;" interface="false" size="20" bugs="0"/>
+      <ClassStats class="android.support.v4.c.e" sourceFile="&lt;Unknown&gt;" interface="false" size="63" bugs="0"/>
+      <ClassStats class="android.support.v4.c.f" sourceFile="&lt;Unknown&gt;" interface="false" size="22" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.c.g" sourceFile="&lt;Unknown&gt;" interface="false" size="54" bugs="0"/>
+      <ClassStats class="android.support.v4.c.h" sourceFile="&lt;Unknown&gt;" interface="false" size="40" bugs="0"/>
+      <ClassStats class="android.support.v4.c.i" sourceFile="&lt;Unknown&gt;" interface="false" size="56" bugs="1" priority_2="1"/>
+      <ClassStats class="android.support.v4.c.j" sourceFile="&lt;Unknown&gt;" interface="false" size="47" bugs="0"/>
+      <ClassStats class="android.support.v4.c.k" sourceFile="&lt;Unknown&gt;" interface="false" size="222" bugs="0"/>
+      <ClassStats class="android.support.v4.c.l" sourceFile="&lt;Unknown&gt;" interface="false" size="59" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="android.support.v4.view" total_bugs="23" total_types="52" total_size="1622" priority_3="15" priority_2="8">
+      <ClassStats class="android.support.v4.view.ViewPager" sourceFile="&lt;Unknown&gt;" interface="false" size="1220" bugs="5" priority_2="5"/>
+      <ClassStats class="android.support.v4.view.ViewPager$1" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="android.support.v4.view.ViewPager$2" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="android.support.v4.view.ViewPager$SavedState" sourceFile="&lt;Unknown&gt;" interface="false" size="22" bugs="0"/>
+      <ClassStats class="android.support.v4.view.ViewPager$SavedState$1" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="android.support.v4.view.a" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="android.support.v4.view.aa" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.view.ab" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.view.ac" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.view.ad" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.view.ae" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.view.af" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.view.ag" sourceFile="&lt;Unknown&gt;" interface="true" size="11" bugs="0"/>
+      <ClassStats class="android.support.v4.view.ah" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.view.ai" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.view.aj" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.view.ak" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.view.al" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.view.am" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.view.an" sourceFile="&lt;Unknown&gt;" interface="true" size="1" bugs="0"/>
+      <ClassStats class="android.support.v4.view.ao" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.view.ap" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="android.support.v4.view.aq" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="android.support.v4.view.ar" sourceFile="&lt;Unknown&gt;" interface="true" size="4" bugs="0"/>
+      <ClassStats class="android.support.v4.view.as" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="android.support.v4.view.at" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.view.au" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="2" priority_3="1" priority_2="1"/>
+      <ClassStats class="android.support.v4.view.b" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="android.support.v4.view.c" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="android.support.v4.view.d" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="android.support.v4.view.e" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="0"/>
+      <ClassStats class="android.support.v4.view.f" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="0"/>
+      <ClassStats class="android.support.v4.view.g" sourceFile="&lt;Unknown&gt;" interface="false" size="23" bugs="0"/>
+      <ClassStats class="android.support.v4.view.h" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="android.support.v4.view.i" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="android.support.v4.view.j" sourceFile="&lt;Unknown&gt;" interface="true" size="4" bugs="0"/>
+      <ClassStats class="android.support.v4.view.k" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="0"/>
+      <ClassStats class="android.support.v4.view.l" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="android.support.v4.view.m" sourceFile="&lt;Unknown&gt;" interface="false" size="20" bugs="0"/>
+      <ClassStats class="android.support.v4.view.n" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="0"/>
+      <ClassStats class="android.support.v4.view.o" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="android.support.v4.view.p" sourceFile="&lt;Unknown&gt;" interface="true" size="6" bugs="0"/>
+      <ClassStats class="android.support.v4.view.q" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="android.support.v4.view.r" sourceFile="&lt;Unknown&gt;" interface="false" size="28" bugs="1" priority_2="1"/>
+      <ClassStats class="android.support.v4.view.s" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="android.support.v4.view.t" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="android.support.v4.view.u" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="android.support.v4.view.v" sourceFile="&lt;Unknown&gt;" interface="true" size="3" bugs="0"/>
+      <ClassStats class="android.support.v4.view.w" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="android.support.v4.view.x" sourceFile="&lt;Unknown&gt;" interface="false" size="35" bugs="0"/>
+      <ClassStats class="android.support.v4.view.y" sourceFile="&lt;Unknown&gt;" interface="false" size="21" bugs="0"/>
+      <ClassStats class="android.support.v4.view.z" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="android.support.v4.widget" total_bugs="18" total_types="31" total_size="1646" priority_3="12" priority_2="4" priority_1="2">
+      <ClassStats class="android.support.v4.widget.DrawerLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="426" bugs="5" priority_3="2" priority_2="1" priority_1="2"/>
+      <ClassStats class="android.support.v4.widget.DrawerLayout$SavedState" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.DrawerLayout$SavedState$1" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.SlidingPaneLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="424" bugs="6" priority_3="5" priority_2="1"/>
+      <ClassStats class="android.support.v4.widget.SlidingPaneLayout$1" sourceFile="&lt;Unknown&gt;" interface="false" size="1" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.SlidingPaneLayout$SavedState" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.SlidingPaneLayout$SavedState$1" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.a" sourceFile="&lt;Unknown&gt;" interface="true" size="5" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.b" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.c" sourceFile="&lt;Unknown&gt;" interface="false" size="64" bugs="3" priority_3="3"/>
+      <ClassStats class="android.support.v4.widget.d" sourceFile="&lt;Unknown&gt;" interface="false" size="21" bugs="1" priority_2="1"/>
+      <ClassStats class="android.support.v4.widget.e" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.f" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.g" sourceFile="&lt;Unknown&gt;" interface="true" size="7" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.h" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.i" sourceFile="&lt;Unknown&gt;" interface="false" size="28" bugs="1" priority_2="1"/>
+      <ClassStats class="android.support.v4.widget.j" sourceFile="&lt;Unknown&gt;" interface="true" size="9" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.k" sourceFile="&lt;Unknown&gt;" interface="false" size="17" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.l" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.m" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.n" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.o" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.p" sourceFile="&lt;Unknown&gt;" interface="false" size="19" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.q" sourceFile="&lt;Unknown&gt;" interface="true" size="1" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.r" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.s" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.t" sourceFile="&lt;Unknown&gt;" interface="false" size="17" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.widget.u" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.v" sourceFile="&lt;Unknown&gt;" interface="false" size="432" bugs="1" priority_3="1"/>
+      <ClassStats class="android.support.v4.widget.v$1" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="android.support.v4.widget.w" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="im.delight.a" total_bugs="0" total_types="4" total_size="126">
+      <ClassStats class="im.delight.a.a" sourceFile="&lt;Unknown&gt;" interface="false" size="101" bugs="0"/>
+      <ClassStats class="im.delight.a.a$1" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="im.delight.a.a$2" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="im.delight.a.a$3" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="im.delight.a2048" total_bugs="0" total_types="5" total_size="180">
+      <ClassStats class="im.delight.a2048.ActivityMain" sourceFile="&lt;Unknown&gt;" interface="false" size="147" bugs="0"/>
+      <ClassStats class="im.delight.a2048.ActivityMain$1" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="im.delight.a2048.ActivityMain$2" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+      <ClassStats class="im.delight.a2048.ActivityMain$3" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="im.delight.a2048.ActivityMain$4" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="im.delight.android.a" total_bugs="6" total_types="7" total_size="98" priority_3="5" priority_2="1">
+      <ClassStats class="im.delight.android.a.a" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="im.delight.android.a.b" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="3" priority_3="3"/>
+      <ClassStats class="im.delight.android.a.c" sourceFile="&lt;Unknown&gt;" interface="false" size="46" bugs="2" priority_3="1" priority_2="1"/>
+      <ClassStats class="im.delight.android.a.c$1" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="1" priority_3="1"/>
+      <ClassStats class="im.delight.android.a.c$1$1" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="im.delight.android.a.c$1$2" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="im.delight.android.a.d" sourceFile="&lt;Unknown&gt;" interface="true" size="3" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="im.delight.android.b" total_bugs="0" total_types="1" total_size="10">
+      <ClassStats class="im.delight.android.b.a" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="im.delight.android.webview" total_bugs="7" total_types="5" total_size="427" priority_3="1" priority_2="6">
+      <ClassStats class="im.delight.android.webview.AdvancedWebView" sourceFile="&lt;Unknown&gt;" interface="false" size="216" bugs="7" priority_3="1" priority_2="6"/>
+      <ClassStats class="im.delight.android.webview.AdvancedWebView$1" sourceFile="&lt;Unknown&gt;" interface="false" size="75" bugs="0"/>
+      <ClassStats class="im.delight.android.webview.AdvancedWebView$2" sourceFile="&lt;Unknown&gt;" interface="false" size="122" bugs="0"/>
+      <ClassStats class="im.delight.android.webview.AdvancedWebView$3" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="im.delight.android.webview.a" sourceFile="&lt;Unknown&gt;" interface="true" size="6" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="597" invocations="1086" avgMicrosecondsPerInvocation="550" maxMicrosecondsPerInvocation="175986" standardDeviationMircosecondsPerInvocation="5476"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="460" invocations="1124" avgMicrosecondsPerInvocation="409" maxMicrosecondsPerInvocation="16849" standardDeviationMircosecondsPerInvocation="1271"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="453" invocations="1086" avgMicrosecondsPerInvocation="417" maxMicrosecondsPerInvocation="8802" standardDeviationMircosecondsPerInvocation="832"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="450" invocations="1086" avgMicrosecondsPerInvocation="414" maxMicrosecondsPerInvocation="12165" standardDeviationMircosecondsPerInvocation="982"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="359" invocations="1019" avgMicrosecondsPerInvocation="352" maxMicrosecondsPerInvocation="27441" standardDeviationMircosecondsPerInvocation="1218"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="335" invocations="1096" avgMicrosecondsPerInvocation="305" maxMicrosecondsPerInvocation="13935" standardDeviationMircosecondsPerInvocation="763"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="326" invocations="1600" avgMicrosecondsPerInvocation="203" maxMicrosecondsPerInvocation="6015" standardDeviationMircosecondsPerInvocation="434"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="311" invocations="280" avgMicrosecondsPerInvocation="1113" maxMicrosecondsPerInvocation="45968" standardDeviationMircosecondsPerInvocation="3335"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="284" invocations="280" avgMicrosecondsPerInvocation="1015" maxMicrosecondsPerInvocation="12993" standardDeviationMircosecondsPerInvocation="2074"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="227" invocations="160" avgMicrosecondsPerInvocation="1423" maxMicrosecondsPerInvocation="194284" standardDeviationMircosecondsPerInvocation="15304"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="224" invocations="1086" avgMicrosecondsPerInvocation="206" maxMicrosecondsPerInvocation="12928" standardDeviationMircosecondsPerInvocation="465"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="223" invocations="921" avgMicrosecondsPerInvocation="243" maxMicrosecondsPerInvocation="6300" standardDeviationMircosecondsPerInvocation="539"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="118" invocations="1086" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="26734" standardDeviationMircosecondsPerInvocation="833"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="100" invocations="1164" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="47290" standardDeviationMircosecondsPerInvocation="1389"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="91" invocations="160" avgMicrosecondsPerInvocation="569" maxMicrosecondsPerInvocation="10774" standardDeviationMircosecondsPerInvocation="1439"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="79" invocations="160" avgMicrosecondsPerInvocation="499" maxMicrosecondsPerInvocation="9405" standardDeviationMircosecondsPerInvocation="1254"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="79" invocations="280" avgMicrosecondsPerInvocation="283" maxMicrosecondsPerInvocation="3303" standardDeviationMircosecondsPerInvocation="531"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="79" invocations="160" avgMicrosecondsPerInvocation="495" maxMicrosecondsPerInvocation="9877" standardDeviationMircosecondsPerInvocation="1169"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="74" invocations="160" avgMicrosecondsPerInvocation="468" maxMicrosecondsPerInvocation="8601" standardDeviationMircosecondsPerInvocation="1194"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="74" invocations="16951" avgMicrosecondsPerInvocation="4" maxMicrosecondsPerInvocation="803" standardDeviationMircosecondsPerInvocation="15"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="69" invocations="280" avgMicrosecondsPerInvocation="248" maxMicrosecondsPerInvocation="5935" standardDeviationMircosecondsPerInvocation="580"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="68" invocations="1086" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="1336" standardDeviationMircosecondsPerInvocation="115"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="60" invocations="388" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="15618" standardDeviationMircosecondsPerInvocation="828"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="59" invocations="1164" avgMicrosecondsPerInvocation="50" maxMicrosecondsPerInvocation="4543" standardDeviationMircosecondsPerInvocation="191"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="57" invocations="280" avgMicrosecondsPerInvocation="207" maxMicrosecondsPerInvocation="2697" standardDeviationMircosecondsPerInvocation="335"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="57" invocations="160" avgMicrosecondsPerInvocation="361" maxMicrosecondsPerInvocation="16467" standardDeviationMircosecondsPerInvocation="1983"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="57" invocations="280" avgMicrosecondsPerInvocation="204" maxMicrosecondsPerInvocation="26477" standardDeviationMircosecondsPerInvocation="1587"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="56" invocations="856" avgMicrosecondsPerInvocation="65" maxMicrosecondsPerInvocation="1647" standardDeviationMircosecondsPerInvocation="135"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="56" invocations="280" avgMicrosecondsPerInvocation="201" maxMicrosecondsPerInvocation="7509" standardDeviationMircosecondsPerInvocation="549"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="52" invocations="280" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="3728" standardDeviationMircosecondsPerInvocation="404"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="49" invocations="1040" avgMicrosecondsPerInvocation="47" maxMicrosecondsPerInvocation="1458" standardDeviationMircosecondsPerInvocation="106"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="49" invocations="160" avgMicrosecondsPerInvocation="308" maxMicrosecondsPerInvocation="6335" standardDeviationMircosecondsPerInvocation="749"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="46" invocations="160" avgMicrosecondsPerInvocation="293" maxMicrosecondsPerInvocation="9157" standardDeviationMircosecondsPerInvocation="992"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
