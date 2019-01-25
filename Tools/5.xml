@@ -1,0 +1,1545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1542587073000" analysisTimestamp="1542588524820" release="">
+  <Project projectName="">
+    <Jar>/home/mitu/Downloads/finalizeCode-INTERNAL-EVIDENCES/allAlgoIn1platform/bytecodes/5.jar</Jar>
+  </Project>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.nickfines.calculator.CalcLayout">
+      <SourceLine classname="uk.co.nickfines.calculator.CalcLayout"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.CalcLayout" name="onLayout" signature="(ZIIII)V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.CalcLayout" startBytecode="0" endBytecode="300"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="348" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.nickfines.calculator.CalcLayout" startBytecode="347" endBytecode="347"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS">
+    <Class classname="uk.co.nickfines.calculator.CalcLayout">
+      <SourceLine classname="uk.co.nickfines.calculator.CalcLayout"/>
+    </Class>
+    <Field classname="uk.co.nickfines.calculator.CalcLayout" name="d" signature="Landroid/view/View;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.CalcLayout"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.CalcLayout" startBytecode="253" endBytecode="253"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" rank="20" abbrev="REC" category="STYLE">
+    <Class classname="uk.co.nickfines.calculator.CalculatorDialog">
+      <SourceLine classname="uk.co.nickfines.calculator.CalculatorDialog"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.CalculatorDialog" name="a" signature="(Landroid/content/Intent;)V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.CalculatorDialog"/>
+    </Method>
+    <SourceLine classname="uk.co.nickfines.calculator.CalculatorDialog" startBytecode="344" endBytecode="344"/>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" rank="20" abbrev="UwF" category="STYLE">
+    <Class classname="uk.co.nickfines.calculator.CalculatorDialog">
+      <SourceLine classname="uk.co.nickfines.calculator.CalculatorDialog"/>
+    </Class>
+    <Field classname="uk.co.nickfines.calculator.CalculatorDialog" name="x" signature="Luk/co/nickfines/calculator/keypad/CalcButton;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.CalculatorDialog"/>
+    </Field>
+    <Method classname="uk.co.nickfines.calculator.CalculatorDialog" name="u" signature="()V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.CalculatorDialog"/>
+    </Method>
+    <SourceLine classname="uk.co.nickfines.calculator.CalculatorDialog" startBytecode="59" endBytecode="59"/>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" rank="20" abbrev="UwF" category="STYLE">
+    <Class classname="uk.co.nickfines.calculator.CalculatorDialog">
+      <SourceLine classname="uk.co.nickfines.calculator.CalculatorDialog"/>
+    </Class>
+    <Field classname="uk.co.nickfines.calculator.CalculatorDialog" name="y" signature="Luk/co/nickfines/calculator/keypad/CalcButton;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.CalculatorDialog"/>
+    </Field>
+    <Method classname="uk.co.nickfines.calculator.CalculatorDialog" name="u" signature="()V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.CalculatorDialog"/>
+    </Method>
+    <SourceLine classname="uk.co.nickfines.calculator.CalculatorDialog" startBytecode="67" endBytecode="67"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="uk.co.nickfines.calculator.CustomizationPreferences">
+      <SourceLine classname="uk.co.nickfines.calculator.CustomizationPreferences"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.CustomizationPreferences" name="d" signature="()V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.CustomizationPreferences"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="90" end="91" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="uk.co.nickfines.calculator.CustomizationPreferences" startBytecode="44" endBytecode="44"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM_EXCEPTION_PATH" priority="3" rank="19" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.CustomizationPreferences">
+      <SourceLine classname="uk.co.nickfines.calculator.CustomizationPreferences"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.CustomizationPreferences" name="d" signature="()V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.CustomizationPreferences" startBytecode="0" endBytecode="79"/>
+    </Method>
+    <Type descriptor="Ljava/io/Writer;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Writer" start="50" end="294" sourcefile="Writer.java" sourcepath="java/io/Writer.java"/>
+    </Type>
+    <SourceLine classname="uk.co.nickfines.calculator.CustomizationPreferences" startBytecode="39" endBytecode="39"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.CustomizationPreferences">
+      <SourceLine classname="uk.co.nickfines.calculator.CustomizationPreferences"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.CustomizationPreferences" name="d" signature="()V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.CustomizationPreferences"/>
+    </Method>
+    <Method classname="java.io.File" name="mkdirs" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="1340" end="1354" startBytecode="0" endBytecode="182" sourcefile="File.java" sourcepath="java/io/File.java"/>
+    </Method>
+    <SourceLine classname="uk.co.nickfines.calculator.CustomizationPreferences" startBytecode="24" endBytecode="24"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.CustomizationPreferences">
+      <SourceLine classname="uk.co.nickfines.calculator.CustomizationPreferences"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.CustomizationPreferences" name="i" signature="()V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.CustomizationPreferences"/>
+    </Method>
+    <Method classname="java.io.File" name="delete" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="1034" end="1041" startBytecode="0" endBytecode="91" sourcefile="File.java" sourcepath="java/io/File.java"/>
+    </Method>
+    <SourceLine classname="uk.co.nickfines.calculator.CustomizationPreferences" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.a">
+      <SourceLine classname="uk.co.nickfines.calculator.a"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.a" name="c" signature="(Landroid/content/Intent;)V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.a"/>
+    </Method>
+    <Method classname="java.io.File" name="delete" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="1034" end="1041" startBytecode="0" endBytecode="91" sourcefile="File.java" sourcepath="java/io/File.java"/>
+    </Method>
+    <SourceLine classname="uk.co.nickfines.calculator.a" startBytecode="84" endBytecode="84"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE">
+    <Class classname="uk.co.nickfines.calculator.a">
+      <SourceLine classname="uk.co.nickfines.calculator.a"/>
+    </Class>
+    <Field classname="uk.co.nickfines.calculator.a" name="t" signature="Z" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.a"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.a" startBytecode="92" endBytecode="92"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE">
+    <Class classname="uk.co.nickfines.calculator.a">
+      <SourceLine classname="uk.co.nickfines.calculator.a"/>
+    </Class>
+    <Field classname="uk.co.nickfines.calculator.a" name="v" signature="Z" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.a"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.a" startBytecode="102" endBytecode="102"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.nickfines.calculator.a.o">
+      <SourceLine classname="uk.co.nickfines.calculator.a.o"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.a.o" name="getView" signature="(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.a.o" startBytecode="0" endBytecode="99"/>
+    </Method>
+    <LocalVariable name="?" register="3" pc="152" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.nickfines.calculator.a.o" startBytecode="151" endBytecode="151"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="3" rank="20" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="uk.co.nickfines.calculator.a.o">
+      <SourceLine classname="uk.co.nickfines.calculator.a.o"/>
+    </Class>
+    <Field classname="uk.co.nickfines.calculator.a.o" name="h" signature="I" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.a.o"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.a.o" startBytecode="17" endBytecode="17"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="3" rank="20" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="uk.co.nickfines.calculator.a.o">
+      <SourceLine classname="uk.co.nickfines.calculator.a.o"/>
+    </Class>
+    <Field classname="uk.co.nickfines.calculator.a.o" name="i" signature="I" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.a.o"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.a.o" startBytecode="23" endBytecode="23"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="3" rank="20" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="uk.co.nickfines.calculator.a.o">
+      <SourceLine classname="uk.co.nickfines.calculator.a.o"/>
+    </Class>
+    <Field classname="uk.co.nickfines.calculator.a.o" name="k" signature="I" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.a.o"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.a.o" startBytecode="28" endBytecode="28"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="3" rank="20" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="uk.co.nickfines.calculator.a.o">
+      <SourceLine classname="uk.co.nickfines.calculator.a.o"/>
+    </Class>
+    <Field classname="uk.co.nickfines.calculator.a.o" name="l" signature="I" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.a.o"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.a.o" startBytecode="34" endBytecode="34"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.aa">
+      <SourceLine classname="uk.co.nickfines.calculator.aa"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.ab">
+      <SourceLine classname="uk.co.nickfines.calculator.ab"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.ad">
+      <SourceLine classname="uk.co.nickfines.calculator.ad"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.ae">
+      <SourceLine classname="uk.co.nickfines.calculator.ae"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.af">
+      <SourceLine classname="uk.co.nickfines.calculator.af"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.ag">
+      <SourceLine classname="uk.co.nickfines.calculator.ag"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.ah">
+      <SourceLine classname="uk.co.nickfines.calculator.ah"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.ai">
+      <SourceLine classname="uk.co.nickfines.calculator.ai"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.ak">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.ak" name="a" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.ak" name="a" signature="[[Luk/co/quarticsoftware/a/ba;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.ak" startBytecode="45" endBytecode="45"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.ak">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.ak" name="a" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.ak" name="d" signature="[[Luk/co/quarticsoftware/a/ba;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.ak" startBytecode="28" endBytecode="28"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.ak">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.ak" name="a" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.ak" name="j" signature="[[Luk/co/quarticsoftware/a/ba;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.ak" startBytecode="49" endBytecode="49"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.ak">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.ak" name="a" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.ak" name="k" signature="[[Luk/co/quarticsoftware/a/ba;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.ak" startBytecode="37" endBytecode="37"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.ak">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.ak" name="b" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.ak" name="b" signature="[[Luk/co/quarticsoftware/a/ba;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.ak" startBytecode="110" endBytecode="110"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.ak">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.ak" name="b" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.ak" name="c" signature="[[Luk/co/quarticsoftware/a/ba;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.ak" startBytecode="123" endBytecode="123"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.ak">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.ak" name="b" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.ak" name="l" signature="[[Luk/co/quarticsoftware/a/ba;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.ak" startBytecode="114" endBytecode="114"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.ak">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.ak" name="b" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.ak" name="m" signature="[[Luk/co/quarticsoftware/a/ba;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.ak" startBytecode="127" endBytecode="127"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.nickfines.calculator.ak">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.ak" name="a" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.ak" startBytecode="0" endBytecode="24"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="31" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.nickfines.calculator.ak" startBytecode="30" endBytecode="30"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.ak">
+      <SourceLine classname="uk.co.nickfines.calculator.ak"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.al">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.al" name="a" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.al" name="a" signature="[[Luk/co/quarticsoftware/a/ba;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.al" startBytecode="45" endBytecode="45"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.al">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.al" name="a" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.al" name="d" signature="[[Luk/co/quarticsoftware/a/ba;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.al" startBytecode="28" endBytecode="28"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.al">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.al" name="a" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.al" name="j" signature="[[Luk/co/quarticsoftware/a/ba;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.al" startBytecode="49" endBytecode="49"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.al">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.al" name="a" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.al" name="k" signature="[[Luk/co/quarticsoftware/a/ba;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.al" startBytecode="37" endBytecode="37"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.al">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.al" name="b" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.al" name="b" signature="[[Luk/co/quarticsoftware/a/ba;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.al" startBytecode="110" endBytecode="110"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.al">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.al" name="b" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.al" name="c" signature="[[Luk/co/quarticsoftware/a/ba;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.al" startBytecode="123" endBytecode="123"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.al">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.al" name="b" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.al" name="l" signature="[[Luk/co/quarticsoftware/a/ba;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.al" startBytecode="114" endBytecode="114"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.al">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.al" name="b" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.al" name="m" signature="[[Luk/co/quarticsoftware/a/ba;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.al" startBytecode="127" endBytecode="127"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.nickfines.calculator.al">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.al" name="a" signature="(IILuk/co/quarticsoftware/a/c/b;)[[Luk/co/quarticsoftware/a/ba;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.al" startBytecode="0" endBytecode="24"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="31" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.nickfines.calculator.al" startBytecode="30" endBytecode="30"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.al">
+      <SourceLine classname="uk.co.nickfines.calculator.al"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.am">
+      <SourceLine classname="uk.co.nickfines.calculator.am"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.ao">
+      <SourceLine classname="uk.co.nickfines.calculator.ao"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="2" rank="17" abbrev="SF" category="STYLE">
+    <Class classname="uk.co.nickfines.calculator.ao">
+      <SourceLine classname="uk.co.nickfines.calculator.ao"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.ao" name="a" signature="(Luk/co/quarticsoftware/a/ba;Landroid/graphics/Canvas;IFFF)V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.ao"/>
+    </Method>
+    <SourceLine classname="uk.co.nickfines.calculator.ao" startBytecode="400" endBytecode="403"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.aq">
+      <SourceLine classname="uk.co.nickfines.calculator.aq"/>
+    </Class>
+    <Field classname="uk.co.nickfines.calculator.aq" name="b" signature="Z" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.aq"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.aq" startBytecode="1" endBytecode="1"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.aq">
+      <SourceLine classname="uk.co.nickfines.calculator.aq"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.nickfines.calculator.ar">
+      <SourceLine classname="uk.co.nickfines.calculator.ar"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.ar" name="onPreferenceClick" signature="(Landroid/preference/Preference;)Z" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.ar" startBytecode="0" endBytecode="19"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="14" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.nickfines.calculator.ar" startBytecode="13" endBytecode="13"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.ar">
+      <SourceLine classname="uk.co.nickfines.calculator.ar"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE">
+    <Class classname="uk.co.nickfines.calculator.as">
+      <SourceLine classname="uk.co.nickfines.calculator.as"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.as" name="onPreferenceChange" signature="(Landroid/preference/Preference;Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.as" startBytecode="0" endBytecode="14"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="26" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.nickfines.calculator.as" startBytecode="25" endBytecode="25"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.EXCEPTION_HANDLER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IN_JSP_PAGE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.PARAM_DEAD_ON_ENTRY" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="1" rank="6" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.nickfines.calculator.as">
+      <SourceLine classname="uk.co.nickfines.calculator.as"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.as" name="onPreferenceChange" signature="(Landroid/preference/Preference;Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.as" startBytecode="0" endBytecode="14"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="26" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.nickfines.calculator.as" startBytecode="25" endBytecode="25"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.as">
+      <SourceLine classname="uk.co.nickfines.calculator.as"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.au">
+      <SourceLine classname="uk.co.nickfines.calculator.au"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="uk.co.nickfines.calculator.av">
+      <SourceLine classname="uk.co.nickfines.calculator.av"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.av" name="a" signature="(Ljava/io/InputStream;[B)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.av"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([BII)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="544" end="547" startBytecode="0" endBytecode="56" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="uk.co.nickfines.calculator.av" startBytecode="66" endBytecode="66"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.av">
+      <SourceLine classname="uk.co.nickfines.calculator.av"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="MS_CANNOT_BE_FINAL" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.aw">
+      <SourceLine classname="uk.co.nickfines.calculator.aw"/>
+    </Class>
+    <Field classname="uk.co.nickfines.calculator.aw" name="o" signature="Z" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.aw"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.aw" startBytecode="34" endBytecode="34"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.aw">
+      <SourceLine classname="uk.co.nickfines.calculator.aw"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.ay">
+      <SourceLine classname="uk.co.nickfines.calculator.ay"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.az">
+      <SourceLine classname="uk.co.nickfines.calculator.az"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE">
+    <Class classname="uk.co.nickfines.calculator.b">
+      <SourceLine classname="uk.co.nickfines.calculator.b"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.b" name="onClick" signature="(Landroid/view/View;)V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.b"/>
+    </Method>
+    <SourceLine classname="uk.co.nickfines.calculator.b" startBytecode="48" endBytecode="48"/>
+  </BugInstance>
+  <BugInstance type="NM_SAME_SIMPLE_NAME_AS_SUPERCLASS" priority="1" rank="14" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.b.b">
+      <SourceLine classname="uk.co.nickfines.calculator.b.b"/>
+    </Class>
+    <Class classname="uk.co.quarticsoftware.a.d.b">
+      <SourceLine classname="uk.co.quarticsoftware.a.d.b"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.ba">
+      <SourceLine classname="uk.co.nickfines.calculator.ba"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.ba">
+      <SourceLine classname="uk.co.nickfines.calculator.ba"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.bb">
+      <SourceLine classname="uk.co.nickfines.calculator.bb"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.bb">
+      <SourceLine classname="uk.co.nickfines.calculator.bb"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_SAME_SIMPLE_NAME_AS_SUPERCLASS" priority="1" rank="14" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.c">
+      <SourceLine classname="uk.co.nickfines.calculator.c"/>
+    </Class>
+    <Class classname="uk.co.nickfines.calculator.c.c">
+      <SourceLine classname="uk.co.nickfines.calculator.c.c"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.nickfines.calculator.c.h">
+      <SourceLine classname="uk.co.nickfines.calculator.c.h"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.c.h" name="onDrag" signature="(Landroid/view/View;Landroid/view/DragEvent;)Z" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.c.h" startBytecode="0" endBytecode="62"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="123" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.nickfines.calculator.c.h" startBytecode="122" endBytecode="122"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="uk.co.nickfines.calculator.c.q">
+      <SourceLine classname="uk.co.nickfines.calculator.c.q"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.c.q" name="a" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.c.q"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="uk.co.nickfines.calculator.c.q" startBytecode="12" endBytecode="12"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.dialog.aa">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.aa"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.dialog.aa">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.aa"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.dialog.ab">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.ab"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.dialog.ab">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.ab"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.dialog.ac">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.ac"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" rank="20" abbrev="UwF" category="STYLE">
+    <Class classname="uk.co.nickfines.calculator.dialog.ac">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.ac"/>
+    </Class>
+    <Field classname="uk.co.nickfines.calculator.dialog.ac" name="b" signature="Luk/co/nickfines/calculator/dialog/y;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.ac"/>
+    </Field>
+    <Method classname="uk.co.nickfines.calculator.dialog.RichText" name="b" signature="(Landroid/text/SpannableStringBuilder;Landroid/content/res/Resources;I)V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.RichText"/>
+    </Method>
+    <SourceLine classname="uk.co.nickfines.calculator.dialog.RichText" startBytecode="229" endBytecode="229"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.dialog.ad">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.ad"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.dialog.ae">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.ae"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.dialog.af">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.af"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.dialog.af" name="&lt;init&gt;" signature="(Landroid/content/Context;IILuk/co/quarticsoftware/a/bb;Z[Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.af"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.dialog.af" name="e" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.af"/>
+    </Field>
+    <LocalVariable name="?" register="6" pc="30" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.nickfines.calculator.dialog.af" startBytecode="30" endBytecode="30"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.dialog.af">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.af"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.dialog.ag">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.ag"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.dialog.ai">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.ai"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.dialog.aj">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.aj"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.dialog.ak">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.ak"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.nickfines.calculator.dialog.s">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.s"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.dialog.s" name="drawBackground" signature="(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;III)V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.s" startBytecode="0" endBytecode="45"/>
+    </Method>
+    <LocalVariable name="?" register="6" pc="14" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.nickfines.calculator.dialog.s" startBytecode="12" endBytecode="12"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.dialog.z">
+      <SourceLine classname="uk.co.nickfines.calculator.dialog.z"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="uk.co.nickfines.calculator.display.a">
+      <SourceLine classname="uk.co.nickfines.calculator.display.a"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.display.a" name="g" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.display.a"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.display.a" name="b" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.display.a"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.display.a" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="3" rank="20" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="uk.co.nickfines.calculator.display.g">
+      <SourceLine classname="uk.co.nickfines.calculator.display.g"/>
+    </Class>
+    <Field classname="uk.co.nickfines.calculator.display.g" name="g" signature="Landroid/graphics/RectF;" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.display.g"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.display.g" startBytecode="28" endBytecode="28"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.nickfines.calculator.display.h">
+      <SourceLine classname="uk.co.nickfines.calculator.display.h"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.display.h" name="b" signature="(Landroid/graphics/Canvas;Ljava/lang/CharSequence;III)Z" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.display.h" startBytecode="0" endBytecode="66"/>
+    </Method>
+    <LocalVariable name="?" register="5" pc="12" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.nickfines.calculator.display.h" startBytecode="10" endBytecode="10"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.nickfines.calculator.display.i">
+      <SourceLine classname="uk.co.nickfines.calculator.display.i"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.display.i" name="b" signature="(Landroid/graphics/Canvas;Ljava/lang/CharSequence;III)Z" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.display.i" startBytecode="0" endBytecode="142"/>
+    </Method>
+    <LocalVariable name="?" register="5" pc="15" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.nickfines.calculator.display.i" startBytecode="13" endBytecode="13"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="2" rank="17" abbrev="SF" category="STYLE">
+    <Class classname="uk.co.nickfines.calculator.display.i">
+      <SourceLine classname="uk.co.nickfines.calculator.display.i"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.display.i" name="a" signature="(C)I" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.display.i"/>
+    </Method>
+    <SourceLine classname="uk.co.nickfines.calculator.display.i" startBytecode="201" endBytecode="202"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="2" rank="17" abbrev="SF" category="STYLE">
+    <Class classname="uk.co.nickfines.calculator.display.j">
+      <SourceLine classname="uk.co.nickfines.calculator.display.j"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.display.j" name="a" signature="(C)F" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.display.j"/>
+    </Method>
+    <SourceLine classname="uk.co.nickfines.calculator.display.j" startBytecode="74" endBytecode="75"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.nickfines.calculator.e">
+      <SourceLine classname="uk.co.nickfines.calculator.e"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.e" name="onLongClick" signature="(Landroid/view/View;)Z" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.e" startBytecode="0" endBytecode="60"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="44" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.nickfines.calculator.e" startBytecode="43" endBytecode="43"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="uk.co.nickfines.calculator.keypad.CalcButton">
+      <SourceLine classname="uk.co.nickfines.calculator.keypad.CalcButton"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.keypad.CalcButton" name="&lt;init&gt;" signature="(Landroid/content/Context;)V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.keypad.CalcButton"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.keypad.CalcButton" name="j" signature="F" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.keypad.CalcButton"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.keypad.CalcButton" startBytecode="64" endBytecode="64"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="uk.co.nickfines.calculator.keypad.CalcButton">
+      <SourceLine classname="uk.co.nickfines.calculator.keypad.CalcButton"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.keypad.CalcButton" name="&lt;init&gt;" signature="(Landroid/content/Context;Landroid/util/AttributeSet;I)V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.keypad.CalcButton"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.keypad.CalcButton" name="j" signature="F" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.keypad.CalcButton"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.keypad.CalcButton" startBytecode="66" endBytecode="66"/>
+  </BugInstance>
+  <BugInstance type="NM_SAME_SIMPLE_NAME_AS_INTERFACE" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.nickfines.calculator.keypad.c">
+      <SourceLine classname="uk.co.nickfines.calculator.keypad.c"/>
+    </Class>
+    <Class classname="uk.co.quarticsoftware.a.c.c">
+      <SourceLine classname="uk.co.quarticsoftware.a.c.c"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="3" rank="20" abbrev="ST" category="STYLE">
+    <Class classname="uk.co.nickfines.calculator.keypad.c">
+      <SourceLine classname="uk.co.nickfines.calculator.keypad.c"/>
+    </Class>
+    <Method classname="uk.co.nickfines.calculator.keypad.c" name="getKeyLayout" signature="()V" isStatic="false">
+      <SourceLine classname="uk.co.nickfines.calculator.keypad.c"/>
+    </Method>
+    <Field classname="uk.co.nickfines.calculator.aw" name="o" signature="Z" isStatic="true">
+      <SourceLine classname="uk.co.nickfines.calculator.aw"/>
+    </Field>
+    <SourceLine classname="uk.co.nickfines.calculator.keypad.c" startBytecode="94" endBytecode="94"/>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" rank="20" abbrev="UwF" category="STYLE">
+    <Class classname="uk.co.quarticsoftware.a.a">
+      <SourceLine classname="uk.co.quarticsoftware.a.a"/>
+    </Class>
+    <Field classname="uk.co.quarticsoftware.a.a" name="h" signature="Luk/co/quarticsoftware/a/av;" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.a"/>
+    </Field>
+    <Method classname="uk.co.quarticsoftware.a.a" name="f" signature="()V" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.a"/>
+    </Method>
+    <SourceLine classname="uk.co.quarticsoftware.a.a" startBytecode="8" endBytecode="8"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="3" rank="15" abbrev="UwF" category="CORRECTNESS">
+    <Class classname="uk.co.quarticsoftware.a.a">
+      <SourceLine classname="uk.co.quarticsoftware.a.a"/>
+    </Class>
+    <Field classname="uk.co.quarticsoftware.a.a" name="k" signature="Z" isStatic="true">
+      <SourceLine classname="uk.co.quarticsoftware.a.a"/>
+    </Field>
+    <SourceLine classname="uk.co.quarticsoftware.a.a" startBytecode="0" endBytecode="0"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="3" rank="20" abbrev="UrF" category="STYLE">
+    <Class classname="uk.co.quarticsoftware.a.a.a">
+      <SourceLine classname="uk.co.quarticsoftware.a.a.a"/>
+    </Class>
+    <Field classname="uk.co.quarticsoftware.a.a.a" name="a" signature="Luk/co/quarticsoftware/a/a/d;" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.a.a"/>
+    </Field>
+    <SourceLine classname="uk.co.quarticsoftware.a.a.a" startBytecode="6" endBytecode="6"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="3" rank="20" abbrev="UrF" category="STYLE">
+    <Class classname="uk.co.quarticsoftware.a.a.e">
+      <SourceLine classname="uk.co.quarticsoftware.a.a.e"/>
+    </Class>
+    <Field classname="uk.co.quarticsoftware.a.a.e" name="a" signature="Luk/co/quarticsoftware/a/a/h;" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.a.e"/>
+    </Field>
+    <SourceLine classname="uk.co.quarticsoftware.a.a.e" startBytecode="6" endBytecode="6"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="uk.co.quarticsoftware.a.a.i">
+      <SourceLine classname="uk.co.quarticsoftware.a.a.i"/>
+    </Class>
+    <Method classname="uk.co.quarticsoftware.a.a.i" name="a" signature="(Ljava/lang/Exception;)V" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.a.i"/>
+    </Method>
+    <SourceLine classname="uk.co.quarticsoftware.a.a.i" startBytecode="16" endBytecode="16"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.quarticsoftware.a.ac">
+      <SourceLine classname="uk.co.quarticsoftware.a.ac"/>
+    </Class>
+    <Method classname="uk.co.quarticsoftware.a.ac" name="a" signature="(Luk/co/quarticsoftware/a/ba;)V" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.ac" startBytecode="0" endBytecode="55"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="49" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.quarticsoftware.a.ac" startBytecode="48" endBytecode="48"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.quarticsoftware.a.ad">
+      <SourceLine classname="uk.co.quarticsoftware.a.ad"/>
+    </Class>
+    <Method classname="uk.co.quarticsoftware.a.ad" name="a" signature="(Luk/co/quarticsoftware/a/ba;)V" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.ad" startBytecode="0" endBytecode="48"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="64" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.quarticsoftware.a.ad" startBytecode="63" endBytecode="63"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.quarticsoftware.a.ae">
+      <SourceLine classname="uk.co.quarticsoftware.a.ae"/>
+    </Class>
+    <Method classname="uk.co.quarticsoftware.a.ae" name="a" signature="(Luk/co/quarticsoftware/a/ba;)V" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.ae" startBytecode="0" endBytecode="71"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="106" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.quarticsoftware.a.ae" startBytecode="105" endBytecode="105"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.quarticsoftware.a.af">
+      <SourceLine classname="uk.co.quarticsoftware.a.af"/>
+    </Class>
+    <Method classname="uk.co.quarticsoftware.a.af" name="a" signature="(Luk/co/quarticsoftware/a/ba;)V" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.af" startBytecode="0" endBytecode="41"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="32" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.quarticsoftware.a.af" startBytecode="31" endBytecode="31"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.quarticsoftware.a.an">
+      <SourceLine classname="uk.co.quarticsoftware.a.an"/>
+    </Class>
+    <Method classname="uk.co.quarticsoftware.a.an" name="a" signature="(Luk/co/quarticsoftware/a/ba;)V" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.an" startBytecode="0" endBytecode="60"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="31" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.quarticsoftware.a.an" startBytecode="30" endBytecode="30"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" rank="20" abbrev="REC" category="STYLE">
+    <Class classname="uk.co.quarticsoftware.a.an">
+      <SourceLine classname="uk.co.quarticsoftware.a.an"/>
+    </Class>
+    <Method classname="uk.co.quarticsoftware.a.an" name="a" signature="(Luk/co/quarticsoftware/a/ba;)V" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.an"/>
+    </Method>
+    <SourceLine classname="uk.co.quarticsoftware.a.an" startBytecode="116" endBytecode="116"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.quarticsoftware.a.ao">
+      <SourceLine classname="uk.co.quarticsoftware.a.ao"/>
+    </Class>
+    <Method classname="uk.co.quarticsoftware.a.ao" name="a" signature="(Luk/co/quarticsoftware/a/ba;)V" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.ao" startBytecode="0" endBytecode="99"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="225" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.quarticsoftware.a.ao" startBytecode="224" endBytecode="224"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.quarticsoftware.a.ap">
+      <SourceLine classname="uk.co.quarticsoftware.a.ap"/>
+    </Class>
+    <Method classname="uk.co.quarticsoftware.a.ap" name="a" signature="(Luk/co/quarticsoftware/a/ba;)V" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.ap" startBytecode="0" endBytecode="48"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="86" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.quarticsoftware.a.ap" startBytecode="85" endBytecode="85"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="3" rank="20" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="uk.co.quarticsoftware.a.b.c">
+      <SourceLine classname="uk.co.quarticsoftware.a.b.c"/>
+    </Class>
+    <Field classname="uk.co.quarticsoftware.a.b.c" name="h" signature="Z" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.b.c"/>
+    </Field>
+    <SourceLine classname="uk.co.quarticsoftware.a.b.c" startBytecode="7" endBytecode="7"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="3" rank="20" abbrev="UrF" category="STYLE">
+    <Class classname="uk.co.quarticsoftware.a.b.f">
+      <SourceLine classname="uk.co.quarticsoftware.a.b.f"/>
+    </Class>
+    <Field classname="uk.co.quarticsoftware.a.b.f" name="q" signature="J" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.b.f"/>
+    </Field>
+    <SourceLine classname="uk.co.quarticsoftware.a.b.f" startBytecode="97" endBytecode="97"/>
+  </BugInstance>
+  <BugInstance type="NM_SAME_SIMPLE_NAME_AS_INTERFACE" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="uk.co.quarticsoftware.a.c">
+      <SourceLine classname="uk.co.quarticsoftware.a.c"/>
+    </Class>
+    <Class classname="uk.co.quarticsoftware.a.c.c">
+      <SourceLine classname="uk.co.quarticsoftware.a.c.c"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NP_LOAD_OF_KNOWN_NULL_VALUE" priority="3" rank="19" abbrev="NP" category="STYLE">
+    <Class classname="uk.co.quarticsoftware.a.d.b">
+      <SourceLine classname="uk.co.quarticsoftware.a.d.b"/>
+    </Class>
+    <Method classname="uk.co.quarticsoftware.a.d.b" name="d" signature="()V" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.d.b" startBytecode="0" endBytecode="51"/>
+    </Method>
+    <LocalVariable name="?" register="3" pc="61" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="uk.co.quarticsoftware.a.d.b" startBytecode="62" endBytecode="62"/>
+  </BugInstance>
+  <BugInstance type="ICAST_INTEGER_MULTIPLY_CAST_TO_LONG" priority="3" rank="20" abbrev="ICAST" category="STYLE">
+    <Class classname="uk.co.quarticsoftware.a.e.b">
+      <SourceLine classname="uk.co.quarticsoftware.a.e.b"/>
+    </Class>
+    <Method classname="uk.co.quarticsoftware.a.e.b" name="b" signature="(Luk/co/quarticsoftware/a/b/f;)Luk/co/quarticsoftware/a/e/d;" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.e.b"/>
+    </Method>
+    <SourceLine classname="uk.co.quarticsoftware.a.e.b" startBytecode="85" endBytecode="85"/>
+  </BugInstance>
+  <BugInstance type="SI_INSTANCE_BEFORE_FINALS_ASSIGNED" priority="2" rank="16" abbrev="SI" category="BAD_PRACTICE">
+    <Class classname="uk.co.quarticsoftware.a.e.f">
+      <SourceLine classname="uk.co.quarticsoftware.a.e.f"/>
+    </Class>
+    <Method classname="uk.co.quarticsoftware.a.e.f" name="&lt;clinit&gt;" signature="()V" isStatic="true">
+      <SourceLine classname="uk.co.quarticsoftware.a.e.f"/>
+    </Method>
+    <Field classname="uk.co.quarticsoftware.a.e.f" name="a" signature="Luk/co/quarticsoftware/a/e/f;" isStatic="true" role="FIELD_STORED">
+      <SourceLine classname="uk.co.quarticsoftware.a.e.f"/>
+    </Field>
+    <Method classname="uk.co.quarticsoftware.a.e.f" name="&lt;init&gt;" signature="(JJ)V" isStatic="false" role="METHOD_CONSTRUCTOR">
+      <SourceLine classname="uk.co.quarticsoftware.a.e.f"/>
+    </Method>
+    <Field classname="uk.co.quarticsoftware.a.e.f" name="d" signature="Luk/co/quarticsoftware/a/e/g;" isStatic="true" role="FIELD_VALUE_OF">
+      <SourceLine classname="uk.co.quarticsoftware.a.e.f"/>
+    </Field>
+    <SourceLine classname="uk.co.quarticsoftware.a.e.f" startBytecode="6" endBytecode="6"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" rank="20" abbrev="REC" category="STYLE">
+    <Class classname="uk.co.quarticsoftware.a.e.k">
+      <SourceLine classname="uk.co.quarticsoftware.a.e.k"/>
+    </Class>
+    <Method classname="uk.co.quarticsoftware.a.e.k" name="a" signature="(Ljava/lang/String;Luk/co/quarticsoftware/a/e/k;)Luk/co/quarticsoftware/a/e/k;" isStatic="true">
+      <SourceLine classname="uk.co.quarticsoftware.a.e.k"/>
+    </Method>
+    <SourceLine classname="uk.co.quarticsoftware.a.e.k" startBytecode="189" endBytecode="189"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="uk.co.quarticsoftware.a.u">
+      <SourceLine classname="uk.co.quarticsoftware.a.u"/>
+    </Class>
+    <Method classname="uk.co.quarticsoftware.a.u" name="a" signature="(Luk/co/quarticsoftware/a/ba;)V" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.a.u" startBytecode="0" endBytecode="11"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="11" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="uk.co.quarticsoftware.a.u" startBytecode="10" endBytecode="10"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="3" rank="20" abbrev="UrF" category="STYLE">
+    <Class classname="uk.co.quarticsoftware.math.c">
+      <SourceLine classname="uk.co.quarticsoftware.math.c"/>
+    </Class>
+    <Field classname="uk.co.quarticsoftware.math.c" name="c" signature="Luk/co/quarticsoftware/math/a;" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.math.c"/>
+    </Field>
+    <SourceLine classname="uk.co.quarticsoftware.math.c" startBytecode="89" endBytecode="89"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="3" rank="20" abbrev="UrF" category="STYLE">
+    <Class classname="uk.co.quarticsoftware.math.c">
+      <SourceLine classname="uk.co.quarticsoftware.math.c"/>
+    </Class>
+    <Field classname="uk.co.quarticsoftware.math.c" name="e" signature="Luk/co/quarticsoftware/math/a;" isStatic="false">
+      <SourceLine classname="uk.co.quarticsoftware.math.c"/>
+    </Field>
+    <SourceLine classname="uk.co.quarticsoftware.math.c" startBytecode="130" endBytecode="130"/>
+  </BugInstance>
+  <BugInstance type="MS_MUTABLE_ARRAY" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="uk.co.quarticsoftware.math.g">
+      <SourceLine classname="uk.co.quarticsoftware.math.g"/>
+    </Class>
+    <Field classname="uk.co.quarticsoftware.math.g" name="a" signature="[J" isStatic="true">
+      <SourceLine classname="uk.co.quarticsoftware.math.g"/>
+    </Field>
+    <SourceLine classname="uk.co.quarticsoftware.math.g" startBytecode="129" endBytecode="129"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="119">
+    <MissingClass>android.app.ActionBar</MissingClass>
+    <MissingClass>android.app.Activity</MissingClass>
+    <MissingClass>android.app.AlertDialog</MissingClass>
+    <MissingClass>android.app.AlertDialog$Builder</MissingClass>
+    <MissingClass>android.app.Dialog</MissingClass>
+    <MissingClass>android.content.ClipData</MissingClass>
+    <MissingClass>android.content.ClipData$Item</MissingClass>
+    <MissingClass>android.content.ClipDescription</MissingClass>
+    <MissingClass>android.content.Context</MissingClass>
+    <MissingClass>android.content.DialogInterface</MissingClass>
+    <MissingClass>android.content.DialogInterface$OnClickListener</MissingClass>
+    <MissingClass>android.content.DialogInterface$OnDismissListener</MissingClass>
+    <MissingClass>android.content.Intent</MissingClass>
+    <MissingClass>android.content.SharedPreferences</MissingClass>
+    <MissingClass>android.content.SharedPreferences$Editor</MissingClass>
+    <MissingClass>android.content.pm.PackageInfo</MissingClass>
+    <MissingClass>android.content.pm.PackageManager</MissingClass>
+    <MissingClass>android.content.res.Configuration</MissingClass>
+    <MissingClass>android.content.res.Resources</MissingClass>
+    <MissingClass>android.content.res.TypedArray</MissingClass>
+    <MissingClass>android.graphics.Bitmap</MissingClass>
+    <MissingClass>android.graphics.Bitmap$Config</MissingClass>
+    <MissingClass>android.graphics.Canvas</MissingClass>
+    <MissingClass>android.graphics.Color</MissingClass>
+    <MissingClass>android.graphics.Paint</MissingClass>
+    <MissingClass>android.graphics.Paint$Align</MissingClass>
+    <MissingClass>android.graphics.Paint$FontMetricsInt</MissingClass>
+    <MissingClass>android.graphics.Paint$Style</MissingClass>
+    <MissingClass>android.graphics.Path</MissingClass>
+    <MissingClass>android.graphics.Path$Direction</MissingClass>
+    <MissingClass>android.graphics.Point</MissingClass>
+    <MissingClass>android.graphics.PointF</MissingClass>
+    <MissingClass>android.graphics.PorterDuff$Mode</MissingClass>
+    <MissingClass>android.graphics.Rect</MissingClass>
+    <MissingClass>android.graphics.RectF</MissingClass>
+    <MissingClass>android.graphics.Typeface</MissingClass>
+    <MissingClass>android.graphics.drawable.BitmapDrawable</MissingClass>
+    <MissingClass>android.graphics.drawable.Drawable</MissingClass>
+    <MissingClass>android.graphics.drawable.StateListDrawable</MissingClass>
+    <MissingClass>android.media.AudioManager</MissingClass>
+    <MissingClass>android.media.MediaScannerConnection</MissingClass>
+    <MissingClass>android.net.Uri</MissingClass>
+    <MissingClass>android.os.Build$VERSION</MissingClass>
+    <MissingClass>android.os.Bundle</MissingClass>
+    <MissingClass>android.os.Environment</MissingClass>
+    <MissingClass>android.os.Handler</MissingClass>
+    <MissingClass>android.os.Vibrator</MissingClass>
+    <MissingClass>android.preference.CheckBoxPreference</MissingClass>
+    <MissingClass>android.preference.DialogPreference</MissingClass>
+    <MissingClass>android.preference.ListPreference</MissingClass>
+    <MissingClass>android.preference.Preference</MissingClass>
+    <MissingClass>android.preference.Preference$OnPreferenceChangeListener</MissingClass>
+    <MissingClass>android.preference.Preference$OnPreferenceClickListener</MissingClass>
+    <MissingClass>android.preference.PreferenceActivity</MissingClass>
+    <MissingClass>android.preference.PreferenceCategory</MissingClass>
+    <MissingClass>android.preference.PreferenceManager</MissingClass>
+    <MissingClass>android.provider.Settings$System</MissingClass>
+    <MissingClass>android.text.ClipboardManager</MissingClass>
+    <MissingClass>android.text.Layout</MissingClass>
+    <MissingClass>android.text.Layout$Alignment</MissingClass>
+    <MissingClass>android.text.SpannableString</MissingClass>
+    <MissingClass>android.text.SpannableStringBuilder</MissingClass>
+    <MissingClass>android.text.Spanned</MissingClass>
+    <MissingClass>android.text.TextPaint</MissingClass>
+    <MissingClass>android.text.method.LinkMovementMethod</MissingClass>
+    <MissingClass>android.text.style.AlignmentSpan$Standard</MissingClass>
+    <MissingClass>android.text.style.BulletSpan</MissingClass>
+    <MissingClass>android.text.style.CharacterStyle</MissingClass>
+    <MissingClass>android.text.style.ClickableSpan</MissingClass>
+    <MissingClass>android.text.style.ForegroundColorSpan</MissingClass>
+    <MissingClass>android.text.style.ImageSpan</MissingClass>
+    <MissingClass>android.text.style.LineBackgroundSpan</MissingClass>
+    <MissingClass>android.text.style.MetricAffectingSpan</MissingClass>
+    <MissingClass>android.text.style.RelativeSizeSpan</MissingClass>
+    <MissingClass>android.text.style.ReplacementSpan</MissingClass>
+    <MissingClass>android.text.style.StyleSpan</MissingClass>
+    <MissingClass>android.text.util.Linkify</MissingClass>
+    <MissingClass>android.util.AttributeSet</MissingClass>
+    <MissingClass>android.util.DisplayMetrics</MissingClass>
+    <MissingClass>android.util.Log</MissingClass>
+    <MissingClass>android.view.DragEvent</MissingClass>
+    <MissingClass>android.view.KeyCharacterMap</MissingClass>
+    <MissingClass>android.view.KeyEvent</MissingClass>
+    <MissingClass>android.view.Menu</MissingClass>
+    <MissingClass>android.view.MenuItem</MissingClass>
+    <MissingClass>android.view.MotionEvent</MissingClass>
+    <MissingClass>android.view.View</MissingClass>
+    <MissingClass>android.view.View$DragShadowBuilder</MissingClass>
+    <MissingClass>android.view.View$MeasureSpec</MissingClass>
+    <MissingClass>android.view.View$OnClickListener</MissingClass>
+    <MissingClass>android.view.View$OnDragListener</MissingClass>
+    <MissingClass>android.view.View$OnLongClickListener</MissingClass>
+    <MissingClass>android.view.View$OnTouchListener</MissingClass>
+    <MissingClass>android.view.ViewConfiguration</MissingClass>
+    <MissingClass>android.view.ViewGroup</MissingClass>
+    <MissingClass>android.view.ViewGroup$LayoutParams</MissingClass>
+    <MissingClass>android.view.Window</MissingClass>
+    <MissingClass>android.widget.AbsListView$LayoutParams</MissingClass>
+    <MissingClass>android.widget.Adapter</MissingClass>
+    <MissingClass>android.widget.AdapterView$OnItemClickListener</MissingClass>
+    <MissingClass>android.widget.BaseAdapter</MissingClass>
+    <MissingClass>android.widget.Button</MissingClass>
+    <MissingClass>android.widget.CheckBox</MissingClass>
+    <MissingClass>android.widget.CompoundButton</MissingClass>
+    <MissingClass>android.widget.CompoundButton$OnCheckedChangeListener</MissingClass>
+    <MissingClass>android.widget.LinearLayout</MissingClass>
+    <MissingClass>android.widget.LinearLayout$LayoutParams</MissingClass>
+    <MissingClass>android.widget.ListView</MissingClass>
+    <MissingClass>android.widget.PopupMenu</MissingClass>
+    <MissingClass>android.widget.PopupMenu$OnMenuItemClickListener</MissingClass>
+    <MissingClass>android.widget.RadioButton</MissingClass>
+    <MissingClass>android.widget.ScrollView</MissingClass>
+    <MissingClass>android.widget.SeekBar</MissingClass>
+    <MissingClass>android.widget.SeekBar$OnSeekBarChangeListener</MissingClass>
+    <MissingClass>android.widget.TextView</MissingClass>
+    <MissingClass>android.widget.Toast</MissingClass>
+    <MissingClass>org.xmlpull.v1.XmlPullParser</MissingClass>
+    <MissingClass>org.xmlpull.v1.XmlPullParserException</MissingClass>
+    <MissingClass>org.xmlpull.v1.XmlPullParserFactory</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sun, 18 Nov 2018 14:24:33 -1000" total_classes="263" referenced_classes="359" total_bugs="122" total_size="15160" num_packages="16" java_version="1.8.0_131" vm_version="25.131-b11" cpu_seconds="36.70" clock_seconds="10.74" peak_mbytes="336.89" alloc_mbytes="683.00" gc_seconds="0.40" priority_3="62" priority_2="53" priority_1="7">
+    <PackageStats package="uk.co.nickfines.RealCalc" total_bugs="0" total_types="1" total_size="7">
+      <ClassStats class="uk.co.nickfines.RealCalc.Calculator" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="uk.co.nickfines.calculator" total_bugs="64" total_types="61" total_size="3909" priority_3="22" priority_2="37" priority_1="5">
+      <ClassStats class="uk.co.nickfines.calculator.CalcLayout" sourceFile="&lt;Unknown&gt;" interface="false" size="186" bugs="2" priority_3="1" priority_2="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.CalculatorDialog" sourceFile="&lt;Unknown&gt;" interface="false" size="134" bugs="3" priority_3="3"/>
+      <ClassStats class="uk.co.nickfines.calculator.CustomizationPreferences" sourceFile="&lt;Unknown&gt;" interface="false" size="138" bugs="4" priority_3="1" priority_2="2" priority_1="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.DisplayFormatPreference" sourceFile="&lt;Unknown&gt;" interface="false" size="264" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.FeedbackPreference" sourceFile="&lt;Unknown&gt;" interface="false" size="150" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.MyListPreference" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.MyPreferences" sourceFile="&lt;Unknown&gt;" interface="false" size="90" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a" sourceFile="&lt;Unknown&gt;" interface="false" size="687" bugs="3" priority_2="3"/>
+      <ClassStats class="uk.co.nickfines.calculator.aa" sourceFile="&lt;Unknown&gt;" interface="false" size="24" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.ab" sourceFile="&lt;Unknown&gt;" interface="false" size="17" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.ac" sourceFile="&lt;Unknown&gt;" interface="false" size="21" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.ad" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.ae" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.af" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.ag" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.ah" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.ai" sourceFile="&lt;Unknown&gt;" interface="false" size="34" bugs="1" priority_2="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.aj" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.ak" sourceFile="&lt;Unknown&gt;" interface="false" size="359" bugs="10" priority_3="1" priority_2="9"/>
+      <ClassStats class="uk.co.nickfines.calculator.al" sourceFile="&lt;Unknown&gt;" interface="false" size="347" bugs="10" priority_3="1" priority_2="9"/>
+      <ClassStats class="uk.co.nickfines.calculator.am" sourceFile="&lt;Unknown&gt;" interface="false" size="145" bugs="1" priority_2="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.an" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.ao" sourceFile="&lt;Unknown&gt;" interface="false" size="398" bugs="2" priority_2="2"/>
+      <ClassStats class="uk.co.nickfines.calculator.ap" sourceFile="&lt;Unknown&gt;" interface="false" size="126" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.aq" sourceFile="&lt;Unknown&gt;" interface="false" size="42" bugs="2" priority_2="2"/>
+      <ClassStats class="uk.co.nickfines.calculator.ar" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="2" priority_3="2"/>
+      <ClassStats class="uk.co.nickfines.calculator.as" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="3" priority_3="1" priority_1="2"/>
+      <ClassStats class="uk.co.nickfines.calculator.at" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.au" sourceFile="&lt;Unknown&gt;" interface="false" size="30" bugs="1" priority_2="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.av" sourceFile="&lt;Unknown&gt;" interface="false" size="33" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.aw" sourceFile="&lt;Unknown&gt;" interface="false" size="246" bugs="2" priority_2="2"/>
+      <ClassStats class="uk.co.nickfines.calculator.ax" sourceFile="&lt;Unknown&gt;" interface="false" size="25" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.ay" sourceFile="&lt;Unknown&gt;" interface="false" size="29" bugs="1" priority_2="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.az" sourceFile="&lt;Unknown&gt;" interface="false" size="20" bugs="1" priority_2="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.b" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="1" priority_2="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.ba" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="2" priority_3="2"/>
+      <ClassStats class="uk.co.nickfines.calculator.bb" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="2" priority_3="2"/>
+      <ClassStats class="uk.co.nickfines.calculator.c" sourceFile="&lt;Unknown&gt;" interface="false" size="25" bugs="1" priority_1="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.d" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.e" sourceFile="&lt;Unknown&gt;" interface="false" size="17" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.f" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.g" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.h" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.i" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.j" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.k" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.l" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.m" sourceFile="&lt;Unknown&gt;" interface="false" size="46" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.n" sourceFile="&lt;Unknown&gt;" interface="true" size="3" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.o" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.p" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.q" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.r" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.s" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.t" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.u" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.v" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.w" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.x" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.y" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.z" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="uk.co.nickfines.calculator.a" total_bugs="5" total_types="18" total_size="662" priority_3="5">
+      <ClassStats class="uk.co.nickfines.calculator.a.a" sourceFile="&lt;Unknown&gt;" interface="false" size="20" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.b" sourceFile="&lt;Unknown&gt;" interface="false" size="38" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.c" sourceFile="&lt;Unknown&gt;" interface="false" size="35" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.d" sourceFile="&lt;Unknown&gt;" interface="false" size="107" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.e" sourceFile="&lt;Unknown&gt;" interface="false" size="97" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.f" sourceFile="&lt;Unknown&gt;" interface="false" size="47" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.g" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.h" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.i" sourceFile="&lt;Unknown&gt;" interface="false" size="32" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.j" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.k" sourceFile="&lt;Unknown&gt;" interface="false" size="43" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.l" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.m" sourceFile="&lt;Unknown&gt;" interface="false" size="32" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.n" sourceFile="&lt;Unknown&gt;" interface="false" size="30" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.o" sourceFile="&lt;Unknown&gt;" interface="false" size="96" bugs="5" priority_3="5"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.p" sourceFile="&lt;Unknown&gt;" interface="false" size="1" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.q" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.a.r" sourceFile="&lt;Unknown&gt;" interface="false" size="38" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="uk.co.nickfines.calculator.b" total_bugs="1" total_types="2" total_size="100" priority_1="1">
+      <ClassStats class="uk.co.nickfines.calculator.b.a" sourceFile="&lt;Unknown&gt;" interface="false" size="52" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.b.b" sourceFile="&lt;Unknown&gt;" interface="false" size="48" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="uk.co.nickfines.calculator.c" total_bugs="2" total_types="17" total_size="208" priority_3="1" priority_1="1">
+      <ClassStats class="uk.co.nickfines.calculator.c.a" sourceFile="&lt;Unknown&gt;" interface="false" size="69" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.c.b" sourceFile="&lt;Unknown&gt;" interface="true" size="4" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.c.c" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.c.d" sourceFile="&lt;Unknown&gt;" interface="false" size="23" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.c.e" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.c.f" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.c.g" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.c.h" sourceFile="&lt;Unknown&gt;" interface="false" size="26" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.c.i" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.c.j" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.c.k" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.c.l" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.c.m" sourceFile="&lt;Unknown&gt;" interface="false" size="3" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.c.n" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.c.o" sourceFile="&lt;Unknown&gt;" interface="true" size="4" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.c.p" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.c.q" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="uk.co.nickfines.calculator.dialog" total_bugs="16" total_types="39" total_size="1059" priority_3="10" priority_2="6">
+      <ClassStats class="uk.co.nickfines.calculator.dialog.RichText" sourceFile="&lt;Unknown&gt;" interface="false" size="197" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.RichText$FaqAnswerSpan" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.a" sourceFile="&lt;Unknown&gt;" interface="false" size="37" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.aa" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="2" priority_3="2"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.ab" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="2" priority_3="2"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.ac" sourceFile="&lt;Unknown&gt;" interface="false" size="21" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.ad" sourceFile="&lt;Unknown&gt;" interface="false" size="45" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.ae" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.af" sourceFile="&lt;Unknown&gt;" interface="false" size="33" bugs="2" priority_2="2"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.ag" sourceFile="&lt;Unknown&gt;" interface="false" size="40" bugs="1" priority_2="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.ah" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.ai" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="1" priority_2="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.aj" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="1" priority_2="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.ak" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="1" priority_2="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.b" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.c" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.d" sourceFile="&lt;Unknown&gt;" interface="false" size="50" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.e" sourceFile="&lt;Unknown&gt;" interface="false" size="73" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.f" sourceFile="&lt;Unknown&gt;" interface="false" size="61" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.g" sourceFile="&lt;Unknown&gt;" interface="false" size="137" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.h" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.i" sourceFile="&lt;Unknown&gt;" interface="false" size="52" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.j" sourceFile="&lt;Unknown&gt;" interface="false" size="3" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.k" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.l" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.m" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.n" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.o" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.p" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.q" sourceFile="&lt;Unknown&gt;" interface="false" size="23" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.r" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.s" sourceFile="&lt;Unknown&gt;" interface="false" size="26" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.t" sourceFile="&lt;Unknown&gt;" interface="false" size="43" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.u" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.v" sourceFile="&lt;Unknown&gt;" interface="false" size="1" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.w" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.x" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.y" sourceFile="&lt;Unknown&gt;" interface="false" size="77" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.dialog.z" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="1" priority_3="1"/>
+    </PackageStats>
+    <PackageStats package="uk.co.nickfines.calculator.display" total_bugs="6" total_types="13" total_size="1409" priority_3="3" priority_2="3">
+      <ClassStats class="uk.co.nickfines.calculator.display.PrefsNumberDisplay" sourceFile="&lt;Unknown&gt;" interface="false" size="47" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.display.a" sourceFile="&lt;Unknown&gt;" interface="false" size="601" bugs="1" priority_2="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.display.b" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.display.c" sourceFile="&lt;Unknown&gt;" interface="false" size="35" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.display.d" sourceFile="&lt;Unknown&gt;" interface="true" size="3" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.display.e" sourceFile="&lt;Unknown&gt;" interface="false" size="102" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.display.f" sourceFile="&lt;Unknown&gt;" interface="true" size="3" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.display.g" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.display.h" sourceFile="&lt;Unknown&gt;" interface="false" size="183" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.display.i" sourceFile="&lt;Unknown&gt;" interface="false" size="248" bugs="2" priority_3="1" priority_2="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.display.j" sourceFile="&lt;Unknown&gt;" interface="false" size="112" bugs="1" priority_2="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.display.k" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.display.l" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="uk.co.nickfines.calculator.keypad" total_bugs="4" total_types="5" total_size="487" priority_3="1" priority_2="3">
+      <ClassStats class="uk.co.nickfines.calculator.keypad.CalcButton" sourceFile="&lt;Unknown&gt;" interface="false" size="178" bugs="2" priority_2="2"/>
+      <ClassStats class="uk.co.nickfines.calculator.keypad.a" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.keypad.b" sourceFile="&lt;Unknown&gt;" interface="false" size="36" bugs="0"/>
+      <ClassStats class="uk.co.nickfines.calculator.keypad.c" sourceFile="&lt;Unknown&gt;" interface="false" size="256" bugs="2" priority_3="1" priority_2="1"/>
+      <ClassStats class="uk.co.nickfines.calculator.keypad.d" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="uk.co.nickfines.calculator.ui" total_bugs="0" total_types="1" total_size="31">
+      <ClassStats class="uk.co.nickfines.calculator.ui.DialogListView" sourceFile="&lt;Unknown&gt;" interface="false" size="31" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="uk.co.quarticsoftware.a" total_bugs="12" total_types="57" total_size="2686" priority_3="11" priority_2="1">
+      <ClassStats class="uk.co.quarticsoftware.a.a" sourceFile="&lt;Unknown&gt;" interface="false" size="123" bugs="2" priority_3="2"/>
+      <ClassStats class="uk.co.quarticsoftware.a.aa" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.ab" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.ac" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.quarticsoftware.a.ad" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.quarticsoftware.a.ae" sourceFile="&lt;Unknown&gt;" interface="false" size="20" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.quarticsoftware.a.af" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.quarticsoftware.a.ag" sourceFile="&lt;Unknown&gt;" interface="false" size="223" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.ah" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.ai" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.aj" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.ak" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.al" sourceFile="&lt;Unknown&gt;" interface="false" size="24" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.am" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.an" sourceFile="&lt;Unknown&gt;" interface="false" size="17" bugs="2" priority_3="2"/>
+      <ClassStats class="uk.co.quarticsoftware.a.ao" sourceFile="&lt;Unknown&gt;" interface="false" size="28" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.quarticsoftware.a.ap" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.quarticsoftware.a.aq" sourceFile="&lt;Unknown&gt;" interface="false" size="245" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.ar" sourceFile="&lt;Unknown&gt;" interface="false" size="45" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.as" sourceFile="&lt;Unknown&gt;" interface="false" size="55" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.at" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.au" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.av" sourceFile="&lt;Unknown&gt;" interface="true" size="10" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.aw" sourceFile="&lt;Unknown&gt;" interface="false" size="25" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.ax" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.ay" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.az" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.b" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.ba" sourceFile="&lt;Unknown&gt;" interface="false" size="441" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.bb" sourceFile="&lt;Unknown&gt;" interface="false" size="58" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.bc" sourceFile="&lt;Unknown&gt;" interface="false" size="33" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.bd" sourceFile="&lt;Unknown&gt;" interface="false" size="135" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.be" sourceFile="&lt;Unknown&gt;" interface="true" size="1" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.c" sourceFile="&lt;Unknown&gt;" interface="false" size="501" bugs="1" priority_2="1"/>
+      <ClassStats class="uk.co.quarticsoftware.a.d" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.e" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.f" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.g" sourceFile="&lt;Unknown&gt;" interface="false" size="81" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.h" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.i" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.j" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.k" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.l" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.m" sourceFile="&lt;Unknown&gt;" interface="false" size="25" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.n" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.o" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.p" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.q" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.r" sourceFile="&lt;Unknown&gt;" interface="false" size="245" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.s" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.t" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.u" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.quarticsoftware.a.v" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.w" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.x" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.y" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.z" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="uk.co.quarticsoftware.a.a" total_bugs="3" total_types="9" total_size="466" priority_3="2" priority_2="1">
+      <ClassStats class="uk.co.quarticsoftware.a.a.a" sourceFile="&lt;Unknown&gt;" interface="false" size="61" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.quarticsoftware.a.a.b" sourceFile="&lt;Unknown&gt;" interface="false" size="34" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.a.c" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.a.d" sourceFile="&lt;Unknown&gt;" interface="false" size="43" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.a.e" sourceFile="&lt;Unknown&gt;" interface="false" size="86" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.quarticsoftware.a.a.f" sourceFile="&lt;Unknown&gt;" interface="false" size="34" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.a.g" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.a.h" sourceFile="&lt;Unknown&gt;" interface="false" size="72" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.a.i" sourceFile="&lt;Unknown&gt;" interface="false" size="120" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="uk.co.quarticsoftware.a.b" total_bugs="2" total_types="7" total_size="682" priority_3="2">
+      <ClassStats class="uk.co.quarticsoftware.a.b.a" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.b.b" sourceFile="&lt;Unknown&gt;" interface="false" size="75" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.b.c" sourceFile="&lt;Unknown&gt;" interface="false" size="186" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.quarticsoftware.a.b.d" sourceFile="&lt;Unknown&gt;" interface="false" size="332" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.b.e" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.b.f" sourceFile="&lt;Unknown&gt;" interface="false" size="61" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.quarticsoftware.a.b.g" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="uk.co.quarticsoftware.a.c" total_bugs="0" total_types="10" total_size="415">
+      <ClassStats class="uk.co.quarticsoftware.a.c.a" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.c.b" sourceFile="&lt;Unknown&gt;" interface="false" size="250" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.c.c" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.c.d" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.c.e" sourceFile="&lt;Unknown&gt;" interface="false" size="21" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.c.f" sourceFile="&lt;Unknown&gt;" interface="false" size="21" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.c.g" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.c.h" sourceFile="&lt;Unknown&gt;" interface="false" size="40" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.c.i" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.c.j" sourceFile="&lt;Unknown&gt;" interface="false" size="30" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="uk.co.quarticsoftware.a.d" total_bugs="1" total_types="2" total_size="176" priority_3="1">
+      <ClassStats class="uk.co.quarticsoftware.a.d.a" sourceFile="&lt;Unknown&gt;" interface="false" size="57" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.d.b" sourceFile="&lt;Unknown&gt;" interface="false" size="119" bugs="1" priority_3="1"/>
+    </PackageStats>
+    <PackageStats package="uk.co.quarticsoftware.a.e" total_bugs="3" total_types="11" total_size="974" priority_3="2" priority_2="1">
+      <ClassStats class="uk.co.quarticsoftware.a.e.a" sourceFile="&lt;Unknown&gt;" interface="true" size="1" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.e.b" sourceFile="&lt;Unknown&gt;" interface="false" size="135" bugs="1" priority_3="1"/>
+      <ClassStats class="uk.co.quarticsoftware.a.e.c" sourceFile="&lt;Unknown&gt;" interface="false" size="1" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.e.d" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.e.e" sourceFile="&lt;Unknown&gt;" interface="false" size="40" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.e.f" sourceFile="&lt;Unknown&gt;" interface="false" size="230" bugs="1" priority_2="1"/>
+      <ClassStats class="uk.co.quarticsoftware.a.e.g" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.e.h" sourceFile="&lt;Unknown&gt;" interface="false" size="210" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.e.i" sourceFile="&lt;Unknown&gt;" interface="false" size="241" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.e.j" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.a.e.k" sourceFile="&lt;Unknown&gt;" interface="false" size="80" bugs="1" priority_3="1"/>
+    </PackageStats>
+    <PackageStats package="uk.co.quarticsoftware.math" total_bugs="3" total_types="10" total_size="1889" priority_3="2" priority_2="1">
+      <ClassStats class="uk.co.quarticsoftware.math.OverflowException" sourceFile="&lt;Unknown&gt;" interface="false" size="3" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.math.a" sourceFile="&lt;Unknown&gt;" interface="false" size="813" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.math.b" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.math.c" sourceFile="&lt;Unknown&gt;" interface="false" size="730" bugs="2" priority_3="2"/>
+      <ClassStats class="uk.co.quarticsoftware.math.d" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.math.e" sourceFile="&lt;Unknown&gt;" interface="false" size="26" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.math.f" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.math.g" sourceFile="&lt;Unknown&gt;" interface="false" size="162" bugs="1" priority_2="1"/>
+      <ClassStats class="uk.co.quarticsoftware.math.h" sourceFile="&lt;Unknown&gt;" interface="false" size="104" bugs="0"/>
+      <ClassStats class="uk.co.quarticsoftware.math.i" sourceFile="&lt;Unknown&gt;" interface="false" size="21" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="815" invocations="1970" avgMicrosecondsPerInvocation="414" maxMicrosecondsPerInvocation="26413" standardDeviationMircosecondsPerInvocation="1107"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="596" invocations="1971" avgMicrosecondsPerInvocation="302" maxMicrosecondsPerInvocation="11301" standardDeviationMircosecondsPerInvocation="617"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="551" invocations="2028" avgMicrosecondsPerInvocation="271" maxMicrosecondsPerInvocation="47401" standardDeviationMircosecondsPerInvocation="1248"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="528" invocations="1971" avgMicrosecondsPerInvocation="268" maxMicrosecondsPerInvocation="9789" standardDeviationMircosecondsPerInvocation="618"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="461" invocations="2001" avgMicrosecondsPerInvocation="230" maxMicrosecondsPerInvocation="12942" standardDeviationMircosecondsPerInvocation="628"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="431" invocations="1170" avgMicrosecondsPerInvocation="368" maxMicrosecondsPerInvocation="33773" standardDeviationMircosecondsPerInvocation="1840"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="389" invocations="2729" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="4150" standardDeviationMircosecondsPerInvocation="303"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="372" invocations="1974" avgMicrosecondsPerInvocation="188" maxMicrosecondsPerInvocation="12038" standardDeviationMircosecondsPerInvocation="471"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="330" invocations="359" avgMicrosecondsPerInvocation="920" maxMicrosecondsPerInvocation="14220" standardDeviationMircosecondsPerInvocation="1778"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="324" invocations="1655" avgMicrosecondsPerInvocation="195" maxMicrosecondsPerInvocation="9425" standardDeviationMircosecondsPerInvocation="405"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="313" invocations="359" avgMicrosecondsPerInvocation="874" maxMicrosecondsPerInvocation="14968" standardDeviationMircosecondsPerInvocation="1867"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="249" invocations="263" avgMicrosecondsPerInvocation="946" maxMicrosecondsPerInvocation="189995" standardDeviationMircosecondsPerInvocation="11704"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="180" invocations="263" avgMicrosecondsPerInvocation="684" maxMicrosecondsPerInvocation="27176" standardDeviationMircosecondsPerInvocation="2301"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="147" invocations="263" avgMicrosecondsPerInvocation="559" maxMicrosecondsPerInvocation="8430" standardDeviationMircosecondsPerInvocation="1134"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="118" invocations="1971" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="2770" standardDeviationMircosecondsPerInvocation="128"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="115" invocations="2082" avgMicrosecondsPerInvocation="55" maxMicrosecondsPerInvocation="39218" standardDeviationMircosecondsPerInvocation="862"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="114" invocations="263" avgMicrosecondsPerInvocation="435" maxMicrosecondsPerInvocation="5811" standardDeviationMircosecondsPerInvocation="724"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="112" invocations="263" avgMicrosecondsPerInvocation="428" maxMicrosecondsPerInvocation="13134" standardDeviationMircosecondsPerInvocation="1111"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="109" invocations="35160" avgMicrosecondsPerInvocation="3" maxMicrosecondsPerInvocation="3495" standardDeviationMircosecondsPerInvocation="22"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="104" invocations="263" avgMicrosecondsPerInvocation="397" maxMicrosecondsPerInvocation="11642" standardDeviationMircosecondsPerInvocation="1138"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="103" invocations="359" avgMicrosecondsPerInvocation="287" maxMicrosecondsPerInvocation="7456" standardDeviationMircosecondsPerInvocation="668"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="100" invocations="359" avgMicrosecondsPerInvocation="281" maxMicrosecondsPerInvocation="4538" standardDeviationMircosecondsPerInvocation="571"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="99" invocations="1970" avgMicrosecondsPerInvocation="50" maxMicrosecondsPerInvocation="1927" standardDeviationMircosecondsPerInvocation="104"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="86" invocations="263" avgMicrosecondsPerInvocation="329" maxMicrosecondsPerInvocation="7341" standardDeviationMircosecondsPerInvocation="712"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="76" invocations="263" avgMicrosecondsPerInvocation="290" maxMicrosecondsPerInvocation="7782" standardDeviationMircosecondsPerInvocation="703"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="74" invocations="488" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="15186" standardDeviationMircosecondsPerInvocation="751"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="74" invocations="263" avgMicrosecondsPerInvocation="281" maxMicrosecondsPerInvocation="4596" standardDeviationMircosecondsPerInvocation="578"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="71" invocations="359" avgMicrosecondsPerInvocation="199" maxMicrosecondsPerInvocation="8381" standardDeviationMircosecondsPerInvocation="614"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="70" invocations="263" avgMicrosecondsPerInvocation="268" maxMicrosecondsPerInvocation="6352" standardDeviationMircosecondsPerInvocation="562"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="69" invocations="2082" avgMicrosecondsPerInvocation="33" maxMicrosecondsPerInvocation="3291" standardDeviationMircosecondsPerInvocation="121"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="69" invocations="263" avgMicrosecondsPerInvocation="264" maxMicrosecondsPerInvocation="3955" standardDeviationMircosecondsPerInvocation="496"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="68" invocations="263" avgMicrosecondsPerInvocation="261" maxMicrosecondsPerInvocation="6112" standardDeviationMircosecondsPerInvocation="589"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="66" invocations="359" avgMicrosecondsPerInvocation="184" maxMicrosecondsPerInvocation="6851" standardDeviationMircosecondsPerInvocation="498"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="66" invocations="263" avgMicrosecondsPerInvocation="251" maxMicrosecondsPerInvocation="3853" standardDeviationMircosecondsPerInvocation="488"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="65" invocations="263" avgMicrosecondsPerInvocation="248" maxMicrosecondsPerInvocation="4519" standardDeviationMircosecondsPerInvocation="495"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="64" invocations="972" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="2230" standardDeviationMircosecondsPerInvocation="149"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="63" invocations="359" avgMicrosecondsPerInvocation="177" maxMicrosecondsPerInvocation="4336" standardDeviationMircosecondsPerInvocation="330"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1542587486000" analysisTimestamp="1542591033263" release="">
+  <Project projectName="">
+    <Jar>/home/mitu/Downloads/finalizeCode-INTERNAL-EVIDENCES/allAlgoIn1platform/bytecodes/36.jar</Jar>
+  </Project>
+  <BugInstance type="INT_BAD_COMPARISON_WITH_NONNEGATIVE_VALUE" priority="2" rank="7" abbrev="INT" category="CORRECTNESS">
+    <Class classname="com.urbanairship.AirshipConfigOptions">
+      <SourceLine classname="com.urbanairship.AirshipConfigOptions"/>
+    </Class>
+    <Method classname="com.urbanairship.AirshipConfigOptions" name="isValid" signature="()Z" isStatic="false">
+      <SourceLine classname="com.urbanairship.AirshipConfigOptions"/>
+    </Method>
+    <Int value="0" role="INT_VALUE"/>
+    <SourceLine classname="com.urbanairship.AirshipConfigOptions" startBytecode="175" endBytecode="175"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="com.urbanairship.InternalOptions">
+      <SourceLine classname="com.urbanairship.InternalOptions"/>
+    </Class>
+    <Method classname="com.urbanairship.InternalOptions" name="loadFromProperties" signature="(Landroid/content/Context;)V" isStatic="false">
+      <SourceLine classname="com.urbanairship.InternalOptions"/>
+    </Method>
+    <Field classname="com.urbanairship.push.embedded.Config$BoxOffice" name="url" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.urbanairship.push.embedded.Config$BoxOffice"/>
+    </Field>
+    <SourceLine classname="com.urbanairship.InternalOptions" startBytecode="30" endBytecode="30"/>
+  </BugInstance>
+  <BugInstance type="MS_CANNOT_BE_FINAL" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.urbanairship.Logger">
+      <SourceLine classname="com.urbanairship.Logger"/>
+    </Class>
+    <Field classname="com.urbanairship.Logger" name="logLevel" signature="I" isStatic="true">
+      <SourceLine classname="com.urbanairship.Logger"/>
+    </Field>
+    <SourceLine classname="com.urbanairship.Logger" startBytecode="2" endBytecode="2"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.urbanairship.Logger">
+      <SourceLine classname="com.urbanairship.Logger"/>
+    </Class>
+    <Field classname="com.urbanairship.Logger" name="TAG" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.urbanairship.Logger"/>
+    </Field>
+    <SourceLine classname="com.urbanairship.Logger" startBytecode="7" endBytecode="7"/>
+  </BugInstance>
+  <BugInstance type="DM_BOXED_PRIMITIVE_FOR_PARSING" priority="1" rank="16" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="com.urbanairship.Options">
+      <SourceLine classname="com.urbanairship.Options"/>
+    </Class>
+    <Method classname="com.urbanairship.Options" name="parseOptionValues" signature="(Ljava/lang/reflect/Field;Ljava/lang/String;)I" isStatic="false">
+      <SourceLine classname="com.urbanairship.Options"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="intValue" signature="()I" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="893" end="893" startBytecode="0" endBytecode="28" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="parseInt" signature="(Ljava/lang/String;)I" isStatic="true" role="SHOULD_CALL"/>
+    <SourceLine classname="com.urbanairship.Options" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE">
+    <Class classname="com.urbanairship.Preferences">
+      <SourceLine classname="com.urbanairship.Preferences"/>
+    </Class>
+    <Method classname="com.urbanairship.Preferences" name="&lt;init&gt;" signature="(Landroid/content/Context;)V" isStatic="false">
+      <SourceLine classname="com.urbanairship.Preferences"/>
+    </Method>
+    <Field classname="com.urbanairship.Preferences" name="resolver" signature="Lcom/urbanairship/PreferencesResolver;" isStatic="true">
+      <SourceLine classname="com.urbanairship.Preferences"/>
+    </Field>
+    <SourceLine classname="com.urbanairship.Preferences" startBytecode="23" endBytecode="23"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="com.urbanairship.Preferences$Preference">
+      <SourceLine classname="com.urbanairship.Preferences$Preference"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_CONDITION" priority="3" rank="19" abbrev="UC" category="STYLE">
+    <Class classname="com.urbanairship.analytics.ActivityState">
+      <SourceLine classname="com.urbanairship.analytics.ActivityState"/>
+    </Class>
+    <Method classname="com.urbanairship.analytics.ActivityState" name="setStopped" signature="(Lcom/urbanairship/analytics/ActivityMonitor$Source;)V" isStatic="false">
+      <SourceLine classname="com.urbanairship.analytics.ActivityState"/>
+    </Method>
+    <String value="this.analyticsEnabled == true"/>
+    <SourceLine classname="com.urbanairship.analytics.ActivityState" startBytecode="85" endBytecode="85"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="com.urbanairship.analytics.Analytics">
+      <SourceLine classname="com.urbanairship.analytics.Analytics"/>
+    </Class>
+    <Method classname="com.urbanairship.analytics.Analytics" name="getHashedDeviceId" signature="()Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.urbanairship.analytics.Analytics"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="com.urbanairship.analytics.Analytics" startBytecode="25" endBytecode="25"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="com.urbanairship.analytics.Analytics$Session">
+      <SourceLine classname="com.urbanairship.analytics.Analytics$Session"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CONFUSING" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.urbanairship.analytics.AnalyticsPreferences">
+      <SourceLine classname="com.urbanairship.analytics.AnalyticsPreferences"/>
+    </Class>
+    <Method classname="com.urbanairship.analytics.AnalyticsPreferences" name="getMaxTotalDbSize" signature="()I" isStatic="false">
+      <SourceLine classname="com.urbanairship.analytics.AnalyticsPreferences"/>
+    </Method>
+    <Class classname="com.urbanairship.analytics.EventUploadManager">
+      <SourceLine classname="com.urbanairship.analytics.EventUploadManager"/>
+    </Class>
+    <Method classname="com.urbanairship.analytics.EventUploadManager" name="getMaxTotalDBSize" signature="()I" isStatic="false">
+      <SourceLine classname="com.urbanairship.analytics.EventUploadManager"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_CONFUSING" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.urbanairship.analytics.DefaultEnvironment">
+      <SourceLine classname="com.urbanairship.analytics.DefaultEnvironment"/>
+    </Class>
+    <Method classname="com.urbanairship.analytics.DefaultEnvironment" name="getApid" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="com.urbanairship.analytics.DefaultEnvironment"/>
+    </Method>
+    <Class classname="com.urbanairship.push.PushManager">
+      <SourceLine classname="com.urbanairship.push.PushManager"/>
+    </Class>
+    <Method classname="com.urbanairship.push.PushManager" name="getAPID" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="com.urbanairship.push.PushManager"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="com.urbanairship.analytics.DefaultEnvironment">
+      <SourceLine classname="com.urbanairship.analytics.DefaultEnvironment"/>
+    </Class>
+    <Method classname="com.urbanairship.analytics.DefaultEnvironment" name="getQuietTimeInterval" signature="()[Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="com.urbanairship.analytics.DefaultEnvironment"/>
+    </Method>
+    <SourceLine classname="com.urbanairship.analytics.DefaultEnvironment" startBytecode="17" endBytecode="17"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="com.urbanairship.analytics.EventRequestFactory">
+      <SourceLine classname="com.urbanairship.analytics.EventRequestFactory"/>
+    </Class>
+    <Method classname="com.urbanairship.analytics.EventRequestFactory" name="getJSONBody" signature="(Ljava/util/Collection;)[B" isStatic="true">
+      <SourceLine classname="com.urbanairship.analytics.EventRequestFactory"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="com.urbanairship.analytics.EventRequestFactory" startBytecode="11" endBytecode="11"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="com.urbanairship.analytics.EventRequestFactory">
+      <SourceLine classname="com.urbanairship.analytics.EventRequestFactory"/>
+    </Class>
+    <Method classname="com.urbanairship.analytics.EventRequestFactory" name="getJSONBody" signature="(Ljava/util/Collection;)[B" isStatic="true">
+      <SourceLine classname="com.urbanairship.analytics.EventRequestFactory"/>
+    </Method>
+    <SourceLine classname="com.urbanairship.analytics.EventRequestFactory" startBytecode="81" endBytecode="81"/>
+    <SourceLine classname="com.urbanairship.analytics.EventRequestFactory" startBytecode="114" endBytecode="114"/>
+  </BugInstance>
+  <BugInstance type="DM_CONVERT_CASE" priority="3" rank="20" abbrev="Dm" category="I18N">
+    <Class classname="com.urbanairship.analytics.LocationEvent">
+      <SourceLine classname="com.urbanairship.analytics.LocationEvent"/>
+    </Class>
+    <Method classname="com.urbanairship.analytics.LocationEvent" name="getValidProviderName" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="com.urbanairship.analytics.LocationEvent"/>
+    </Method>
+    <SourceLine classname="com.urbanairship.analytics.LocationEvent" startBytecode="31" endBytecode="31"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="com.urbanairship.location.LocationService">
+      <SourceLine classname="com.urbanairship.location.LocationService"/>
+    </Class>
+    <Field classname="com.urbanairship.location.LocationService" name="locationChangedPendingIntent" signature="Landroid/app/PendingIntent;" isStatic="false">
+      <SourceLine classname="com.urbanairship.location.LocationService"/>
+    </Field>
+    <Int value="50" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="com.urbanairship.location.LocationService" startBytecode="11" endBytecode="11" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="com.urbanairship.location.LocationService" startBytecode="71" endBytecode="71" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="com.urbanairship.location.LocationService" startBytecode="60" endBytecode="60" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="com.urbanairship.location.LocationService" startBytecode="39" endBytecode="39" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="com.urbanairship.location.LocationService">
+      <SourceLine classname="com.urbanairship.location.LocationService"/>
+    </Class>
+    <Field classname="com.urbanairship.location.LocationService" name="locationManager" signature="Landroid/location/LocationManager;" isStatic="false">
+      <SourceLine classname="com.urbanairship.location.LocationService"/>
+    </Field>
+    <Int value="63" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="com.urbanairship.location.LocationService" startBytecode="14" endBytecode="14" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="com.urbanairship.location.LocationService" startBytecode="9" endBytecode="9" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="com.urbanairship.location.LocationService" startBytecode="7" endBytecode="7" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="com.urbanairship.location.LocationService" startBytecode="1" endBytecode="1" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="com.urbanairship.location.LocationService" startBytecode="29" endBytecode="29" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="com.urbanairship.location.LocationService" startBytecode="17" endBytecode="17" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="com.urbanairship.location.LocationService" startBytecode="81" endBytecode="81" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="com.urbanairship.location.LocationService" startBytecode="10" endBytecode="10" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="com.urbanairship.location.LocationService" startBytecode="28" endBytecode="28" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="com.urbanairship.location.LocationService" startBytecode="56" endBytecode="56" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="com.urbanairship.location.LocationService" startBytecode="1" endBytecode="1" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="com.urbanairship.location.LocationService$1">
+      <SourceLine classname="com.urbanairship.location.LocationService$1"/>
+    </Class>
+    <Method classname="com.urbanairship.location.LocationService$1" name="doInBackground" signature="([Ljava/lang/Void;)Ljava/lang/Void;" isStatic="false">
+      <SourceLine classname="com.urbanairship.location.LocationService$1" startBytecode="0" endBytecode="58"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="10" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.urbanairship.location.LocationService$1" startBytecode="9" endBytecode="9"/>
+  </BugInstance>
+  <BugInstance type="STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE" priority="2" rank="8" abbrev="STCAL" category="MT_CORRECTNESS">
+    <Class classname="com.urbanairship.preference.QuietTimePickerPreference">
+      <SourceLine classname="com.urbanairship.preference.QuietTimePickerPreference"/>
+    </Class>
+    <Method classname="com.urbanairship.preference.QuietTimePickerPreference" name="getSummary" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="com.urbanairship.preference.QuietTimePickerPreference"/>
+    </Method>
+    <Method classname="java.text.SimpleDateFormat" name="format" signature="(Ljava/util/Date;)Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.text.SimpleDateFormat" sourcefile="SimpleDateFormat.java" sourcepath="java/text/SimpleDateFormat.java"/>
+    </Method>
+    <Field classname="com.urbanairship.preference.QuietTimePickerPreference" name="formatter" signature="Ljava/text/SimpleDateFormat;" isStatic="true">
+      <SourceLine classname="com.urbanairship.preference.QuietTimePickerPreference"/>
+    </Field>
+    <SourceLine classname="com.urbanairship.preference.QuietTimePickerPreference" startBytecode="10" endBytecode="10"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
+    <Class classname="com.urbanairship.preference.UAPreferenceAdapter">
+      <SourceLine classname="com.urbanairship.preference.UAPreferenceAdapter"/>
+    </Class>
+    <Method classname="com.urbanairship.preference.UAPreferenceAdapter" name="applyUrbanAirshipPreferences" signature="()V" isStatic="false">
+      <SourceLine classname="com.urbanairship.preference.UAPreferenceAdapter"/>
+    </Method>
+    <Field classname="com.urbanairship.preference.UAPreferenceAdapter" name="preferences" signature="Ljava/util/Map;" isStatic="false">
+      <SourceLine classname="com.urbanairship.preference.UAPreferenceAdapter"/>
+    </Field>
+    <SourceLine classname="com.urbanairship.preference.UAPreferenceAdapter" startBytecode="39" endBytecode="39"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="com.urbanairship.push.BasicPushNotificationBuilder">
+      <SourceLine classname="com.urbanairship.push.BasicPushNotificationBuilder"/>
+    </Class>
+    <Method classname="com.urbanairship.push.BasicPushNotificationBuilder" name="buildNotification" signature="(Ljava/lang/String;Ljava/util/Map;)Landroid/app/Notification;" isStatic="false">
+      <SourceLine classname="com.urbanairship.push.BasicPushNotificationBuilder" startBytecode="0" endBytecode="60"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="31" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.urbanairship.push.BasicPushNotificationBuilder" startBytecode="30" endBytecode="30"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="com.urbanairship.push.CustomPushNotificationBuilder">
+      <SourceLine classname="com.urbanairship.push.CustomPushNotificationBuilder"/>
+    </Class>
+    <Method classname="com.urbanairship.push.CustomPushNotificationBuilder" name="buildNotification" signature="(Ljava/lang/String;Ljava/util/Map;)Landroid/app/Notification;" isStatic="false">
+      <SourceLine classname="com.urbanairship.push.CustomPushNotificationBuilder" startBytecode="0" endBytecode="123"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="31" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.urbanairship.push.CustomPushNotificationBuilder" startBytecode="30" endBytecode="30"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_TOSTRING" priority="3" rank="20" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="com.urbanairship.push.GCMRegistrar">
+      <SourceLine classname="com.urbanairship.push.GCMRegistrar"/>
+    </Class>
+    <Method classname="com.urbanairship.push.GCMRegistrar" name="isGCMAvailable" signature="()Z" isStatic="true">
+      <SourceLine classname="com.urbanairship.push.GCMRegistrar"/>
+    </Method>
+    <SourceLine classname="com.urbanairship.push.GCMRegistrar" startBytecode="52" endBytecode="52"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
+    <Class classname="com.urbanairship.push.PushMessage">
+      <SourceLine classname="com.urbanairship.push.PushMessage"/>
+    </Class>
+    <Method classname="com.urbanairship.push.PushMessage" name="buildAndDisplayNotification" signature="()I" isStatic="false">
+      <SourceLine classname="com.urbanairship.push.PushMessage"/>
+    </Method>
+    <Field classname="com.urbanairship.push.PushMessage" name="extras" signature="Ljava/util/Map;" isStatic="false">
+      <SourceLine classname="com.urbanairship.push.PushMessage"/>
+    </Field>
+    <SourceLine classname="com.urbanairship.push.PushMessage" startBytecode="280" endBytecode="280"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
+    <Class classname="com.urbanairship.push.PushMessage">
+      <SourceLine classname="com.urbanairship.push.PushMessage"/>
+    </Class>
+    <Method classname="com.urbanairship.push.PushMessage" name="createMessageBundle" signature="()Landroid/os/Bundle;" isStatic="false">
+      <SourceLine classname="com.urbanairship.push.PushMessage"/>
+    </Method>
+    <Field classname="com.urbanairship.push.PushMessage" name="extras" signature="Ljava/util/Map;" isStatic="false">
+      <SourceLine classname="com.urbanairship.push.PushMessage"/>
+    </Field>
+    <SourceLine classname="com.urbanairship.push.PushMessage" startBytecode="49" endBytecode="49"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="com.urbanairship.push.PushPreferences">
+      <SourceLine classname="com.urbanairship.push.PushPreferences"/>
+    </Class>
+    <Method classname="com.urbanairship.push.PushPreferences" name="getQuietTimeInterval" signature="()[Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="com.urbanairship.push.PushPreferences"/>
+    </Method>
+    <SourceLine classname="com.urbanairship.push.PushPreferences" startBytecode="55" endBytecode="55"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="com.urbanairship.push.embedded.BoxOfficeClient">
+      <SourceLine classname="com.urbanairship.push.embedded.BoxOfficeClient"/>
+    </Class>
+    <Method classname="com.urbanairship.push.embedded.BoxOfficeClient" name="getHashedDeviceId" signature="(Landroid/content/Context;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.urbanairship.push.embedded.BoxOfficeClient"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="com.urbanairship.push.embedded.BoxOfficeClient" startBytecode="24" endBytecode="24"/>
+  </BugInstance>
+  <BugInstance type="MS_CANNOT_BE_FINAL" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.urbanairship.push.embedded.Config$BoxOffice">
+      <SourceLine classname="com.urbanairship.push.embedded.Config$BoxOffice"/>
+    </Class>
+    <Field classname="com.urbanairship.push.embedded.Config$BoxOffice" name="url" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.urbanairship.push.embedded.Config$BoxOffice"/>
+    </Field>
+    <SourceLine classname="com.urbanairship.push.embedded.Config$BoxOffice" startBytecode="2" endBytecode="2"/>
+  </BugInstance>
+  <BugInstance type="NP_LOAD_OF_KNOWN_NULL_VALUE" priority="3" rank="19" abbrev="NP" category="STYLE">
+    <Class classname="com.urbanairship.push.embedded.Network">
+      <SourceLine classname="com.urbanairship.push.embedded.Network"/>
+    </Class>
+    <Method classname="com.urbanairship.push.embedded.Network" name="getActiveIPAddress" signature="()Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.urbanairship.push.embedded.Network" startBytecode="0" endBytecode="103"/>
+    </Method>
+    <LocalVariable name="?" register="3" pc="51" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.urbanairship.push.embedded.Network" startBytecode="54" endBytecode="54"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="3" rank="20" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.urbanairship.restclient.Request">
+      <SourceLine classname="com.urbanairship.restclient.Request"/>
+    </Class>
+    <Field classname="com.urbanairship.restclient.Request" name="verifySSLHostnames" signature="Z" isStatic="true">
+      <SourceLine classname="com.urbanairship.restclient.Request"/>
+    </Field>
+    <SourceLine classname="com.urbanairship.restclient.Request" startBytecode="1" endBytecode="1"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="3" rank="20" abbrev="UrF" category="STYLE">
+    <Class classname="com.urbanairship.restclient.Request">
+      <SourceLine classname="com.urbanairship.restclient.Request"/>
+    </Class>
+    <Field classname="com.urbanairship.restclient.Request" name="verifySSLHostnames" signature="Z" isStatic="true">
+      <SourceLine classname="com.urbanairship.restclient.Request"/>
+    </Field>
+    <SourceLine classname="com.urbanairship.restclient.Request" startBytecode="1" endBytecode="1"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="com.urbanairship.restclient.Request$BackgroundRequest">
+      <SourceLine classname="com.urbanairship.restclient.Request$BackgroundRequest"/>
+    </Class>
+    <Method classname="com.urbanairship.restclient.Request$BackgroundRequest" name="doInBackground" signature="([Lcom/urbanairship/restclient/Request;)Lcom/urbanairship/restclient/Response;" isStatic="false">
+      <SourceLine classname="com.urbanairship.restclient.Request$BackgroundRequest"/>
+    </Method>
+    <Class classname="java.io.OutputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.OutputStream" start="46" end="152" sourcefile="OutputStream.java" sourcepath="java/io/OutputStream.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <String value="{OutputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM_EXCEPTION_PATH" priority="3" rank="19" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="com.urbanairship.restclient.Request$BackgroundRequest">
+      <SourceLine classname="com.urbanairship.restclient.Request$BackgroundRequest"/>
+    </Class>
+    <Method classname="com.urbanairship.restclient.Request$BackgroundRequest" name="doInBackground" signature="([Lcom/urbanairship/restclient/Request;)Lcom/urbanairship/restclient/Response;" isStatic="false">
+      <SourceLine classname="com.urbanairship.restclient.Request$BackgroundRequest" startBytecode="0" endBytecode="107"/>
+    </Method>
+    <Type descriptor="Ljava/io/OutputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.OutputStream" start="46" end="152" sourcefile="OutputStream.java" sourcepath="java/io/OutputStream.java"/>
+    </Type>
+    <SourceLine classname="com.urbanairship.restclient.Request$BackgroundRequest" startBytecode="73" endBytecode="73"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" rank="20" abbrev="REC" category="STYLE">
+    <Class classname="com.urbanairship.restclient.Request$BackgroundRequest">
+      <SourceLine classname="com.urbanairship.restclient.Request$BackgroundRequest"/>
+    </Class>
+    <Method classname="com.urbanairship.restclient.Request$BackgroundRequest" name="doInBackground" signature="([Lcom/urbanairship/restclient/Request;)Lcom/urbanairship/restclient/Response;" isStatic="false">
+      <SourceLine classname="com.urbanairship.restclient.Request$BackgroundRequest"/>
+    </Method>
+    <SourceLine classname="com.urbanairship.restclient.Request$BackgroundRequest" startBytecode="148" endBytecode="148"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE">
+    <Class classname="com.urbanairship.restclient.Request$BackgroundRequest">
+      <SourceLine classname="com.urbanairship.restclient.Request$BackgroundRequest"/>
+    </Class>
+    <Method classname="com.urbanairship.restclient.Request$BackgroundRequest" name="doInBackground" signature="([Lcom/urbanairship/restclient/Request;)Lcom/urbanairship/restclient/Response;" isStatic="false">
+      <SourceLine classname="com.urbanairship.restclient.Request$BackgroundRequest"/>
+    </Method>
+    <Method classname="java.io.File" name="mkdirs" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="1340" end="1354" startBytecode="0" endBytecode="182" sourcefile="File.java" sourcepath="java/io/File.java"/>
+    </Method>
+    <SourceLine classname="com.urbanairship.restclient.Request$BackgroundRequest" startBytecode="56" endBytecode="56"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="com.urbanairship.richpush.RichPushInbox$3">
+      <SourceLine classname="com.urbanairship.richpush.RichPushInbox$3"/>
+    </Class>
+    <Method classname="com.urbanairship.richpush.RichPushInbox$3" name="onReceive" signature="(Landroid/content/Context;Landroid/content/Intent;)V" isStatic="false">
+      <SourceLine classname="com.urbanairship.richpush.RichPushInbox$3" startBytecode="0" endBytecode="44"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="45" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.urbanairship.richpush.RichPushInbox$3" startBytecode="44" endBytecode="44"/>
+  </BugInstance>
+  <BugInstance type="SE_COMPARATOR_SHOULD_BE_SERIALIZABLE" priority="2" rank="19" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="com.urbanairship.richpush.RichPushInbox$SentAtRichPushMessageComparator">
+      <SourceLine classname="com.urbanairship.richpush.RichPushInbox$SentAtRichPushMessageComparator"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="3" rank="20" abbrev="ST" category="STYLE">
+    <Class classname="com.urbanairship.richpush.RichPushManager">
+      <SourceLine classname="com.urbanairship.richpush.RichPushManager"/>
+    </Class>
+    <Method classname="com.urbanairship.richpush.RichPushManager" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="com.urbanairship.richpush.RichPushManager"/>
+    </Method>
+    <Field classname="com.urbanairship.richpush.RichPushManager" name="resolver" signature="Lcom/urbanairship/richpush/RichPushResolver;" isStatic="true">
+      <SourceLine classname="com.urbanairship.richpush.RichPushManager"/>
+    </Field>
+    <SourceLine classname="com.urbanairship.richpush.RichPushManager" startBytecode="69" endBytecode="69"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="com.urbanairship.richpush.RichPushManager$1">
+      <SourceLine classname="com.urbanairship.richpush.RichPushManager$1"/>
+    </Class>
+    <Method classname="com.urbanairship.richpush.RichPushManager$1" name="onReceiveResult" signature="(ILandroid/os/Bundle;)V" isStatic="false">
+      <SourceLine classname="com.urbanairship.richpush.RichPushManager$1" startBytecode="0" endBytecode="53"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="32" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.urbanairship.richpush.RichPushManager$1" startBytecode="31" endBytecode="31"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="com.urbanairship.richpush.RichPushManager$2">
+      <SourceLine classname="com.urbanairship.richpush.RichPushManager$2"/>
+    </Class>
+    <Method classname="com.urbanairship.richpush.RichPushManager$2" name="onReceiveResult" signature="(ILandroid/os/Bundle;)V" isStatic="false">
+      <SourceLine classname="com.urbanairship.richpush.RichPushManager$2" startBytecode="0" endBytecode="48"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.urbanairship.richpush.RichPushManager$2" startBytecode="22" endBytecode="22"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.urbanairship.richpush.RichPushMessage">
+      <SourceLine classname="com.urbanairship.richpush.RichPushMessage"/>
+    </Class>
+    <Method classname="com.urbanairship.richpush.RichPushMessage" name="getSentDate" signature="()Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="com.urbanairship.richpush.RichPushMessage"/>
+    </Method>
+    <Field classname="com.urbanairship.richpush.RichPushMessage" name="sent" signature="Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="com.urbanairship.richpush.RichPushMessage"/>
+    </Field>
+    <SourceLine classname="com.urbanairship.richpush.RichPushMessage" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE" priority="2" rank="8" abbrev="STCAL" category="MT_CORRECTNESS">
+    <Class classname="com.urbanairship.richpush.RichPushMessage">
+      <SourceLine classname="com.urbanairship.richpush.RichPushMessage"/>
+    </Class>
+    <Method classname="com.urbanairship.richpush.RichPushMessage" name="formatDate" signature="(Ljava/lang/String;)Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="com.urbanairship.richpush.RichPushMessage"/>
+    </Method>
+    <Method classname="java.text.SimpleDateFormat" name="format" signature="(Ljava/util/Date;)Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.text.SimpleDateFormat" sourcefile="SimpleDateFormat.java" sourcepath="java/text/SimpleDateFormat.java"/>
+    </Method>
+    <Field classname="com.urbanairship.richpush.RichPushMessage" name="UA_DATE_FORMATTER" signature="Ljava/text/SimpleDateFormat;" isStatic="true">
+      <SourceLine classname="com.urbanairship.richpush.RichPushMessage"/>
+    </Field>
+    <SourceLine classname="com.urbanairship.richpush.RichPushMessage" startBytecode="29" endBytecode="29"/>
+  </BugInstance>
+  <BugInstance type="STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE" priority="2" rank="8" abbrev="STCAL" category="MT_CORRECTNESS">
+    <Class classname="com.urbanairship.richpush.RichPushMessage">
+      <SourceLine classname="com.urbanairship.richpush.RichPushMessage"/>
+    </Class>
+    <Method classname="com.urbanairship.richpush.RichPushMessage" name="formatDate" signature="(Ljava/lang/String;)Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="com.urbanairship.richpush.RichPushMessage"/>
+    </Method>
+    <Method classname="java.text.SimpleDateFormat" name="parse" signature="(Ljava/lang/String;)Ljava/util/Date;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.text.SimpleDateFormat" sourcefile="SimpleDateFormat.java" sourcepath="java/text/SimpleDateFormat.java"/>
+    </Method>
+    <Field classname="com.urbanairship.richpush.RichPushMessage" name="UA_DATE_FORMATTER" signature="Ljava/text/SimpleDateFormat;" isStatic="true">
+      <SourceLine classname="com.urbanairship.richpush.RichPushMessage"/>
+    </Field>
+    <SourceLine classname="com.urbanairship.richpush.RichPushMessage" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE" priority="2" rank="8" abbrev="STCAL" category="MT_CORRECTNESS">
+    <Class classname="com.urbanairship.richpush.RichPushMessage">
+      <SourceLine classname="com.urbanairship.richpush.RichPushMessage"/>
+    </Class>
+    <Method classname="com.urbanairship.richpush.RichPushMessage" name="toContentValues" signature="()Landroid/content/ContentValues;" isStatic="false">
+      <SourceLine classname="com.urbanairship.richpush.RichPushMessage"/>
+    </Method>
+    <Method classname="java.text.SimpleDateFormat" name="format" signature="(Ljava/util/Date;)Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.text.SimpleDateFormat" sourcefile="SimpleDateFormat.java" sourcepath="java/text/SimpleDateFormat.java"/>
+    </Method>
+    <Field classname="com.urbanairship.richpush.RichPushMessage" name="UA_DATE_FORMATTER" signature="Ljava/text/SimpleDateFormat;" isStatic="true">
+      <SourceLine classname="com.urbanairship.richpush.RichPushMessage"/>
+    </Field>
+    <SourceLine classname="com.urbanairship.richpush.RichPushMessage" startBytecode="35" endBytecode="35"/>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" rank="20" abbrev="UwF" category="STYLE">
+    <Class classname="com.urbanairship.richpush.RichPushMessage">
+      <SourceLine classname="com.urbanairship.richpush.RichPushMessage"/>
+    </Class>
+    <Field classname="com.urbanairship.richpush.RichPushMessage" name="databaseId" signature="Ljava/lang/Integer;" isStatic="false">
+      <SourceLine classname="com.urbanairship.richpush.RichPushMessage"/>
+    </Field>
+    <Method classname="com.urbanairship.richpush.RichPushMessage" name="getDatabaseId" signature="()I" isStatic="false">
+      <SourceLine classname="com.urbanairship.richpush.RichPushMessage"/>
+    </Method>
+    <SourceLine classname="com.urbanairship.richpush.RichPushMessage" startBytecode="4" endBytecode="4"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="1" rank="6" abbrev="NP" category="CORRECTNESS">
+    <Class classname="com.urbanairship.richpush.RichPushUpdateService">
+      <SourceLine classname="com.urbanairship.richpush.RichPushUpdateService"/>
+    </Class>
+    <Method classname="com.urbanairship.richpush.RichPushUpdateService" name="retrieveMessage" signature="(Ljava/lang/String;Landroid/os/ResultReceiver;)V" isStatic="false">
+      <SourceLine classname="com.urbanairship.richpush.RichPushUpdateService"/>
+    </Method>
+    <LocalVariable name="?" register="4" pc="68" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.urbanairship.richpush.RichPushUpdateService" startBytecode="70" endBytecode="70" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="com.urbanairship.richpush.RichPushUpdateService" startBytecode="55" endBytecode="55" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="com.urbanairship.richpush.RichPushUpdateService">
+      <SourceLine classname="com.urbanairship.richpush.RichPushUpdateService"/>
+    </Class>
+    <Method classname="com.urbanairship.richpush.RichPushUpdateService" name="getMessagesFromServer" signature="(Ljava/lang/String;)[Lcom/urbanairship/richpush/RichPushMessage;" isStatic="false">
+      <SourceLine classname="com.urbanairship.richpush.RichPushUpdateService"/>
+    </Method>
+    <SourceLine classname="com.urbanairship.richpush.RichPushUpdateService" startBytecode="73" endBytecode="73"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="com.urbanairship.widget.RichPushMessageView$1">
+      <SourceLine classname="com.urbanairship.widget.RichPushMessageView$1"/>
+    </Class>
+    <Method classname="com.urbanairship.widget.RichPushMessageView$1" name="onReceivedHttpAuthRequest" signature="(Landroid/webkit/WebView;Landroid/webkit/HttpAuthHandler;Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.urbanairship.widget.RichPushMessageView$1" startBytecode="0" endBytecode="9"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="7" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.urbanairship.widget.RichPushMessageView$1" startBytecode="6" endBytecode="6"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" rank="20" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="com.urbanairship.widget.RichPushMessageView$1">
+      <SourceLine classname="com.urbanairship.widget.RichPushMessageView$1"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="com.vicinno.sci15clite.IntentReceiver">
+      <SourceLine classname="com.vicinno.sci15clite.IntentReceiver"/>
+    </Class>
+    <Method classname="com.vicinno.sci15clite.IntentReceiver" name="onReceive" signature="(Landroid/content/Context;Landroid/content/Intent;)V" isStatic="false">
+      <SourceLine classname="com.vicinno.sci15clite.IntentReceiver" startBytecode="0" endBytecode="142"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="30" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.vicinno.sci15clite.IntentReceiver" startBytecode="29" endBytecode="29"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.vicinno.sci15clite.IntentReceiver">
+      <SourceLine classname="com.vicinno.sci15clite.IntentReceiver"/>
+    </Class>
+    <Field classname="com.vicinno.sci15clite.IntentReceiver" name="APID_UPDATED_ACTION_SUFFIX" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.vicinno.sci15clite.IntentReceiver"/>
+    </Field>
+    <SourceLine classname="com.vicinno.sci15clite.IntentReceiver" startBytecode="2" endBytecode="2"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="com.vicinno.sci15clite.MainActivity">
+      <SourceLine classname="com.vicinno.sci15clite.MainActivity"/>
+    </Class>
+    <Method classname="com.vicinno.sci15clite.MainActivity" name="onClickLogo" signature="(Landroid/view/View;)V" isStatic="false">
+      <SourceLine classname="com.vicinno.sci15clite.MainActivity" startBytecode="0" endBytecode="12"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="11" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.vicinno.sci15clite.MainActivity" startBytecode="10" endBytecode="10"/>
+  </BugInstance>
+  <BugInstance type="UPM_UNCALLED_PRIVATE_METHOD" priority="3" rank="20" abbrev="UPM" category="PERFORMANCE">
+    <Class classname="com.vicinno.sci15clite.MainActivity">
+      <SourceLine classname="com.vicinno.sci15clite.MainActivity"/>
+    </Class>
+    <Method classname="com.vicinno.sci15clite.MainActivity" name="playClickSound" signature="()V" isStatic="false">
+      <SourceLine classname="com.vicinno.sci15clite.MainActivity"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" rank="20" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="com.vicinno.sci15clite.MainActivity$2">
+      <SourceLine classname="com.vicinno.sci15clite.MainActivity$2"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" rank="20" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="com.vicinno.sci15clite.MainActivity$4">
+      <SourceLine classname="com.vicinno.sci15clite.MainActivity$4"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="com.vicinno.sci15clite.MainActivity$5">
+      <SourceLine classname="com.vicinno.sci15clite.MainActivity$5"/>
+    </Class>
+    <Method classname="com.vicinno.sci15clite.MainActivity$5" name="onClick" signature="(Landroid/content/DialogInterface;I)V" isStatic="false">
+      <SourceLine classname="com.vicinno.sci15clite.MainActivity$5" startBytecode="0" endBytecode="20"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="25" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.vicinno.sci15clite.MainActivity$5" startBytecode="24" endBytecode="24"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" rank="20" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="com.vicinno.sci15clite.MainActivity$6">
+      <SourceLine classname="com.vicinno.sci15clite.MainActivity$6"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="3" rank="11" abbrev="IP" category="CORRECTNESS">
+    <Class classname="com.vicinno.sci15clite.MainActivity$7">
+      <SourceLine classname="com.vicinno.sci15clite.MainActivity$7"/>
+    </Class>
+    <Method classname="com.vicinno.sci15clite.MainActivity$7" name="onClick" signature="(Landroid/content/DialogInterface;I)V" isStatic="false">
+      <SourceLine classname="com.vicinno.sci15clite.MainActivity$7" startBytecode="0" endBytecode="20"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="25" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.vicinno.sci15clite.MainActivity$7" startBytecode="24" endBytecode="24"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.vicinno.sci15clite.Manifest$permission">
+      <SourceLine classname="com.vicinno.sci15clite.Manifest$permission"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="com.vicinno.sci15clite.MyApplication">
+      <SourceLine classname="com.vicinno.sci15clite.MyApplication"/>
+    </Class>
+    <Method classname="com.vicinno.sci15clite.MyApplication" name="onCreate" signature="()V" isStatic="false">
+      <SourceLine classname="com.vicinno.sci15clite.MyApplication"/>
+    </Method>
+    <Field classname="com.urbanairship.Logger" name="logLevel" signature="I" isStatic="true">
+      <SourceLine classname="com.urbanairship.Logger"/>
+    </Field>
+    <SourceLine classname="com.vicinno.sci15clite.MyApplication" startBytecode="16" endBytecode="16"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.vicinno.sci15clite.R$attr">
+      <SourceLine classname="com.vicinno.sci15clite.R$attr"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.vicinno.sci15clite.R$color">
+      <SourceLine classname="com.vicinno.sci15clite.R$color"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.vicinno.sci15clite.R$dimen">
+      <SourceLine classname="com.vicinno.sci15clite.R$dimen"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.vicinno.sci15clite.R$drawable">
+      <SourceLine classname="com.vicinno.sci15clite.R$drawable"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.vicinno.sci15clite.R$id">
+      <SourceLine classname="com.vicinno.sci15clite.R$id"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.vicinno.sci15clite.R$layout">
+      <SourceLine classname="com.vicinno.sci15clite.R$layout"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.vicinno.sci15clite.R$raw">
+      <SourceLine classname="com.vicinno.sci15clite.R$raw"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.vicinno.sci15clite.R$string">
+      <SourceLine classname="com.vicinno.sci15clite.R$string"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.vicinno.sci15clite.R$style">
+      <SourceLine classname="com.vicinno.sci15clite.R$style"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.vicinno.sci15clite.R$xml">
+      <SourceLine classname="com.vicinno.sci15clite.R$xml"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="0" missingClasses="114">
+    <MissingClass>android.app.Activity</MissingClass>
+    <MissingClass>android.app.AlarmManager</MissingClass>
+    <MissingClass>android.app.AlertDialog$Builder</MissingClass>
+    <MissingClass>android.app.Application</MissingClass>
+    <MissingClass>android.app.Application$ActivityLifecycleCallbacks</MissingClass>
+    <MissingClass>android.app.IntentService</MissingClass>
+    <MissingClass>android.app.ListActivity</MissingClass>
+    <MissingClass>android.app.Notification</MissingClass>
+    <MissingClass>android.app.NotificationManager</MissingClass>
+    <MissingClass>android.app.PendingIntent</MissingClass>
+    <MissingClass>android.app.Service</MissingClass>
+    <MissingClass>android.content.BroadcastReceiver</MissingClass>
+    <MissingClass>android.content.ComponentName</MissingClass>
+    <MissingClass>android.content.ContentProvider</MissingClass>
+    <MissingClass>android.content.ContentResolver</MissingClass>
+    <MissingClass>android.content.ContentValues</MissingClass>
+    <MissingClass>android.content.Context</MissingClass>
+    <MissingClass>android.content.DialogInterface</MissingClass>
+    <MissingClass>android.content.DialogInterface$OnClickListener</MissingClass>
+    <MissingClass>android.content.Intent</MissingClass>
+    <MissingClass>android.content.IntentFilter</MissingClass>
+    <MissingClass>android.content.ServiceConnection</MissingClass>
+    <MissingClass>android.content.SharedPreferences</MissingClass>
+    <MissingClass>android.content.SharedPreferences$Editor</MissingClass>
+    <MissingClass>android.content.UriMatcher</MissingClass>
+    <MissingClass>android.content.pm.ApplicationInfo</MissingClass>
+    <MissingClass>android.content.pm.PackageInfo</MissingClass>
+    <MissingClass>android.content.pm.PackageManager</MissingClass>
+    <MissingClass>android.content.pm.PackageManager$NameNotFoundException</MissingClass>
+    <MissingClass>android.content.res.AssetFileDescriptor</MissingClass>
+    <MissingClass>android.content.res.AssetManager</MissingClass>
+    <MissingClass>android.content.res.Configuration</MissingClass>
+    <MissingClass>android.content.res.Resources</MissingClass>
+    <MissingClass>android.database.ContentObserver</MissingClass>
+    <MissingClass>android.database.Cursor</MissingClass>
+    <MissingClass>android.database.sqlite.SQLiteDatabase</MissingClass>
+    <MissingClass>android.database.sqlite.SQLiteOpenHelper</MissingClass>
+    <MissingClass>android.database.sqlite.SQLiteStatement</MissingClass>
+    <MissingClass>android.graphics.Typeface</MissingClass>
+    <MissingClass>android.location.Criteria</MissingClass>
+    <MissingClass>android.location.Location</MissingClass>
+    <MissingClass>android.location.LocationListener</MissingClass>
+    <MissingClass>android.location.LocationManager</MissingClass>
+    <MissingClass>android.media.MediaPlayer</MissingClass>
+    <MissingClass>android.media.MediaPlayer$OnCompletionListener</MissingClass>
+    <MissingClass>android.net.ConnectivityManager</MissingClass>
+    <MissingClass>android.net.NetworkInfo</MissingClass>
+    <MissingClass>android.net.Uri</MissingClass>
+    <MissingClass>android.os.AsyncTask</MissingClass>
+    <MissingClass>android.os.Binder</MissingClass>
+    <MissingClass>android.os.Build</MissingClass>
+    <MissingClass>android.os.Build$VERSION</MissingClass>
+    <MissingClass>android.os.Bundle</MissingClass>
+    <MissingClass>android.os.Handler</MissingClass>
+    <MissingClass>android.os.IBinder</MissingClass>
+    <MissingClass>android.os.IInterface</MissingClass>
+    <MissingClass>android.os.Looper</MissingClass>
+    <MissingClass>android.os.Parcel</MissingClass>
+    <MissingClass>android.os.Parcelable$Creator</MissingClass>
+    <MissingClass>android.os.PowerManager</MissingClass>
+    <MissingClass>android.os.PowerManager$WakeLock</MissingClass>
+    <MissingClass>android.os.RemoteException</MissingClass>
+    <MissingClass>android.os.ResultReceiver</MissingClass>
+    <MissingClass>android.os.SystemClock</MissingClass>
+    <MissingClass>android.os.Vibrator</MissingClass>
+    <MissingClass>android.preference.CheckBoxPreference</MissingClass>
+    <MissingClass>android.preference.DialogPreference</MissingClass>
+    <MissingClass>android.preference.Preference</MissingClass>
+    <MissingClass>android.preference.Preference$OnPreferenceChangeListener</MissingClass>
+    <MissingClass>android.preference.PreferenceActivity</MissingClass>
+    <MissingClass>android.preference.PreferenceGroup</MissingClass>
+    <MissingClass>android.preference.PreferenceManager</MissingClass>
+    <MissingClass>android.provider.Settings$Secure</MissingClass>
+    <MissingClass>android.telephony.TelephonyManager</MissingClass>
+    <MissingClass>android.util.Log</MissingClass>
+    <MissingClass>android.util.SparseArray</MissingClass>
+    <MissingClass>android.view.MotionEvent</MissingClass>
+    <MissingClass>android.view.View</MissingClass>
+    <MissingClass>android.view.ViewGroup</MissingClass>
+    <MissingClass>android.view.Window</MissingClass>
+    <MissingClass>android.webkit.HttpAuthHandler</MissingClass>
+    <MissingClass>android.webkit.WebChromeClient</MissingClass>
+    <MissingClass>android.webkit.WebSettings</MissingClass>
+    <MissingClass>android.webkit.WebView</MissingClass>
+    <MissingClass>android.webkit.WebViewClient</MissingClass>
+    <MissingClass>android.widget.RemoteViews</MissingClass>
+    <MissingClass>android.widget.TextView</MissingClass>
+    <MissingClass>android.widget.TimePicker</MissingClass>
+    <MissingClass>android.widget.Toast</MissingClass>
+    <MissingClass>org.apache.http.Header</MissingClass>
+    <MissingClass>org.apache.http.HttpEntity</MissingClass>
+    <MissingClass>org.apache.http.HttpResponse</MissingClass>
+    <MissingClass>org.apache.http.StatusLine</MissingClass>
+    <MissingClass>org.apache.http.auth.AuthScope</MissingClass>
+    <MissingClass>org.apache.http.auth.UsernamePasswordCredentials</MissingClass>
+    <MissingClass>org.apache.http.client.entity.UrlEncodedFormEntity</MissingClass>
+    <MissingClass>org.apache.http.client.methods.HttpEntityEnclosingRequestBase</MissingClass>
+    <MissingClass>org.apache.http.client.methods.HttpPost</MissingClass>
+    <MissingClass>org.apache.http.client.utils.URLEncodedUtils</MissingClass>
+    <MissingClass>org.apache.http.entity.AbstractHttpEntity</MissingClass>
+    <MissingClass>org.apache.http.entity.ByteArrayEntity</MissingClass>
+    <MissingClass>org.apache.http.entity.InputStreamEntity</MissingClass>
+    <MissingClass>org.apache.http.entity.StringEntity</MissingClass>
+    <MissingClass>org.apache.http.impl.auth.BasicScheme</MissingClass>
+    <MissingClass>org.apache.http.impl.client.BasicCredentialsProvider</MissingClass>
+    <MissingClass>org.apache.http.impl.client.DefaultHttpClient</MissingClass>
+    <MissingClass>org.apache.http.message.BasicNameValuePair</MissingClass>
+    <MissingClass>org.apache.http.params.BasicHttpParams</MissingClass>
+    <MissingClass>org.apache.http.params.HttpConnectionParams</MissingClass>
+    <MissingClass>org.apache.http.params.HttpProtocolParams</MissingClass>
+    <MissingClass>org.apache.http.util.EntityUtils</MissingClass>
+    <MissingClass>org.json.JSONArray</MissingClass>
+    <MissingClass>org.json.JSONException</MissingClass>
+    <MissingClass>org.json.JSONObject</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sun, 18 Nov 2018 14:31:26 -1000" total_classes="180" referenced_classes="296" total_bugs="71" total_size="5916" num_packages="12" java_version="1.8.0_131" vm_version="25.131-b11" cpu_seconds="24.25" clock_seconds="6.94" peak_mbytes="316.65" alloc_mbytes="683.00" gc_seconds="0.32" priority_3="32" priority_2="32" priority_1="7">
+    <PackageStats package="android.annotation" total_bugs="0" total_types="2" total_size="4">
+      <ClassStats class="android.annotation.SuppressLint" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="android.annotation.TargetApi" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.urbanairship" total_bugs="7" total_types="21" total_size="843" priority_2="5" priority_1="2">
+      <ClassStats class="com.urbanairship.AirshipConfigOptions" sourceFile="&lt;Unknown&gt;" interface="false" size="88" bugs="1" priority_2="1"/>
+      <ClassStats class="com.urbanairship.AirshipConfigOptions$TransportType" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="0"/>
+      <ClassStats class="com.urbanairship.Autopilot" sourceFile="&lt;Unknown&gt;" interface="false" size="32" bugs="0"/>
+      <ClassStats class="com.urbanairship.ConstantClass" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.urbanairship.CoreReceiver" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.urbanairship.InternalOptions" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="com.urbanairship.LocationOptions" sourceFile="&lt;Unknown&gt;" interface="false" size="98" bugs="0"/>
+      <ClassStats class="com.urbanairship.Logger" sourceFile="&lt;Unknown&gt;" interface="false" size="42" bugs="2" priority_2="2"/>
+      <ClassStats class="com.urbanairship.Options" sourceFile="&lt;Unknown&gt;" interface="false" size="74" bugs="1" priority_1="1"/>
+      <ClassStats class="com.urbanairship.Preferences" sourceFile="&lt;Unknown&gt;" interface="false" size="89" bugs="1" priority_1="1"/>
+      <ClassStats class="com.urbanairship.Preferences$Preference" sourceFile="&lt;Unknown&gt;" interface="false" size="26" bugs="1" priority_2="1"/>
+      <ClassStats class="com.urbanairship.Preferences$Preference$PreferencesObserver" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.urbanairship.PreferencesDataManager" sourceFile="&lt;Unknown&gt;" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.urbanairship.PreferencesResolver" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.urbanairship.PropertyName" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.urbanairship.RichPushDataManager" sourceFile="&lt;Unknown&gt;" interface="false" size="30" bugs="0"/>
+      <ClassStats class="com.urbanairship.RichPushTable" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.urbanairship.UAirship" sourceFile="&lt;Unknown&gt;" interface="false" size="96" bugs="0"/>
+      <ClassStats class="com.urbanairship.UrbanAirshipProvider" sourceFile="&lt;Unknown&gt;" interface="false" size="111" bugs="0"/>
+      <ClassStats class="com.urbanairship.UrbanAirshipProvider$DatabaseModel" sourceFile="&lt;Unknown&gt;" interface="false" size="30" bugs="0"/>
+      <ClassStats class="com.urbanairship.UrbanAirshipResolver" sourceFile="&lt;Unknown&gt;" interface="false" size="20" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.urbanairship.analytics" total_bugs="9" total_types="37" total_size="1088" priority_3="6" priority_2="1" priority_1="2">
+      <ClassStats class="com.urbanairship.analytics.ActivityMonitor" sourceFile="&lt;Unknown&gt;" interface="false" size="35" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.ActivityMonitor$1" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.ActivityMonitor$Delegate" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.ActivityMonitor$Source" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.ActivityStartedEvent" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.ActivityState" sourceFile="&lt;Unknown&gt;" interface="false" size="44" bugs="1" priority_3="1"/>
+      <ClassStats class="com.urbanairship.analytics.ActivityState$State" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.ActivityStoppedEvent" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.Analytics" sourceFile="&lt;Unknown&gt;" interface="false" size="114" bugs="1" priority_1="1"/>
+      <ClassStats class="com.urbanairship.analytics.Analytics$1" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.Analytics$2" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.Analytics$3" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.Analytics$4" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.Analytics$AddEventTask" sourceFile="&lt;Unknown&gt;" interface="false" size="39" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.Analytics$Session" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="com.urbanairship.analytics.AnalyticsPreferences" sourceFile="&lt;Unknown&gt;" interface="false" size="33" bugs="1" priority_3="1"/>
+      <ClassStats class="com.urbanairship.analytics.AppBackgroundEvent" sourceFile="&lt;Unknown&gt;" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.AppForegroundEvent" sourceFile="&lt;Unknown&gt;" interface="false" size="27" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.DefaultEnvironment" sourceFile="&lt;Unknown&gt;" interface="false" size="60" bugs="2" priority_3="2"/>
+      <ClassStats class="com.urbanairship.analytics.Environment" sourceFile="&lt;Unknown&gt;" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.Event" sourceFile="&lt;Unknown&gt;" interface="false" size="55" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.EventDataManager" sourceFile="&lt;Unknown&gt;" interface="false" size="104" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.EventDataManager$Events" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.EventRequestFactory" sourceFile="&lt;Unknown&gt;" interface="false" size="62" bugs="2" priority_3="1" priority_1="1"/>
+      <ClassStats class="com.urbanairship.analytics.EventService" sourceFile="&lt;Unknown&gt;" interface="false" size="22" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.EventUploadManager" sourceFile="&lt;Unknown&gt;" interface="false" size="103" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.InstrumentedActivity" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.InstrumentedListActivity" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.LifeCycleCallbacks" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.LifeCycleCallbacks$1" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.LifeCycleCallbacks$Callback" sourceFile="&lt;Unknown&gt;" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.LocationEvent" sourceFile="&lt;Unknown&gt;" interface="false" size="67" bugs="1" priority_3="1"/>
+      <ClassStats class="com.urbanairship.analytics.LocationEvent$AllowableProvider" sourceFile="&lt;Unknown&gt;" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.LocationEvent$UpdateType" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.PushArrivedEvent" sourceFile="&lt;Unknown&gt;" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.PushPreferencesChangedEvent" sourceFile="&lt;Unknown&gt;" interface="false" size="24" bugs="0"/>
+      <ClassStats class="com.urbanairship.analytics.PushServiceStartedEvent" sourceFile="&lt;Unknown&gt;" interface="false" size="21" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.urbanairship.location" total_bugs="3" total_types="13" total_size="648" priority_3="1" priority_2="2">
+      <ClassStats class="com.urbanairship.location.ILocationService" sourceFile="&lt;Unknown&gt;" interface="true" size="9" bugs="0"/>
+      <ClassStats class="com.urbanairship.location.ILocationService$Stub" sourceFile="&lt;Unknown&gt;" interface="false" size="57" bugs="0"/>
+      <ClassStats class="com.urbanairship.location.ILocationService$Stub$Proxy" sourceFile="&lt;Unknown&gt;" interface="false" size="72" bugs="0"/>
+      <ClassStats class="com.urbanairship.location.LastLocationFinder" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="0"/>
+      <ClassStats class="com.urbanairship.location.LocationPreferences" sourceFile="&lt;Unknown&gt;" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.urbanairship.location.LocationService" sourceFile="&lt;Unknown&gt;" interface="false" size="199" bugs="2" priority_2="2"/>
+      <ClassStats class="com.urbanairship.location.LocationService$1" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="1" priority_3="1"/>
+      <ClassStats class="com.urbanairship.location.LocationService$2" sourceFile="&lt;Unknown&gt;" interface="false" size="36" bugs="0"/>
+      <ClassStats class="com.urbanairship.location.LocationService$3" sourceFile="&lt;Unknown&gt;" interface="false" size="32" bugs="0"/>
+      <ClassStats class="com.urbanairship.location.LocationService$ProviderListener" sourceFile="&lt;Unknown&gt;" interface="false" size="28" bugs="0"/>
+      <ClassStats class="com.urbanairship.location.UALocationManager" sourceFile="&lt;Unknown&gt;" interface="false" size="137" bugs="0"/>
+      <ClassStats class="com.urbanairship.location.UALocationManager$1" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.urbanairship.location.UALocationManager$2" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.urbanairship.preference" total_bugs="2" total_types="19" total_size="342" priority_2="2">
+      <ClassStats class="com.urbanairship.preference.ApidPreference" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.urbanairship.preference.LocationBackgroundEnablePreference" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.urbanairship.preference.LocationEnablePreference" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.urbanairship.preference.LocationForegroundEnablePreference" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.urbanairship.preference.PushEnablePreference" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.urbanairship.preference.QuietTimeEnablePreference" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.urbanairship.preference.QuietTimeEndPreference" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.urbanairship.preference.QuietTimePickerPreference" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="1" priority_2="1"/>
+      <ClassStats class="com.urbanairship.preference.QuietTimeStartPreference" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.urbanairship.preference.SoundEnablePreference" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.urbanairship.preference.UACheckBoxPreference" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.urbanairship.preference.UAPreference" sourceFile="&lt;Unknown&gt;" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.urbanairship.preference.UAPreference$PreferenceType" sourceFile="&lt;Unknown&gt;" interface="false" size="42" bugs="0"/>
+      <ClassStats class="com.urbanairship.preference.UAPreferenceAdapter" sourceFile="&lt;Unknown&gt;" interface="false" size="127" bugs="1" priority_2="1"/>
+      <ClassStats class="com.urbanairship.preference.UAPreferenceAdapter$1" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.urbanairship.preference.UAPreferenceAdapter$2" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.urbanairship.preference.UAPreferenceAdapter$3" sourceFile="&lt;Unknown&gt;" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.urbanairship.preference.UserIdPreference" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.urbanairship.preference.VibrateEnablePreference" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.urbanairship.push" total_bugs="6" total_types="13" total_size="851" priority_3="4" priority_2="2">
+      <ClassStats class="com.urbanairship.push.BasicPushNotificationBuilder" sourceFile="&lt;Unknown&gt;" interface="false" size="22" bugs="1" priority_3="1"/>
+      <ClassStats class="com.urbanairship.push.CustomPushNotificationBuilder" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="1" priority_3="1"/>
+      <ClassStats class="com.urbanairship.push.GCMMessageHandler" sourceFile="&lt;Unknown&gt;" interface="false" size="32" bugs="0"/>
+      <ClassStats class="com.urbanairship.push.GCMPushReceiver" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.urbanairship.push.GCMRegistrar" sourceFile="&lt;Unknown&gt;" interface="false" size="168" bugs="1" priority_3="1"/>
+      <ClassStats class="com.urbanairship.push.PushManager" sourceFile="&lt;Unknown&gt;" interface="false" size="179" bugs="0"/>
+      <ClassStats class="com.urbanairship.push.PushMessage" sourceFile="&lt;Unknown&gt;" interface="false" size="70" bugs="2" priority_2="2"/>
+      <ClassStats class="com.urbanairship.push.PushNotificationBuilder" sourceFile="&lt;Unknown&gt;" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.urbanairship.push.PushPreferences" sourceFile="&lt;Unknown&gt;" interface="false" size="150" bugs="1" priority_3="1"/>
+      <ClassStats class="com.urbanairship.push.PushPreferences$QuietTime" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.urbanairship.push.PushRegistrationBuilder" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.urbanairship.push.PushRegistrationPayload" sourceFile="&lt;Unknown&gt;" interface="false" size="23" bugs="0"/>
+      <ClassStats class="com.urbanairship.push.PushService" sourceFile="&lt;Unknown&gt;" interface="false" size="132" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.urbanairship.push.embedded" total_bugs="3" total_types="7" total_size="120" priority_3="1" priority_2="1" priority_1="1">
+      <ClassStats class="com.urbanairship.push.embedded.BoxOfficeClient" sourceFile="&lt;Unknown&gt;" interface="false" size="70" bugs="1" priority_1="1"/>
+      <ClassStats class="com.urbanairship.push.embedded.BoxOfficeClient$BoxOfficeException" sourceFile="&lt;Unknown&gt;" interface="false" size="3" bugs="0"/>
+      <ClassStats class="com.urbanairship.push.embedded.BoxOfficeClient$FatalBoxOfficeException" sourceFile="&lt;Unknown&gt;" interface="false" size="3" bugs="0"/>
+      <ClassStats class="com.urbanairship.push.embedded.BoxOfficeClient$FirstRunForbiddenException" sourceFile="&lt;Unknown&gt;" interface="false" size="3" bugs="0"/>
+      <ClassStats class="com.urbanairship.push.embedded.Config" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="0"/>
+      <ClassStats class="com.urbanairship.push.embedded.Config$BoxOffice" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="com.urbanairship.push.embedded.Network" sourceFile="&lt;Unknown&gt;" interface="false" size="34" bugs="1" priority_3="1"/>
+    </PackageStats>
+    <PackageStats package="com.urbanairship.restclient" total_bugs="6" total_types="10" total_size="226" priority_3="4" priority_2="2">
+      <ClassStats class="com.urbanairship.restclient.AppAuthenticatedRequest" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.urbanairship.restclient.AsyncHandler" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.urbanairship.restclient.Post" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.urbanairship.restclient.PostInputStream" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.urbanairship.restclient.Request" sourceFile="&lt;Unknown&gt;" interface="false" size="59" bugs="2" priority_3="2"/>
+      <ClassStats class="com.urbanairship.restclient.Request$1" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.urbanairship.restclient.Request$BackgroundRequest" sourceFile="&lt;Unknown&gt;" interface="false" size="38" bugs="4" priority_3="2" priority_2="2"/>
+      <ClassStats class="com.urbanairship.restclient.RequestQueue" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="0"/>
+      <ClassStats class="com.urbanairship.restclient.RequestQueue$1" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.urbanairship.restclient.Response" sourceFile="&lt;Unknown&gt;" interface="false" size="32" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.urbanairship.richpush" total_bugs="12" total_types="21" total_size="892" priority_3="6" priority_2="5" priority_1="1">
+      <ClassStats class="com.urbanairship.richpush.RichPushInbox" sourceFile="&lt;Unknown&gt;" interface="false" size="71" bugs="0"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushInbox$1" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushInbox$2" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushInbox$3" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="1" priority_3="1"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushInbox$Listener" sourceFile="&lt;Unknown&gt;" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushInbox$SentAtRichPushMessageComparator" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="1" priority_2="1"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushManager" sourceFile="&lt;Unknown&gt;" interface="false" size="77" bugs="1" priority_3="1"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushManager$1" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="1" priority_3="1"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushManager$2" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="1" priority_3="1"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushManager$3" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushManager$Listener" sourceFile="&lt;Unknown&gt;" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushManager$UpdateResultReceiver" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushMessage" sourceFile="&lt;Unknown&gt;" interface="false" size="144" bugs="5" priority_3="1" priority_2="4"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushMessageCache" sourceFile="&lt;Unknown&gt;" interface="false" size="37" bugs="0"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushMessageJavaScript" sourceFile="&lt;Unknown&gt;" interface="false" size="42" bugs="0"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushMessageJavaScriptInterface" sourceFile="&lt;Unknown&gt;" interface="true" size="13" bugs="0"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushResolver" sourceFile="&lt;Unknown&gt;" interface="false" size="88" bugs="0"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushUpdateService" sourceFile="&lt;Unknown&gt;" interface="false" size="197" bugs="2" priority_3="1" priority_1="1"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushUser" sourceFile="&lt;Unknown&gt;" interface="false" size="102" bugs="0"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushUser$UserPreferences" sourceFile="&lt;Unknown&gt;" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.urbanairship.richpush.RichPushUserAuthenticatedRequest" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.urbanairship.util" total_bugs="0" total_types="7" total_size="180">
+      <ClassStats class="com.urbanairship.util.DataManager" sourceFile="&lt;Unknown&gt;" interface="false" size="94" bugs="0"/>
+      <ClassStats class="com.urbanairship.util.DataManager$1" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.urbanairship.util.IntentUtils" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.urbanairship.util.NotificationIDGenerator" sourceFile="&lt;Unknown&gt;" interface="false" size="34" bugs="0"/>
+      <ClassStats class="com.urbanairship.util.ServiceNotBoundException" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.urbanairship.util.Toaster" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.urbanairship.util.UAStringUtil" sourceFile="&lt;Unknown&gt;" interface="false" size="22" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.urbanairship.widget" total_bugs="2" total_types="2" total_size="49" priority_3="2">
+      <ClassStats class="com.urbanairship.widget.RichPushMessageView" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="0"/>
+      <ClassStats class="com.urbanairship.widget.RichPushMessageView$1" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="2" priority_3="2"/>
+    </PackageStats>
+    <PackageStats package="com.vicinno.sci15clite" total_bugs="21" total_types="28" total_size="673" priority_3="8" priority_2="12" priority_1="1">
+      <ClassStats class="com.vicinno.sci15clite.AboutActivity" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.vicinno.sci15clite.BuildConfig" sourceFile="&lt;Unknown&gt;" interface="false" size="3" bugs="0"/>
+      <ClassStats class="com.vicinno.sci15clite.IntentReceiver" sourceFile="&lt;Unknown&gt;" interface="false" size="50" bugs="2" priority_3="1" priority_1="1"/>
+      <ClassStats class="com.vicinno.sci15clite.MainActivity" sourceFile="&lt;Unknown&gt;" interface="false" size="200" bugs="2" priority_3="2"/>
+      <ClassStats class="com.vicinno.sci15clite.MainActivity$1" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.vicinno.sci15clite.MainActivity$2" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="1" priority_3="1"/>
+      <ClassStats class="com.vicinno.sci15clite.MainActivity$3" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.vicinno.sci15clite.MainActivity$4" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="1" priority_3="1"/>
+      <ClassStats class="com.vicinno.sci15clite.MainActivity$5" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="1" priority_3="1"/>
+      <ClassStats class="com.vicinno.sci15clite.MainActivity$6" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="1" priority_3="1"/>
+      <ClassStats class="com.vicinno.sci15clite.MainActivity$7" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="1" priority_3="1"/>
+      <ClassStats class="com.vicinno.sci15clite.MainActivity$8" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.vicinno.sci15clite.Manifest" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="0"/>
+      <ClassStats class="com.vicinno.sci15clite.Manifest$permission" sourceFile="&lt;Unknown&gt;" interface="false" size="3" bugs="1" priority_2="1"/>
+      <ClassStats class="com.vicinno.sci15clite.MyApplication" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="com.vicinno.sci15clite.R" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="0"/>
+      <ClassStats class="com.vicinno.sci15clite.R$attr" sourceFile="&lt;Unknown&gt;" interface="false" size="2" bugs="1" priority_2="1"/>
+      <ClassStats class="com.vicinno.sci15clite.R$color" sourceFile="&lt;Unknown&gt;" interface="false" size="91" bugs="1" priority_2="1"/>
+      <ClassStats class="com.vicinno.sci15clite.R$dimen" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="1" priority_2="1"/>
+      <ClassStats class="com.vicinno.sci15clite.R$drawable" sourceFile="&lt;Unknown&gt;" interface="false" size="52" bugs="1" priority_2="1"/>
+      <ClassStats class="com.vicinno.sci15clite.R$id" sourceFile="&lt;Unknown&gt;" interface="false" size="30" bugs="1" priority_2="1"/>
+      <ClassStats class="com.vicinno.sci15clite.R$layout" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="1" priority_2="1"/>
+      <ClassStats class="com.vicinno.sci15clite.R$raw" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="1" priority_2="1"/>
+      <ClassStats class="com.vicinno.sci15clite.R$string" sourceFile="&lt;Unknown&gt;" interface="false" size="39" bugs="1" priority_2="1"/>
+      <ClassStats class="com.vicinno.sci15clite.R$style" sourceFile="&lt;Unknown&gt;" interface="false" size="34" bugs="1" priority_2="1"/>
+      <ClassStats class="com.vicinno.sci15clite.R$xml" sourceFile="&lt;Unknown&gt;" interface="false" size="3" bugs="1" priority_2="1"/>
+      <ClassStats class="com.vicinno.sci15clite.SettingHelper" sourceFile="&lt;Unknown&gt;" interface="false" size="27" bugs="0"/>
+      <ClassStats class="com.vicinno.sci15clite.SettingPreferenceActivity" sourceFile="&lt;Unknown&gt;" interface="false" size="34" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="414" invocations="1232" avgMicrosecondsPerInvocation="336" maxMicrosecondsPerInvocation="25498" standardDeviationMircosecondsPerInvocation="1162"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="374" invocations="995" avgMicrosecondsPerInvocation="376" maxMicrosecondsPerInvocation="11704" standardDeviationMircosecondsPerInvocation="646"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="359" invocations="1025" avgMicrosecondsPerInvocation="351" maxMicrosecondsPerInvocation="7955" standardDeviationMircosecondsPerInvocation="578"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="312" invocations="1041" avgMicrosecondsPerInvocation="300" maxMicrosecondsPerInvocation="12135" standardDeviationMircosecondsPerInvocation="659"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="289" invocations="1020" avgMicrosecondsPerInvocation="283" maxMicrosecondsPerInvocation="4521" standardDeviationMircosecondsPerInvocation="473"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="245" invocations="1558" avgMicrosecondsPerInvocation="157" maxMicrosecondsPerInvocation="3633" standardDeviationMircosecondsPerInvocation="303"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="245" invocations="1053" avgMicrosecondsPerInvocation="232" maxMicrosecondsPerInvocation="15320" standardDeviationMircosecondsPerInvocation="607"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="241" invocations="296" avgMicrosecondsPerInvocation="817" maxMicrosecondsPerInvocation="15065" standardDeviationMircosecondsPerInvocation="1782"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="228" invocations="1025" avgMicrosecondsPerInvocation="222" maxMicrosecondsPerInvocation="11709" standardDeviationMircosecondsPerInvocation="479"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="222" invocations="180" avgMicrosecondsPerInvocation="1237" maxMicrosecondsPerInvocation="195556" standardDeviationMircosecondsPerInvocation="14525"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="215" invocations="880" avgMicrosecondsPerInvocation="245" maxMicrosecondsPerInvocation="4707" standardDeviationMircosecondsPerInvocation="446"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="215" invocations="296" avgMicrosecondsPerInvocation="726" maxMicrosecondsPerInvocation="9971" standardDeviationMircosecondsPerInvocation="1351"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="140" invocations="180" avgMicrosecondsPerInvocation="781" maxMicrosecondsPerInvocation="36235" standardDeviationMircosecondsPerInvocation="3431"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="82" invocations="1094" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="38311" standardDeviationMircosecondsPerInvocation="1158"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="80" invocations="1025" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="1591" standardDeviationMircosecondsPerInvocation="134"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="74" invocations="296" avgMicrosecondsPerInvocation="250" maxMicrosecondsPerInvocation="5028" standardDeviationMircosecondsPerInvocation="525"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="74" invocations="296" avgMicrosecondsPerInvocation="250" maxMicrosecondsPerInvocation="3032" standardDeviationMircosecondsPerInvocation="425"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="72" invocations="180" avgMicrosecondsPerInvocation="403" maxMicrosecondsPerInvocation="3271" standardDeviationMircosecondsPerInvocation="499"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="71" invocations="180" avgMicrosecondsPerInvocation="396" maxMicrosecondsPerInvocation="3782" standardDeviationMircosecondsPerInvocation="548"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="64" invocations="429" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="14438" standardDeviationMircosecondsPerInvocation="735"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="62" invocations="1044" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="1435" standardDeviationMircosecondsPerInvocation="110"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="58" invocations="12753" avgMicrosecondsPerInvocation="4" maxMicrosecondsPerInvocation="1877" standardDeviationMircosecondsPerInvocation="22"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="58" invocations="180" avgMicrosecondsPerInvocation="324" maxMicrosecondsPerInvocation="3395" standardDeviationMircosecondsPerInvocation="471"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="57" invocations="995" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="1207" standardDeviationMircosecondsPerInvocation="90"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="55" invocations="180" avgMicrosecondsPerInvocation="306" maxMicrosecondsPerInvocation="12150" standardDeviationMircosecondsPerInvocation="951"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="49" invocations="180" avgMicrosecondsPerInvocation="276" maxMicrosecondsPerInvocation="2868" standardDeviationMircosecondsPerInvocation="408"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="49" invocations="296" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="2664" standardDeviationMircosecondsPerInvocation="285"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="49" invocations="1236" avgMicrosecondsPerInvocation="39" maxMicrosecondsPerInvocation="599" standardDeviationMircosecondsPerInvocation="30"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="48" invocations="296" avgMicrosecondsPerInvocation="163" maxMicrosecondsPerInvocation="7140" standardDeviationMircosecondsPerInvocation="510"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="46" invocations="296" avgMicrosecondsPerInvocation="157" maxMicrosecondsPerInvocation="3649" standardDeviationMircosecondsPerInvocation="353"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="46" invocations="296" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="10696" standardDeviationMircosecondsPerInvocation="965"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="45" invocations="180" avgMicrosecondsPerInvocation="253" maxMicrosecondsPerInvocation="1825" standardDeviationMircosecondsPerInvocation="302"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="45" invocations="296" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="3165" standardDeviationMircosecondsPerInvocation="378"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="44" invocations="21768" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="599" standardDeviationMircosecondsPerInvocation="4"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="40" invocations="945" avgMicrosecondsPerInvocation="43" maxMicrosecondsPerInvocation="1403" standardDeviationMircosecondsPerInvocation="77"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="39" invocations="180" avgMicrosecondsPerInvocation="221" maxMicrosecondsPerInvocation="2287" standardDeviationMircosecondsPerInvocation="293"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
